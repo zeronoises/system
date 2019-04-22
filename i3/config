@@ -285,6 +285,7 @@ workspace $ws6                                          output $Rmon
 workspace $ws7                                          output $Lmon
 workspace $ws8                                          output $Rmon
 workspace $ws9                                          output $Lmon
+workspace $ws10                                         output $Rmon
 
 # Window colours                                        border  backgr  text    indicator
 client.focused                                          $black  $black  $gold   $gold
