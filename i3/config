@@ -63,11 +63,6 @@ set $ws6                                "6"
 set $ws7                                "7"
 set $ws8                                "8"
 set $ws9                                "9"
-set $ws90                               "90"
-set $ws91                               "91"
-set $ws92                               "92"
-set $ws93                               "93"
-set $ws94                               "94"
 
 # Next empty workspace
 set $nempty                             $(($(wmctrl -d | wc -l) + 1))
@@ -112,29 +107,29 @@ bindsym $mod+w                          exec --no-startup-id $cheat
 # Terminal
 bindsym $mod+Return                     exec $term
 # Firefox
-bindsym $mod+F1                         exec firefox
+bindsym $mod+F1                         exec --no-startup-id firefox
 # VS Code
 bindsym $mod+F2                         exec --no-startup-id code
 # PCmanFM
-bindsym $mod+F3                         exec pcmanfm $zome
+bindsym $mod+F3                         exec --no-startup-id pcmanfm $zome
 # Gimp
-bindsym $mod+F4                         exec gimp
+bindsym $mod+F4                         exec --no-startup-id gimp
 # VCV Rack
-bindsym $mod+F5                         exec vcvrack
+bindsym $mod+F5                         exec --no-startup-id vcvrack
 # Mousepad
-bindsym $mod+F6                         exec mousepad
+bindsym $mod+F6                         exec --no-startup-id mousepad
 # Audacity
-bindsym $mod+F7                         exec audacity
+bindsym $mod+F7                         exec --no-startup-id audacity
 # Mixxx
-bindsym $mod+F8                         exec mixxx
+bindsym $mod+F8                         exec --no-startup-id mixxx
 # Cadence
-bindsym $mod+F9                         exec pamac-manager
+bindsym $mod+F9                         exec --no-startup-id pamac-manager
 # Flowblade
-bindsym $mod+F10                        exec python2 /usr/bin/flowblade
+bindsym $mod+F10                        exec --no-startup-id typora
 # Sticky Terminal
 bindsym $mod+F11                        exec minimal=true $term --title stickyterm
 # Calculator
-bindsym $mod+F12                        exec gitkraken
+bindsym $mod+F12                        exec --no-startup-id gitkraken
 # Close focused window
 bindsym $mod+Shift+q                    kill
 # Xkill
@@ -190,7 +185,7 @@ bindsym $mod+Shift+r                    restart
 # Move to scratchpad
 bindsym $mod+minus                      move scratchpad
 # Dropdown JACK patchbay
-bindsym $mod+j                          [title="Carla - carla_default.carxp"] scratchpad show, resize set 1400 800, move position center
+bindsym $mod+j                          [title="Carla"] scratchpad show, resize set 1400 800, move position center
 # Dropdown email
 bindsym $mod+m                          [class="Rambox"] scratchpad show, resize set 1400 800, move position center
 # Screenshot - full
@@ -287,11 +282,6 @@ workspace $ws6                                          output $Rmon
 workspace $ws7                                          output $Lmon
 workspace $ws8                                          output $Rmon
 workspace $ws9                                          output $Lmon
-workspace $ws90                                         output $Rmon
-workspace $ws91                                         output $Lmon
-workspace $ws92                                         output $Lmon
-workspace $ws93                                         output $Lmon
-workspace $ws94                                         output $Rmon
 
 # Window colours                                        border  backgr  text    indicator
 client.focused                                          $black  $black  $gold   $gold
@@ -360,9 +350,10 @@ for_window [class="GLFW-Application"]                   focus
 for_window [class="Gimp"]                               focus
 for_window [class="Mixxx"]                              focus
 for_window [class="code-oss"]                           focus
-for_window [class="Flowblade"]                          focus
 for_window [class="Audacity"]                           focus
 for_window [class="Firefox"]                            focus
+for_window [class="GitKraken"]                          focus
+for_window [class="Typora"]                             focus
 
 for_window [title="NetSpeed"]                           move scratchpad
 for_window [title="Carla"]                              move scratchpad
@@ -374,11 +365,12 @@ for_window [class="(?i)firefox"] 			resize grow height 1 px or 1 ppt
 # Program assignments
 assign [class="Firefox" window_type="normal"]           workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
-assign [class="Audacity"]                               workspace number $ws90
-assign [class="Flowblade"]                              workspace number $ws91
-assign [class="Gimp"]                                   workspace number $ws92
-assign [class="GLFW-Application"]                       workspace number $ws93
-assign [class="Mixxx" window_type="normal"]             workspace number $ws94
+assign [class="GLFW-Application"]                       workspace number $ws3
+assign [class="GitKraken"]                              workspace number $ws4
+assign [class="Audacity"]                               workspace number $ws6
+assign [class="Gimp"]                                   workspace number $ws7
+assign [class="Typora"]                                 workspace number $ws8
+assign [class="Mixxx" window_type="normal"]             workspace number $ws9
 
 # Autostart
 
