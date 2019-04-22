@@ -1,0 +1,3 @@
+# i3 config
+
+Trying to keep order...
