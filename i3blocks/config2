@@ -1,0 +1,139 @@
+
+# i3blocks config file 2
+
+# Global properties
+markup=none
+separator_block_width=5
+separator=false
+color=#FF8393
+
+[quodlibet]
+label=🎵 
+command=quodlibet --print-playing '<albumartist|<albumartist>|<artist|<artist>|No artist>> - <title>'; /mnt/Gog/Scripts/quodbar.sh &
+min_width=600
+align=center
+interval=2
+color=#FFFFFF
+
+[memory_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/mem-info.sh &
+interval=once
+color=#FFFFFF
+
+[memory]
+command=/mnt/Gog/Scripts/memory.sh
+interval=5
+min_width=99.99G
+
+[cpu_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/cpu-info.sh &
+interval=once
+color=#FFFFFF
+
+[cpu_usage]
+command=/mnt/Gog/Scripts/cpu_usage -w 50 -c 90
+interval=5
+min_width=100.00%
+
+[down_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/NStoggle.sh 2>&1 1> /dev/null &
+interval=once
+color=#FFFFFF
+
+[bandwith-down]
+min_width=________
+align=center
+command=/mnt/Gog/Scripts/bandwidth2.sh
+instance=enp3s0;in
+interval=1
+
+[up_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/NStoggle.sh 2>&1 1> /dev/null &
+interval=once
+color=#FFFFFF
+
+[bandwith-up]
+min_width=________
+align=center
+command=/mnt/Gog/Scripts/bandwidth2.sh
+instance=enp3s0;out
+interval=1
+
+[disk_root_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/dee-eff.sh / &
+interval=once
+color=#FFFFFF
+
+[disk-root]
+label=root
+command=df -h -P -l / | awk '/\/.*/ { print $5; exit 0 }'
+interval=30
+
+[disk_home_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/dee-eff.sh ~/ &
+interval=once
+color=#FFFFFF
+
+[disk-home]
+label=home
+command=df -h -P -l $HOME | awk '/\/.*/ { print $5; exit 0 }'
+interval=30
+
+[disk_gog_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/dee-eff.sh /mnt/Gog &
+interval=once
+color=#FFFFFF
+
+[disk-gog]
+label=Gog
+command=df -h -P -l /mnt/Gog | awk '/\/.*/ { print $5; exit 0 }'
+interval=30
+
+[disk_magog_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/dee-eff.sh /mnt/Magog &
+interval=once
+color=#FFFFFF
+
+[disk-magog]
+label=Magog
+command=df -h -P -l /mnt/Magog | awk '/\/.*/ { print $5; exit 0 }'
+interval=30
+
+[disk_angel_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/dee-eff.sh /mnt/Angel &
+interval=once
+color=#FFFFFF
+
+[disk-angel]
+label=Angel
+command=df -h -P -l /mnt/Angel | awk '/\/.*/ { print $5; exit 0 }'
+interval=30
+
+[paddingB]
+command=echo "      "
+interval=once
+
+[date_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || notify-send "$(cal)" &
+interval=once
+color=#FFFFFF
+
+[date]
+command=date '+ %a %b %_d %Y'
+interval=1
+align=left
+min_width=Wed_Oct_00_0000
+
+[time_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || notify-send -h string:fgcolor:#FFFFFF "$(date '+%A %B %d %Y')" "$(date  '+%H:%M:%S %P')" &
+interval=once
+color=#FFFFFF
+
+[time]
+command=date '+%H:%M %P'
+min_width=00:00_am
+interval=1
+
+[padding]
+command=echo "      "
+interval=once

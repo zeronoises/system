@@ -1,0 +1,34 @@
+
+# i3blocks config file 1
+
+# Global properties
+markup=none
+separator_block_width=5
+separator=false
+color=#FF8393
+
+[date_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || notify-send "$(cal)" &
+interval=once
+color=#FFFFFF
+
+[date]
+command=date '+ %a %b %_d %Y'
+interval=1
+align=left
+min_width=Wed_Oct_00_0000
+
+[time_label]
+command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || notify-send -h string:fgcolor:#FFFFFF "$(date '+%A %B %d %Y')" "$(date  '+%H:%M:%S %P')" &
+interval=once
+color=#FFFFFF
+
+[time]
+command=date '+%H:%M %P'
+interval=1
+align=left
+min_width=00:00_am
+
+[padding]
+command=echo "      "
+interval=once
