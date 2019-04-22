@@ -42,8 +42,8 @@ Move workspace to other monitor               mod+x
 Move container to other monitor         mod+Shift+x
 Prev workspace                      mod+bracketleft
 Next workspace                     mod+bracketright
-Workspace n                                mod+KP n
-Move container to ws n               mod+Shift+KP n
+Workspace n                                   mod+n
+Move container to ws n                  mod+Shift+n
 Move container to next empty workspace        mod+n
 New workspace                                 mod+z
 Swap displays                                 mod+y
