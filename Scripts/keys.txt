@@ -9,7 +9,7 @@ Mousepad                                     mod+F6
 Audacity                                     mod+F7
 Mixxx                                        mod+F8
 Pamac GUI                                    mod+F9
-Flowblade                                   mod+F10
+Typora                                      mod+F10
 Sticky Terminal                             mod+F11
 Gitkraken                                   mod+F12
 ROFI MENUS-----------------------------------------
