@@ -22,7 +22,6 @@ alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
 alias ll="ls -Hal | less"
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
-alias config='/usr/bin/git --git-dir=$HOME/.system/ --work-tree=$HOME'
 
 # PS1="\[\e[33m\]\A\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\] \[\e[35m\][\[\e[m\]\[\e[35m\]\W\[\e[m\]\[\e[35m\]]\[\e[m\] > "
 
