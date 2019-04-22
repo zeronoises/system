@@ -63,6 +63,7 @@ set $ws6                                "6"
 set $ws7                                "7"
 set $ws8                                "8"
 set $ws9                                "9"
+set $ws10                               "10"
 
 # Next empty workspace
 set $nempty                             $(($(wmctrl -d | wc -l) + 1))
@@ -91,6 +92,7 @@ bindsym $mod+6                          workspace number $ws6
 bindsym $mod+7                          workspace number $ws7
 bindsym $mod+8                          workspace number $ws8
 bindsym $mod+9                          workspace number $ws9
+bindsym $mod+0                          workspace number $ws10
 
 bindsym $mod+Shift+1                    move container to workspace number $ws1
 bindsym $mod+Shift+2                    move container to workspace number $ws2
@@ -101,6 +103,7 @@ bindsym $mod+Shift+6                    move container to workspace number $ws6
 bindsym $mod+Shift+7                    move container to workspace number $ws7
 bindsym $mod+Shift+8                    move container to workspace number $ws8
 bindsym $mod+Shift+9                    move container to workspace number $ws9
+bindsym $mod+Shift+0                    move container to workspace number $ws10
 
 # Cheatsheet
 bindsym $mod+w                          exec --no-startup-id $cheat
@@ -365,12 +368,12 @@ for_window [class="(?i)firefox"] 			resize grow height 1 px or 1 ppt
 # Program assignments
 assign [class="Firefox" window_type="normal"]           workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
-assign [class="GLFW-Application"]                       workspace number $ws3
-assign [class="GitKraken"]                              workspace number $ws4
-assign [class="Audacity"]                               workspace number $ws6
+assign [class="GLFW-Application"]                       workspace number $ws5
+assign [class="GitKraken"]                              workspace number $ws6
 assign [class="Gimp"]                                   workspace number $ws7
-assign [class="Typora"]                                 workspace number $ws8
+assign [class="Audacity"]                               workspace number $ws8
 assign [class="Mixxx" window_type="normal"]             workspace number $ws9
+assign [class="Typora"]                                 workspace number $ws10
 
 # Autostart
 
