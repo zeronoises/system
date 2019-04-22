@@ -11,9 +11,13 @@ color=#FF8393
 label=🎵 
 command=quodlibet --print-playing '<albumartist|<albumartist>|<artist|<artist>|No artist>> - <title>'; /mnt/Gog/Scripts/quodbar.sh &
 min_width=600
-align=center
+align=right
 interval=2
 color=#FFFFFF
+
+[paddingQ]
+command=echo "      "
+interval=once
 
 [memory_label]
 command=echo ""; [[ -z "${BLOCK_BUTTON}" ]] || /mnt/Gog/Scripts/mem-info.sh &
