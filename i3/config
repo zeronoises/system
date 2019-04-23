@@ -373,7 +373,7 @@ assign [class="GLFW-Application"]                       workspace number $ws5
 assign [class="GitKraken"]                              workspace number $ws6
 assign [class="Gimp"]                                   workspace number $ws7
 assign [class="Audacity"]                               workspace number $ws8
-assign [class="Typora"]                                 workspace number $ws09
+assign [class="Typora"]                                 workspace number $ws9
 assign [class="Mixxx" window_type="normal"]             workspace number $ws10
 
 # Autostart
