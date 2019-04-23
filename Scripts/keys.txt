@@ -7,11 +7,11 @@ Gimp                   7                     mod+F4
 VCV Rack               5                     mod+F5
 Mousepad                                     mod+F6
 Audacity               8                     mod+F7
-Mixxx                  9                     mod+F8
+Mixxx                  10                    mod+F8
 Pamac GUI                                    mod+F9
 Sticky Terminal                             mod+F11
 Gitkraken              6                    mod+F12
-Typora                 10                   mod+F10
+Typora                 9                    mod+F10
 ROFI MENUS-----------------------------------------
 DRun menu                                     mod+d
 Window menu                                   mod+g
