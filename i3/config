@@ -339,6 +339,7 @@ for_window [class="Quodlibet"]                          floating enable
 for_window [title="yaws" class="Yad"]                   floating enable
 for_window [title="yaws" class="feh"]                   floating enable
 for_window [class="Gnethogs"]                           floating enable
+for_window [class="Gitg"]                               floating enable
 for_window [class="Surf"]                               floating enable, resize set 1400 800, move position center
 
 for_window [class="dupeGuru"]                           floating enable, move position center
