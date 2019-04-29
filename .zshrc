@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -12,7 +12,7 @@ ZSH_THEME="powerline"
 
 # Powerline theme variables
 POWERLINE_RIGHT_A="mixed"
-POWERLINE_DATE_FORMAT="%D{%d-%m}"
+POWERLINE_DATE_FORMAT="%D{%d/%m}"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
