@@ -118,3 +118,10 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
+
+if [[ -z "$minimal" ]]; then
+    fortune oblique-strategies | lolcat
+    echo " "
+else
+    unset minimal
+fi
