@@ -122,4 +122,7 @@ if [[ -z "$minimal" ]]; then
 else
     unset minimal
 fi
+
 eval $(thefuck --alias)
+
+export LESS=" -iMFXR"
