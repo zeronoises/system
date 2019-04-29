@@ -13,6 +13,8 @@ ZSH_THEME="powerline"
 # Powerline theme variables
 POWERLINE_RIGHT_A="mixed"
 POWERLINE_DATE_FORMAT="%D{%d/%m}"
+POWERLINE_MULTILINE="true"
+POWERLINE_NO_BLANK_LINE="true"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,7 +103,7 @@ alias clock="tty-clock -s -c -n"
 alias c='clear'
 alias neo='clear && neofetch'
 alias gitpac='cd ~/.pacmanity/pacmanity && git pull && cd -'
-alias lsd='lsd -al1 | less'
+alias lsd='lsd -ahl1'
 alias cmatrix='cmatrix -b -s | lolcat -t'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
