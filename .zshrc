@@ -14,7 +14,6 @@ ZSH_THEME="powerline"
 POWERLINE_RIGHT_A="mixed"
 POWERLINE_DATE_FORMAT="%D{%d/%m}"
 POWERLINE_MULTILINE="true"
-POWERLINE_NO_BLANK_LINE="true"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
