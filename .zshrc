@@ -40,7 +40,7 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -56,7 +56,7 @@ DISABLE_AUTO_UPDATE="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-HIST_STAMPS="dd/mm/yyyy"
+# HIST_STAMPS="dd/mm/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -66,7 +66,7 @@ HIST_STAMPS="dd/mm/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(colored-man-pages sudo wd zsh_reload)
 
 
 # User configuration
@@ -101,15 +101,10 @@ alias clock="tty-clock -s -c -n"
 alias c='clear'
 alias neo='clear && neofetch'
 alias gitpac='cd ~/.pacmanity/pacmanity && git pull && cd -'
-alias cdz='cd /mnt/Gog'
-alias cds='cd /mnt/Gog/Scripts'
-alias cdt='cd /mnt/Gog/Temp'
-alias cdr='cd /mnt/Gog/repos'
-alias lsd='lsd -al1'
+alias lsd='lsd -al1 | less'
 alias cmatrix='cmatrix -b -s | lolcat -t'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
-alias ll="ls -Hal | less"
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
@@ -125,3 +120,4 @@ if [[ -z "$minimal" ]]; then
 else
     unset minimal
 fi
+eval $(thefuck --alias)
