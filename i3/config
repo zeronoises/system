@@ -104,8 +104,8 @@ bindsym $mod+Shift+8                    move container to workspace number $ws8
 bindsym $mod+Shift+9                    move container to workspace number $ws9
 bindsym $mod+Shift+0                    move container to workspace number $ws10
 
-# Cheatsheet
-bindsym $mod+w                          exec --no-startup-id $cheat
+## LAUNCHERS
+
 # Terminal
 bindsym $mod+Return                     exec $term
 # Firefox
@@ -136,6 +136,7 @@ bindsym $mod+F12                        exec --no-startup-id gitkraken
 bindsym $mod+Shift+q                    kill
 # Xkill
 bindsym $mod+Escape --release           exec --no-startup-id $xkiller
+
 # Run menu
 bindsym $mod+d                          exec --no-startup-id rofi -show drun
 # Window menu
