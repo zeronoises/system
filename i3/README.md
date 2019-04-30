@@ -1,7 +1,7 @@
 
 |                          |                   |      |                                        |                  |
 | :----------------------- | ----------------: | ---- | :------------------------------------- | ---------------: |
-| **Launchers** |                🚀 |      | **Rofi Menus**                         |               ✅ |
+| **Launchers**            |                 🚀 |      | **Rofi Menus**                         |                ✅ |
 | Terminal                 |        mod+Return |      | DRun menu                              |            mod+d |
 | Firefox                  |            mod+F1 |      | Window menu                            |            mod+g |
 | VS Code                  |            mod+F2 |      | Clipboard menu                         |            mod+c |
@@ -11,11 +11,12 @@
 | Mousepad                 |            mod+F6 |      | Run menu                               |            mod+o |
 | Audacity                 |            mod+F7 |      | Yaws menu                              |      mod+Shift+u |
 | Mixxx                    |            mod+F8 |      |                                        |                  |
-| Pamac GUI                |            mod+F9 |      | **Scratchpad**                         |                🗒|
+| Pamac GUI                |            mod+F9 |      | **Scratchpad**                         |                🗒 |
 | Typora                   |           mod+F10 |      | Move to scratchpad                     |        mod+minus |
 | Sticky Terminal          |           mod+F11 |      | Dropdown JACK patchbay                 |            mod+j |
 | Gitkraken                |           mod+F12 |      | Dropdown email                         |            mod+m |
-| **Windows & Workspaces** |                 💻|      |                                        |                  |
+|                          |                   |      |                                        |                  |
+| **Windows & Workspaces** |                 💻 |      |                                        |                  |
 | Move focus               |       mod+[arrow] |      | Move workspace to other monitor        |            mod+x |
 | Move container           | mod+Shift+[arrow] |      | Move container to other monitor        |      mod+Shift+x |
 | Close focused window     |       mod+Shift+q |      | Prev workspace                         |  mod+bracketleft |
@@ -26,10 +27,10 @@
 | Toggle bar 2             |        mod+period |      | New workspace                          |            mod+z |
 | Toggle gaps              |             mod+t |      | Swap displays                          |            mod+y |
 | Fullscreen toggle        |             mod+f |      |                                        |                  |
-| Global fullscreen        |       mod+Shift+f |      | **Screen**                             |                📷|
+| Global fullscreen        |       mod+Shift+f |      | **Screen**                             |                📷 |
 | Toggle tiled/floating    |         mod+space |      | Screenshot full                        |        mod+Print |
 | Toggle tabbed/split      |             mod+k |      | Screenshot screen                      |  mod+Shift+Print |
 |                          |                   |      | Screenshot selection                   |            mod+p |
-| **i3**                   |                ⌨|      | Random paper                           |            mod+u |
+| **i3**                   |                 ⌨ |      | Random paper                           |            mod+u |
 | Reload i3 config         |       mod+Shift+c |      | Add paper to star list                 |            mod+a |
 | Restart i3 inplace       |       mod+Shift+r |      | Delete paper                           |      mod+Shift+a |
