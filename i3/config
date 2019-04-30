@@ -40,7 +40,6 @@ set $scard                              /mnt/Gog/Scripts/soundcard2.sh
 set $wsnew                              /mnt/Gog/Scripts/workspace-new.py
 set $dpmsoff                            /mnt/Gog/Scripts/dpms_off.sh
 set $cheat                              /mnt/Gog/Scripts/cheat.sh
-set $emoji                              /mnt/Gog/Scripts/rofimoji.py
 set $i3msg                              /mnt/Gog/Scripts/rofi_i3_msg.sh
 set $xkiller                            /mnt/Gog/Scripts/xkiller.sh
 set $dswap                              /mnt/Gog/Scripts/display-swap.sh
@@ -148,7 +147,7 @@ bindsym $mod+i                          exec --no-startup-id rofi -show i3-msg -
 # Power menu
 bindsym $mod+Delete                     exec --no-startup-id $pmenu
 # Emoji menu
-bindsym $mod+e                          exec --no-startup-id $emoji
+bindsym $mod+e                          exec --no-startup-id rofimoji
 # Run dialogue
 bindsym $mod+o                          exec --no-startup-id rofi -show run
 # Split horizontal
