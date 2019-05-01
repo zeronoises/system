@@ -16,7 +16,7 @@
 | Sticky Terminal          |           mod+F11 |      | Dropdown JACK patchbay                 |            mod+j |
 | Gitkraken                |           mod+F12 |      | Dropdown email                         |            mod+m |
 |                          |                   |      |                                        |                  |
-| **Windows & Workspaces** |                 💻 |      |                                        |                  |
+| **Windows & Workspaces** |                   |      |                                        |                💻 |
 | Move focus               |       mod+[arrow] |      | Move workspace to other monitor        |            mod+x |
 | Move container           | mod+Shift+[arrow] |      | Move container to other monitor        |      mod+Shift+x |
 | Close focused window     |       mod+Shift+q |      | Prev workspace                         |  mod+bracketleft |
