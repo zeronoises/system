@@ -1,5 +1,5 @@
 #!/bin/bash
-# takes the release_id of a discogs release from a markdown file
+# takes the release_id of a discogs release from a markdown table
 # which has been converted from csv
 # in this format:
 # |Artist|Title|Label|Catalogue|Released|release_id| 
