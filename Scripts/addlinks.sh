@@ -9,3 +9,6 @@ awk -v FS=\| -v OFS=\| '
 NR>2 {$(NF-1) = "[🔗](http://www.discogs.com/release/" $(NF-1) "){:target=\"_blank\"}"}
 1
 ' discogs.md > discogs_links.md
+
+# with sed
+# sed '3,$s@\([0-9]*\)| *$@[link](https://www.discogs.com/release/\1){:target=\"_blank\"}|@' discogs.md > discogs_links.md
