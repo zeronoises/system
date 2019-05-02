@@ -16,7 +16,7 @@ POWERLINE_RIGHT_A="mixed"
 POWERLINE_DATE_FORMAT="%D{%d/%m}"
 POWERLINE_MULTILINE="true"
 
-# Powrlevel10k variables
+# Powerlevel10k variables
 POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
 POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='grey30'
 POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND='red'
@@ -118,7 +118,6 @@ alias c='clear'
 alias neo='clear && neofetch'
 alias gitpac='cd ~/.pacmanity/pacmanity && git pull && cd -'
 alias lsd='lsd -ahl1'
-alias cmatrix='cmatrix -b -s | lolcat -t'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
