@@ -39,7 +39,7 @@ set $pmenu                              /mnt/Gog/Scripts/rofi-power.sh
 set $scard                              /mnt/Gog/Scripts/soundcard2.sh
 set $wsnew                              /mnt/Gog/Scripts/workspace-new.py
 set $dpmsoff                            /mnt/Gog/Scripts/dpms_off.sh
-set $cheat                              /mnt/Gog/Scripts/cheat.sh
+set $cheat                              /mnt/Gog/repos/system/i3/README.md
 set $i3msg                              /mnt/Gog/Scripts/rofi_i3_msg.sh
 set $xkiller                            /mnt/Gog/Scripts/xkiller.sh
 set $dswap                              /mnt/Gog/Scripts/display-swap.sh
@@ -103,6 +103,8 @@ bindsym $mod+Shift+7                    move container to workspace number $ws7
 bindsym $mod+Shift+8                    move container to workspace number $ws8
 bindsym $mod+Shift+9                    move container to workspace number $ws9
 bindsym $mod+Shift+0                    move container to workspace number $ws10
+
+bindsym $mod+Shift+w                    exec markdown_previewer $cheat
 
 ## LAUNCHERS
 
