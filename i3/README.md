@@ -21,8 +21,8 @@
 | Move container           | mod+Shift+[arrow] | Move container to other monitor        |      mod+Shift+x |
 | Close focused window     |       mod+Shift+q | Prev workspace                         |  mod+bracketleft |
 | Xkill                    |        mod+Escape | Next workspace                         | mod+bracketright |
-| Split horizontal         |             mod+h | Workspace n                            |            mod+n |
-| Split vertical           |             mod+v | Move container to ws n                 |      mod+Shift+n |
+| Split horizontal         |             mod+h | Workspace n                            |          mod+[n] |
+| Split vertical           |             mod+v | Move container to ws n                 |    mod+Shift+[n] |
 | Toggle bar 1             |         mod+comma | Move container to next empty workspace |            mod+n |
 | Toggle bar 2             |        mod+period | New workspace                          |            mod+z |
 | Toggle gaps              |             mod+t | Swap displays                          |            mod+y |
