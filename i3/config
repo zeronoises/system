@@ -271,7 +271,7 @@ bar {
         tray_padding                    0
         workspace_buttons               no
         mode                            hide
-        hidden_state                    show
+        hidden_state                    hide
         modifier                        Mod5
 }
 
