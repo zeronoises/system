@@ -102,7 +102,7 @@ export LANG=en_GB.UTF-8
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-source $ZSH_CUSTOM/aliases.zsh
+source $ZSH_CUSTOM/lib/aliases.zsh
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
