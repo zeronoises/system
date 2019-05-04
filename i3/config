@@ -110,8 +110,8 @@ bindsym $mod+Shift+w                    exec markdown_previewer $cheat
 
 # Terminal
 bindsym $mod+Return                     exec $term
-# Firefox
-bindsym $mod+F1                         exec --no-startup-id firefox
+# Brave
+bindsym $mod+F1                         exec --no-startup-id brave
 # VS Code
 bindsym $mod+F2                         exec --no-startup-id code
 # PCmanFM
@@ -358,7 +358,7 @@ for_window [class="Gimp"]                               focus
 for_window [class="Mixxx"]                              focus
 for_window [class="code-oss"]                           focus
 for_window [class="Audacity"]                           focus
-for_window [class="Firefox"]                            focus
+for_window [class="Brave-browser"]                      focus
 for_window [class="GitKraken"]                          focus
 for_window [class="Typora"]                             focus
 
@@ -366,11 +366,8 @@ for_window [title="NetSpeed"]                           move scratchpad
 for_window [title="Carla"]                              move scratchpad
 for_window [class="Rambox"]                             move scratchpad
 
-# Firefox resize bug workaround
-for_window [class="(?i)firefox"] 			resize grow height 1 px or 1 ppt
-
 # Program assignments
-assign [class="Firefox" window_type="normal"]           workspace number $ws1
+assign [class="Brave-browser" window_type="normal"]     workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
 assign [class="GLFW-Application"]                       workspace number $ws5
 assign [class="GitKraken"]                              workspace number $ws6
