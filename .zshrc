@@ -11,25 +11,6 @@ ZSH=/usr/share/oh-my-zsh/
 POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME=powerlevel10k/powerlevel10k # powerline
 
-# Powerline theme variables
-POWERLINE_RIGHT_A="mixed"
-POWERLINE_DATE_FORMAT="%D{%d/%m}"
-POWERLINE_MULTILINE="true"
-
-# Powerlevel10k variables
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='white'
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='grey30'
-POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND='red'
-POWERLEVEL9K_CONTEXT_ROOT_BACKGROUND='black'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
-POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
-POWERLEVEL9K_TIME_ICON=""
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="🀄"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↪ "
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
-
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -103,6 +84,7 @@ export LANG=en_GB.UTF-8
 # export ARCHFLAGS="-arch x86_64"
 
 source $ZSH_CUSTOM/lib/aliases.zsh
+source $ZSH_CUSTOM/lib/theme_vars.zsh
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
