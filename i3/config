@@ -378,7 +378,7 @@ assign [class="Mixxx" window_type="normal"]             workspace number $ws10
 
 # Autostart
 
-exec --no-startup-id                                    compton -b &
+exec --no-startup-id                                    compton --config ~/.config/compton/compton.conf -b &
 exec --no-startup-id                                    comptray
 exec --no-startup-id                                    nm-applet
 exec --no-startup-id                                    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
