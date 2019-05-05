@@ -110,8 +110,8 @@ bindsym $mod+Shift+w                    exec markdown_previewer $cheat
 
 # Terminal
 bindsym $mod+Return                     exec $term
-# Opera
-bindsym $mod+F1                         exec --no-startup-id opera
+# Vivaldi
+bindsym $mod+F1                         exec --no-startup-id vivaldi-stable
 # VS Code
 bindsym $mod+F2                         exec --no-startup-id code
 # PCmanFM
@@ -358,7 +358,7 @@ for_window [class="Gimp"]                               focus
 for_window [class="Mixxx"]                              focus
 for_window [class="code-oss"]                           focus
 for_window [class="Audacity"]                           focus
-for_window [class="Opera"]                              focus
+for_window [class="Vivaldi-stable"]                     focus
 for_window [class="GitKraken"]                          focus
 for_window [class="Typora"]                             focus
 
@@ -367,7 +367,7 @@ for_window [title="Carla"]                              move scratchpad
 for_window [class="Rambox"]                             move scratchpad
 
 # Program assignments
-assign [class="Opera" window_type="normal"]             workspace number $ws1
+assign [class="Vivaldi-stable" window_type="normal"]    workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
 assign [class="GLFW-Application"]                       workspace number $ws5
 assign [class="GitKraken"]                              workspace number $ws6
