@@ -16,3 +16,4 @@ alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
 alias keys="mdv /mnt/Gog/repos/system/i3/README.md"
 alias sync_noises="rsync -h --progress --stats -r -tgo -p -l -D -C --update /mnt/Gog/repos/noises/_site/ /mnt/Gog/repos/compiled\ noises"
+alias pinfo="pamac info"
