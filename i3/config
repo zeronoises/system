@@ -65,7 +65,7 @@ set $ws9                                "9"
 set $ws10                               "10"
 
 # Next empty workspace
-set $nempty                             $(($(wmctrl -d | wc -l) + 1))
+set $nempty                             $(($(wmctrl -d | wc -l) + 2))
 
 ## KEY BINDINGS
 
