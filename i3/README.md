@@ -29,8 +29,8 @@
 | Fullscreen toggle        |             mod+f |                                        |                  |
 | Global fullscreen        |       mod+Shift+f | **Screen**                             |                📷 |
 | Toggle tiled/floating    |         mod+space | Screenshot full                        |        mod+Print |
-| Toggle tabbed/split      |             mod+k | Screenshot screen                      |  mod+Shift+Print |
-|                          |                   | Screenshot selection                   |            mod+p |
-| **i3**                   |                 ⌨ | Random paper                           |            mod+u |
+|                          |                   | Screenshot screen                      |  mod+Shift+Print |
+| **i3**                   |                 ⌨| Screenshot selection                   |            mod+p |
+| Clock                    |              mod+k| Random paper                           |            mod+u |
 | Reload i3 config         |       mod+Shift+c | Add paper to star list                 |            mod+a |
 | Restart i3 inplace       |       mod+Shift+r | Delete paper                           |      mod+Shift+a |

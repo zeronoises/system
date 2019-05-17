@@ -200,7 +200,7 @@ bindsym $mod+Shift+Print                exec flameshot screen -p $scrotd
 # Screenshot - selection
 bindsym $mod+p                          exec flameshot gui -p $temp
 # Tabbed container
-bindsym $mod+k                          layout toggle tabbed split
+bindsym $mod+k                          exec $term --title "Clock" -e "tty-clock -s -c -n"
 
 ## YAWS
 # Random paper
@@ -214,6 +214,7 @@ bindsym $mod+Shift+u			exec --no-startup-id $rofiyaws
 
 # Restart Carla
 bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
+
 ## STATUS BARS
 
 # Start i3bar to display a workspace bar
@@ -342,6 +343,7 @@ for_window [title="yaws" class="Yad"]                   floating enable
 for_window [title="yaws" class="feh"]                   floating enable
 for_window [class="Gnethogs"]                           floating enable
 for_window [class="Gitg"]                               floating enable
+for_window [title="Clock"]                              floating enable, resize set 600 250
 for_window [class="Surf"]                               floating enable, resize set 1400 800, move position center
 
 for_window [class="dupeGuru"]                           floating enable, move position center
