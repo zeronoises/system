@@ -31,7 +31,7 @@ set $Lmon                               "DVI-D-1"
 set $Rmon                               "HDMI-1"
 
 # Terminal
-set $term                               termite
+set $term                               kitty
 
 # Scripts
 set $mclip                              /mnt/Gog/Scripts/mclip.py
@@ -200,7 +200,7 @@ bindsym $mod+Shift+Print                exec flameshot screen -p $scrotd
 # Screenshot - selection
 bindsym $mod+p                          exec flameshot gui -p $temp
 # Tabbed container
-bindsym $mod+k                          exec $term --title "Clock" -e "tty-clock -s -c -n"
+bindsym $mod+k                          exec $term --title Clock tty-clock -s -c -n
 
 ## YAWS
 # Random paper
@@ -386,7 +386,7 @@ exec --no-startup-id                                    nm-applet
 exec --no-startup-id                                    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id                                    numlockx on
 exec --no-startup-id                                    megasync
-exec --no-startup-id                                    $term --title NetSpeed -e "speedometer -r enp3s0 -t enp3s0"
+exec --no-startup-id                                    $term --title NetSpeed speedometer -r enp3s0 -t enp3s0
 exec --no-startup-id                                    pamac-tray
 exec --no-startup-id                                    $dpmsoff
 exec --no-startup-id                                    rambox
