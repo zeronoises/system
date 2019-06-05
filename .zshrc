@@ -103,3 +103,8 @@ fi
 eval $(thefuck --alias)
 
 export LESS=" -iMFXR"
+
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
