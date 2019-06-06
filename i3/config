@@ -131,7 +131,7 @@ bindsym $mod+F9                         exec --no-startup-id pamac-manager
 # Flowblade
 bindsym $mod+F10                        exec --no-startup-id typora
 # Sticky Terminal
-bindsym $mod+F11                        exec minimal=true $term --title stickyterm
+bindsym $mod+F11                        exec $term --title stickyterm
 # Calculator
 bindsym $mod+F12                        exec --no-startup-id gitkraken
 # Close focused window
@@ -353,7 +353,7 @@ for_window [class="qwinff"]                             floating enable, move po
 
 for_window [class="Mixxx" title="Preferences"]		move position center
 
-for_window [title="stickyterm"]                         floating enable, sticky enable, resize set 1100 600
+for_window [title="stickyterm"]                         floating enable, sticky enable, resize set 1100 600, move position center
 
 for_window [class="GLFW-Application"]                   focus
 for_window [class="Gimp"]                               focus
