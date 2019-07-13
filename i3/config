@@ -371,7 +371,7 @@ for_window [class="Rambox"]                             move scratchpad
 # Program assignments
 assign [class="Vivaldi-stable" window_type="normal"]    workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
-assign [class="GLFW-Application"]                       workspace number $ws5
+assign [class="GLFW-Application"]                       workspace number $ws4
 assign [class="GitKraken"]                              workspace number $ws6
 assign [class="Gimp"]                                   workspace number $ws7
 assign [class="Audacity"]                               workspace number $ws8
