@@ -392,7 +392,6 @@ exec --no-startup-id                                    $dpmsoff
 exec --no-startup-id                                    rambox
 exec --no-startup-id 					sh /home/zero/.fehbg
 exec --no-startup-id 					cadence --minimized
-exec --no-startup-id                                    quodlibet --start-hidden
 exec --no-startup-id                                    udiskie -t
 exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
 exec_always --no-startup-id                             i3altlayout
