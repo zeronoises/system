@@ -120,8 +120,8 @@ bindsym $mod+F3                         exec --no-startup-id pcmanfm $zome
 bindsym $mod+F4                         exec --no-startup-id gimp
 # VCV Rack
 bindsym $mod+F5                         exec --no-startup-id vcvrack
-# Mousepad
-bindsym $mod+F6                         exec --no-startup-id mousepad
+# Gedit
+bindsym $mod+F6                         exec --no-startup-id gedit
 # Audacity
 bindsym $mod+F7                         exec --no-startup-id audacity
 # Mixxx
