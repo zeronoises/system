@@ -190,7 +190,7 @@ bindsym $mod+Shift+r                    restart
 # Move to scratchpad
 bindsym $mod+minus                      move scratchpad
 # Dropdown JACK patchbay
-bindsym $mod+j                          [title="Carla"] scratchpad show, resize set 1400 800, move position center
+bindsym $mod+j                          [title="Carla - carla_default.carxp"] scratchpad show, resize set 1400 800, move position center
 # Dropdown email
 bindsym $mod+m                          [class="Rambox"] scratchpad show, resize set 1400 800, move position center
 # Screenshot - full
@@ -365,7 +365,7 @@ for_window [class="GitKraken"]                          focus
 for_window [class="Typora"]                             focus
 
 for_window [title="NetSpeed"]                           move scratchpad
-for_window [title="Carla"]                              move scratchpad
+for_window [title="Carla - carla_default.carxp"]        move scratchpad
 for_window [class="Rambox"]                             move scratchpad
 
 # Program assignments
