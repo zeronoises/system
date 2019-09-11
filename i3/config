@@ -346,7 +346,7 @@ for_window [class="Gitg"]                               floating enable
 for_window [class="Nvidia-settings"]                    floating enable
 for_window [title="Clock"]                              floating enable, resize set 600 250
 for_window [class="Surf"]                               floating enable, resize set 1400 800, move position center
-
+for_window [class="Clementine"]                         floating enable
 for_window [class="dupeGuru"]                           floating enable, move position center
 for_window [class="Pyrenamer"]				floating enable, move position center
 for_window [class="Cadence"]                            floating enable, move position center
