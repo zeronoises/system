@@ -36,7 +36,7 @@ get_duration() {
 }
 
 KEY="35dd2a8e40a2bf537caca5a64c7724f1"
-CITY="London, UK"
+CITY="2643743"
 UNITS="imperial"
 SYMBOL="°"
 
