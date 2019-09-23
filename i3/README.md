@@ -12,7 +12,7 @@
 | Audacity                 |            mod+F7 | Yaws menu                              |      mod+Shift+u |
 | Mixxx                    |            mod+F8 |                                        |                  |
 | Pamac GUI                |            mod+F9 | **Scratchpad**                         |                🗒 |
-| Typora                   |           mod+F10 | Move to scratchpad                     |        mod+minus |
+| Notable                  |           mod+F10 | Move to scratchpad                     |        mod+minus |
 | Sticky Terminal          |           mod+F11 | Dropdown JACK patchbay                 |            mod+j |
 | Gitkraken                |           mod+F12 | Dropdown email                         |            mod+m |
 |                          |                   |                                        |                  |
