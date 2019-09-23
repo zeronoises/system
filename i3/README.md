@@ -23,12 +23,12 @@
 | Xkill                    |        mod+Escape | Next workspace                         | mod+bracketright |
 | Split horizontal         |             mod+h | Workspace n                            |          mod+[n] |
 | Split vertical           |             mod+v | Move container to ws n                 |    mod+Shift+[n] |
-| Toggle bar 1             |         mod+comma | Move container to next empty workspace |            mod+n |
-| Toggle bar 2             |        mod+period | New workspace                          |            mod+z |
-| Toggle gaps              |             mod+t | Swap displays                          |            mod+y |
-| Fullscreen toggle        |             mod+f |                                        |                  |
-| Global fullscreen        |       mod+Shift+f | **Screen**                             |                📷 |
-| Toggle tiled/floating    |         mod+space | Screenshot full                        |        mod+Print |
+| Toggle gaps              |             mod+t  | Move container to next empty workspace |            mod+n |
+| Fullscreen toggle        |             mod+f | New workspace                          |            mod+z |
+| Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
+| Toggle tiled/floating    |         mod+space |                                        |                  |
+|                          |                   | **Screen**                             |                📷 |
+|                          |                   | Screenshot full                        |        mod+Print |
 |                          |                   | Screenshot screen                      |  mod+Shift+Print |
 | **i3**                   |                 ⌨| Screenshot selection                   |            mod+p |
 | Clock                    |              mod+k| Random paper                           |            mod+u |

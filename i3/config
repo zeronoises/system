@@ -51,7 +51,7 @@ set $polybar                            /mnt/Gog/Scripts/polylaunch.sh
 # Directories
 set $scrotd                             /mnt/Gog/Pictures/scrots/
 set $zome                               /mnt/Gog/
-set $temp				/mnt/Gog/Temp
+set $temp				                /mnt/Gog/Temp
 
 # Default workspaces
 set $ws1                                "1"
@@ -158,10 +158,6 @@ bindsym $mod+o                          exec --no-startup-id rofi -show run
 bindsym $mod+h                          split h; exec notify-send 'horizontal split'
 # Split vertical
 bindsym $mod+v                          split v; exec notify-send 'vertical split'
-# Toggle bar 1 hide/show
-bindsym $mod+comma                      bar mode toggle bar-1
-# Toggle bar 2 hide/show
-bindsym $mod+period                     bar mode toggle bar-2
 # Toggle gaps
 bindsym $mod+t                          exec $gtoggle
 # Fullscreen toggle
