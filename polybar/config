@@ -1,0 +1,246 @@
+;==========================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background = #44444410
+background-alt = #444
+foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+secondary = #e60053
+alert = #bd2c40
+
+gold   = #FFD700
+white  = #FFFFFF
+red    = #FF0000
+lblue  = #3597F0
+black  = #000000
+dgrey  = #2E2E2E
+grey   = #929292
+salmon = #FF8393
+
+[bar/bar1]
+monitor = DVI-D-0
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+radius = 0.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 1
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 6
+padding-right = 6
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = Noto Sans Regular:size=10
+font-1 = FontAwesome
+font-2 = Weather Icons:size=12;1
+
+modules-left = i3 xwindow
+modules-center = 
+modules-right = openweathermap-fullfeatured date
+
+tray-position = none
+tray-padding = 2
+tray-background = #44444480
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/bar2]
+monitor = HDMI-0
+width = 100%
+height = 27
+radius = 0.0
+fixed-center = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 1
+line-color = #f00
+
+border-size = 0
+border-color = #00000000
+
+padding-left = 6
+padding-right = 6
+
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = Noto Sans Regular:size=10
+font-1 = FontAwesome
+font-2 = Weather Icons:size=12;1
+
+modules-left = i3 xwindow
+modules-center = 
+modules-right = filesystem memory cpu eth date
+
+tray-position = center
+tray-padding = 2
+tray-background = #44444480
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+format-foreground = ${colors.gold}
+label = %title:0:40:...%
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+mount-1 = /home
+mount-2 = /mnt/Gog
+mount-3 = /mnt/Magog
+mount-4 = /mnt/Angel
+
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+strip-wsnumbers = true
+
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+; focused = Active workspace on focused monitor
+label-focused = %name%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %name%
+label-unfocused-padding = 2
+
+; visible = Active workspace on unfocused monitor
+label-visible = %name%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %name%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.salmon}
+format-underline = #f90000
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${colors.red}
+format-underline = #4bffdc
+label = %percentage_used%%
+
+[module/eth]
+type = internal/network
+interface = enp3s0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-prefix = " "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date =
+date-alt = "%A, %d %B %Y"
+
+time = %H:%M
+time-alt = 
+
+format-prefix = " "
+format-prefix-foreground = ${colors.lblue}
+format-underline = #0a6cf5
+
+label = %time% %date%
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+[module/openweathermap-fullfeatured]
+type = custom/script
+exec = /mnt/Gog/Scripts/polybar-scripts/openweathermap-fullfeatured.sh
+interval = 600
+label-font = 3
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini
