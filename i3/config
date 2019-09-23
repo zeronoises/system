@@ -46,6 +46,7 @@ set $dswap                              /mnt/Gog/Scripts/display-swap.sh
 set $yaws                               /mnt/Gog/repos/yaws/yaws.sh
 set $gtoggle                            /mnt/Gog/Scripts/gapstoggle.sh
 set $rofiyaws                           /mnt/Gog/repos/yaws/yaws_rofi.sh
+set $polybar                            /mnt/Gog/Scripts/polylaunch.sh
 
 # Directories
 set $scrotd                             /mnt/Gog/Pictures/scrots/
@@ -128,8 +129,8 @@ bindsym $mod+F7                         exec --no-startup-id audacity
 bindsym $mod+F8                         exec --no-startup-id mixxx
 # Cadence
 bindsym $mod+F9                         exec --no-startup-id pamac-manager
-# Flowblade
-bindsym $mod+F10                        exec --no-startup-id typora
+# Notable
+bindsym $mod+F10                        exec --no-startup-id notable
 # Sticky Terminal
 bindsym $mod+F11                        exec $term --title stickyterm
 # Calculator
@@ -215,66 +216,6 @@ bindsym $mod+Shift+u			exec --no-startup-id $rofiyaws
 # Restart Carla
 bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
 
-## STATUS BARS
-
-# Start i3bar to display a workspace bar
-bar {
-        id                              bar-1
-        i3bar_command                   i3bar -t
-        colors {
-                background              $trans
-                statusline              $white
-                #                       border          background      text
-                active_workspace        $trans          $trans          $salmon
-                focused_workspace       $trans          $trans          $lblue
-                inactive_workspace      $trans          $trans          $gold
-                urgent_workspace        $trans          $red            $black
-                }
-        output                          $Lmon
-        position                        top
-
-        height                          24
-        tray_output                     none
-        strip_workspace_numbers         no
-        status_command                  i3blocks -c ~/.config/i3blocks/config1
-}
-
-bar {
-        id                              bar-2
-        i3bar_command                   i3bar -t
-        colors {
-                background              $trans
-                statusline              $white
-                #                       border          background      text
-                active_workspace        $trans          $trans          $salmon
-                focused_workspace       $trans          $trans          $lblue
-                inactive_workspace      $trans          $trans          $gold
-                urgent_workspace        $trans          $red            $black
-                }
-        output                          $Rmon
-        position                        top
-        height                          24
-        tray_output                     none
-        strip_workspace_numbers         no
-        status_command                  i3blocks -c ~/.config/i3blocks/config2
-}
-
-bar {
-        id                              bar-3
-        i3bar_command                   i3bar -t
-        colors {
-                background              "#00000000"
-                }
-        output                          $Rmon
-        position                        bottom
-        height                          24
-        tray_output                     $Rmon
-        tray_padding                    0
-        workspace_buttons               no
-        mode                            hide
-        hidden_state                    hide
-        modifier                        Mod5
-}
 
 ## EVERYTHING ELSE
 
@@ -320,11 +261,9 @@ for_window [class="Gksu-properties"]                    floating enable
 for_window [class="Pamac-manager"]                      floating enable
 for_window [class="Pamac-updater"]                      floating enable
 for_window [class="System-config-printer.py"]           floating enable
-for_window [class="Catfish"]                            floating enable
 for_window [class="GParted"]                            floating enable
 for_window [class="Gnome-disks"]                        floating enable
 for_window [class="Lightdm-settings"]                   floating enable
-for_window [title="cheat" class="feh"]                  floating enable
 for_window [title="Yad"]                                floating enable
 for_window [class="Sol"]                                floating enable
 for_window [class="Kvantum"]                            floating enable
@@ -333,16 +272,9 @@ for_window [class="Arandr"]                             floating enable
 for_window [class="flameshot"]                          floating enable
 for_window [class="multibootusb"]                       floating enable
 for_window [title="Event Tester"]                       floating enable
-for_window [class="Youtube-dl-gui"]                     floating enable
 for_window [class="Bleachbit"]                          floating enable
-for_window [class="Flowblade" title="Audio Mixer"]      floating enable
-for_window [class="Flowblademedialinker"]               floating enable
-for_window [class="Flowblademgmic"]                     floating enable
-for_window [class="Quodlibet"]                          floating enable
 for_window [title="yaws" class="Yad"]                   floating enable
 for_window [title="yaws" class="feh"]                   floating enable
-for_window [class="Gnethogs"]                           floating enable
-for_window [class="Gitg"]                               floating enable
 for_window [class="Nvidia-settings"]                    floating enable
 for_window [title="butt 0.1.18"]                        floating enable, move position center
 for_window [title="Clock"]                              floating enable, resize set 600 250
@@ -388,7 +320,6 @@ exec --no-startup-id                                    nm-applet
 exec --no-startup-id                                    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id                                    numlockx on
 exec --no-startup-id                                    megasync
-exec --no-startup-id                                    $term --title NetSpeed speedometer -r enp3s0 -t enp3s0
 exec --no-startup-id                                    pamac-tray
 exec --no-startup-id                                    $dpmsoff
 exec --no-startup-id                                    rambox
@@ -400,3 +331,4 @@ exec_always --no-startup-id                             i3altlayout
 exec_always --no-startup-id                             i3wsr
 exec_always --no-startup-id                             $scard
 exec_always --no-startup-id                             $mclip daemon
+exec_always --no-startup-id                             $polybar
