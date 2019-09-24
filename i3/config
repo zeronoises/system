@@ -129,8 +129,8 @@ bindsym $mod+F7                         exec --no-startup-id audacity
 bindsym $mod+F8                         exec --no-startup-id mixxx
 # Cadence
 bindsym $mod+F9                         exec --no-startup-id pamac-manager
-# Notable
-bindsym $mod+F10                        exec --no-startup-id notable
+#
+# bindsym $mod+F10                      
 # Sticky Terminal
 bindsym $mod+F11                        exec $term --title stickyterm
 # Calculator
@@ -207,7 +207,7 @@ bindsym $mod+a                          exec --no-startup-id $yaws sp
 # Delete paper
 bindsym $mod+Shift+a                    exec --no-startup-id $yaws jp
 # YAWS rofi menu
-bindsym $mod+Shift+u			exec --no-startup-id $rofiyaws
+bindsym $mod+Shift+u			        exec --no-startup-id $rofiyaws
 
 # Restart Carla
 bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
@@ -260,7 +260,7 @@ for_window [class="System-config-printer.py"]           floating enable
 for_window [class="GParted"]                            floating enable
 for_window [class="Gnome-disks"]                        floating enable
 for_window [class="Lightdm-settings"]                   floating enable
-for_window [title="Yad"]                                floating enable
+for_window [class="Yad"]                                floating enable
 for_window [class="Sol"]                                floating enable
 for_window [class="Kvantum"]                            floating enable
 for_window [class="Lxappearance"]                       floating enable
@@ -276,12 +276,13 @@ for_window [title="butt 0.1.18"]                        floating enable, move po
 for_window [title="Clock"]                              floating enable, resize set 600 250
 for_window [class="Surf"]                               floating enable, resize set 1400 800, move position center
 for_window [class="Clementine"]                         floating enable
+for_window [class="Gucharmap"]                          floating enable
 for_window [class="dupeGuru"]                           floating enable, move position center
-for_window [class="Pyrenamer"]				floating enable, move position center
+for_window [class="Pyrenamer"]				            floating enable, move position center
 for_window [class="Cadence"]                            floating enable, move position center
 for_window [class="qwinff"]                             floating enable, move position center
 
-for_window [class="Mixxx" title="Preferences"]		move position center
+for_window [class="Mixxx" title="Preferences"]		    move position center
 
 for_window [title="stickyterm"]                         floating enable, sticky enable, resize set 1100 600, move position center
 
@@ -292,9 +293,7 @@ for_window [class="code-oss"]                           focus
 for_window [class="Audacity"]                           focus
 for_window [class="Vivaldi-stable"]                     focus
 for_window [class="GitKraken"]                          focus
-for_window [class="Typora"]                             focus
 
-for_window [title="NetSpeed"]                           move scratchpad
 for_window [title="Carla - carla_default.carxp"]        move scratchpad
 for_window [class="Rambox"]                             move scratchpad
 
@@ -305,13 +304,11 @@ assign [class="GLFW-Application"]                       workspace number $ws3
 assign [class="GitKraken"]                              workspace number $ws4
 assign [class="Gimp"]                                   workspace number $ws5
 assign [class="Audacity"]                               workspace number $ws6
-assign [class="Typora"]                                 workspace number $ws7
 assign [class="Mixxx" window_type="normal"]             workspace number $ws8
 
 # Autostart
 
 exec --no-startup-id                                    compton --config ~/.config/compton/compton.conf -b &
-exec --no-startup-id                                    comptray
 exec --no-startup-id                                    nm-applet
 exec --no-startup-id                                    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id                                    numlockx on
@@ -319,8 +316,8 @@ exec --no-startup-id                                    megasync
 exec --no-startup-id                                    pamac-tray
 exec --no-startup-id                                    $dpmsoff
 exec --no-startup-id                                    rambox
-exec --no-startup-id 					sh /home/zero/.fehbg
-exec --no-startup-id 					cadence --minimized
+exec --no-startup-id 					                sh /home/zero/.fehbg
+exec --no-startup-id 					                cadence --minimized
 exec --no-startup-id                                    udiskie -t
 exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
 exec_always --no-startup-id                             i3altlayout
