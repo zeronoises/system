@@ -23,27 +23,37 @@ dgrey  = #2E2E2E
 grey   = #929292
 salmon = #FF8393
 
-[bar/bar1]
-monitor = DVI-D-0
-height = 27
+[bar/master]
+height = 25
+width = 100%
 radius = 0.0
 fixed-center = false
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-border-size = 0
+border-left-size = 8
+border-right-size = 8
+border-top-size = 2
+border-bottom-size = 2
 border-color = #00000000
 
-padding-left = 6
-padding-right = 6
+padding-left = 4
+padding-right = 4
 
-module-margin-left = 0
+module-margin-left = 1
 module-margin-right = 1
 
 font-0 = Noto Sans Regular:size=11;1
 font-1 = FontAwesome:size=12;1
 font-2 = Weather Icons:size=12;1
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[bar/bar1]
+inherit =bar/master
+monitor = DVI-D-0
 
 modules-left = i3 xwindow
 modules-center = 
@@ -51,31 +61,9 @@ modules-right = openweathermap-fullfeatured just-date
 
 tray-position = none
 
-cursor-click = pointer
-cursor-scroll = ns-resize
-
 [bar/bar2]
+inherit =bar/master
 monitor = HDMI-0
-width = 100%
-height = 27
-radius = 0.0
-fixed-center = false
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-border-size = 0
-border-color = #00000000
-
-padding-left = 6
-padding-right = 6
-
-module-margin-left = 0
-module-margin-right = 1
-
-font-0 = Noto Sans Regular:size=11;1
-font-1 = FontAwesome:size=12;1
-font-2 = Weather Icons:size=12;1
 
 modules-left = i3 xwindow
 modules-center = 
@@ -84,9 +72,6 @@ modules-right = filesystem memory cpu just-time
 tray-position = center
 tray-padding = 1
 tray-maxsize = 18
-
-cursor-click = pointer
-cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
@@ -124,16 +109,19 @@ label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
+label-focused-foreground = ${colors.lblue}
 label-focused-background = ${colors.background-alt}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %name%
+label-unfocused-foreground = ${colors.grey}
 label-unfocused-background = ${colors.background-alt-alt}
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name%
+label-visible-foreground = ${colors.salmon}
 label-visible-background = ${self.label-focused-background}
 label-visible-padding = ${self.label-focused-padding}
 

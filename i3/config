@@ -9,7 +9,7 @@ popup_during_fullscreen                 leave_fullscreen
 
 # i3-gaps
 gaps inner                              18
-gaps outer                              2
+gaps outer                              -10
 
 ## SET VARIABLES
 
