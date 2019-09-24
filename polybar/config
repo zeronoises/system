@@ -8,7 +8,7 @@
 ;==========================================================
 
 [colors]
-background = #A0000000
+background = #70000000
 background-alt = #20000000
 background-alt-alt = #50000000
 foreground = #dfdfdf
@@ -27,7 +27,7 @@ salmon = #FF8393
 height = 25
 width = 100%
 radius = 0.0
-fixed-center = false
+fixed-center = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -35,18 +35,19 @@ foreground = ${colors.foreground}
 border-left-size = 8
 border-right-size = 8
 border-top-size = 2
-border-bottom-size = 2
+border-bottom-size = 0
 border-color = #00000000
 
-padding-left = 4
-padding-right = 4
+padding-left = 2
+padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = Noto Sans Regular:size=11;1
-font-1 = FontAwesome:size=12;1
-font-2 = Weather Icons:size=12;1
+font-0 = Noto Sans Regular:size=12;3
+font-1 = Font Awesome 5 Free Solid:style=Solid:size=12;3
+font-2 = Weather Icons:size=12;2
+enable-ipc = true
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -55,9 +56,9 @@ cursor-scroll = ns-resize
 inherit =bar/master
 monitor = DVI-D-0
 
-modules-left = i3 xwindow
-modules-center = 
-modules-right = openweathermap-fullfeatured just-date
+modules-left = disco i3 xwindow
+modules-center = just-date
+modules-right = openweathermap-fullfeatured network-traffic
 
 tray-position = none
 
@@ -65,47 +66,88 @@ tray-position = none
 inherit =bar/master
 monitor = HDMI-0
 
-modules-left = i3 xwindow
-modules-center = 
-modules-right = filesystem memory cpu just-time
+modules-left = disco i3 xwindow
+modules-center = just-time
+modules-right = f1 f2 f3 f4 f5 memory cpu
 
-tray-position = center
+tray-position = right
 tray-padding = 1
 tray-maxsize = 18
+
+[module/disco]
+type = custom/text
+content = 
 
 [module/xwindow]
 type = internal/xwindow
 format-foreground = ${colors.gold}
-label = %title:0:40:...%
+label = %title:0:30:...%
 format-prefix ="  "
 
-[module/filesystem]
+[module/f1]
 type = internal/fs
 interval = 25
+fixed-values = true
 
 mount-0 = /
-mount-1 = /home
-mount-2 = /mnt/Gog
-mount-3 = /mnt/Magog
-mount-4 = /mnt/Angel
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#3597F0}root:%{F-} %percentage_used:2%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/f2]
+type = internal/fs
+interval = 25
+fixed-values = true
+
+mount-0 = /home
+
+label-mounted = %{F#3597F0}home:%{F-} %percentage_used:2%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/f3]
+type = internal/fs
+interval = 25
+fixed-values = true
+
+mount-0 = /mnt/Gog
+
+label-mounted = %{F#3597F0}Gog:%{F-} %percentage_used:2%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/f4]
+type = internal/fs
+interval = 25
+fixed-values = true
+
+mount-0 = /mnt/Magog
+
+label-mounted = %{F#3597F0}Magog:%{F-} %percentage_used:2%%
+label-unmounted = %mountpoint% not mounted
+label-unmounted-foreground = ${colors.foreground-alt}
+
+[module/f5]
+type = internal/fs
+interval = 25
+fixed-values = true
+
+mount-0 = /mnt/Angel
+
+label-mounted = %{F#3597F0}Angel:%{F-} %percentage_used:2%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/i3]
 type = internal/i3
-format = <label-state> <label-mode>
+format = <label-state>
 index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
 pin-workspaces = true
 strip-wsnumbers = true
-
-label-mode-padding = 2
-label-mode-foreground = #000
-label-mode-background = ${colors.background}
 
 ; focused = Active workspace on focused monitor
 label-focused = %name%
@@ -136,36 +178,38 @@ label-urgent-padding = 2
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.salmon}
+format-prefix = "  "
+format-prefix-foreground = ${colors.red}
 label = %percentage:2%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = "  "
 format-prefix-foreground = ${colors.red}
-label = %percentage_used%%
+label = %percentage_used:2%%
 
 [module/just-date]
 type = internal/date
 interval = 5
 date = "%A, %d %B %Y"
-format-prefix = "  "
-format-prefix-foreground = ${colors.lblue}
 
 [module/just-time]
 type = internal/date
 interval = 5
 date = "%H:%M"
-format-prefix = "  "
-format-prefix-foreground = ${colors.lblue}
 
 [module/openweathermap-fullfeatured]
 type = custom/script
 exec = /mnt/Gog/Scripts/polybar-scripts/openweathermap-fullfeatured.sh
 interval = 600
 label-font = 3
+
+[module/network-traffic]
+type = custom/script
+exec = /mnt/Gog/repos/system/Scripts/polybar-scripts/network-traffic.sh
+format-foreground = ${colors.salmon}
+tail = true
 
 [settings]
 screenchange-reload = true
