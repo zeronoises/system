@@ -103,12 +103,19 @@ label =                             %title:0:30:...%
 format-prefix =                     "  "
 
 ;==========================================================
-[module/f1]
+[network/master]
 ;==========================================================
 
 type =                              internal/fs
 interval =                          25
 fixed-values =                      true
+
+
+;==========================================================
+[module/f1]
+;==========================================================
+
+inherit =                           network/master
 
 mount-0 =                           /
 
@@ -120,9 +127,7 @@ label-unmounted-foreground =        ${colors.foreground-alt}
 [module/f2]
 ;==========================================================
 
-type =                              internal/fs
-interval =                          25
-fixed-values =                      true
+inherit =                           network/master
 
 mount-0 =                           /home
 
@@ -134,9 +139,7 @@ label-unmounted-foreground =        ${colors.foreground-alt}
 [module/f3]
 ;==========================================================
 
-type =                              internal/fs
-interval =                          25
-fixed-values =                      true
+inherit =                           network/master
 
 mount-0 =                           /mnt/Gog
 
@@ -148,9 +151,7 @@ label-unmounted-foreground =        ${colors.foreground-alt}
 [module/f4]
 ;==========================================================
 
-type =                              internal/fs
-interval =                          25
-fixed-values =                      true
+inherit =                           network/master
 
 mount-0 =                           /mnt/Magog
 
@@ -162,9 +163,7 @@ label-unmounted-foreground =        ${colors.foreground-alt}
 [module/f5]
 ;==========================================================
 
-type =                              internal/fs
-interval =                          25
-fixed-values =                      true
+inherit =                           network/master
 
 mount-0 =                           /mnt/Angel
 
