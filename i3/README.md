@@ -12,7 +12,7 @@
 | Audacity                 |            mod+F7 | Yaws menu                              |      mod+Shift+u |
 | Mixxx                    |            mod+F8 |                                        |                  |
 | Pamac GUI                |            mod+F9 | **Scratchpad**                         |                🗒 |
-|                          |           mod+F10 | Move to scratchpad                     |        mod+minus |
+| Typora |           mod+F10 | Move to scratchpad                     |        mod+minus |
 | Sticky Terminal          |           mod+F11 | Dropdown JACK patchbay                 |            mod+j |
 | Gitkraken                |           mod+F12 | Dropdown email                         |            mod+m |
 |                          |                   |                                        |                  |
@@ -28,9 +28,9 @@
 | Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
 | Toggle tiled/floating    |         mod+space |                                        |                  |
 |                          |                   | **Screen**                             |                📷 |
-|                          |                   | Screenshot full                        |        mod+Print |
-|                          |                   | Screenshot screen                      |  mod+Shift+Print |
-| **i3**                   |                 ⌨| Screenshot selection                   |            mod+p |
-| Clock                    |              mod+k| Random paper                           |            mod+u |
+| Clock | mod+k | Screenshot full                        |        mod+Print |
+| Restart Carla | mod+Shift+j | Screenshot screen                      |  mod+Shift+Print |
+|                          |                   | Screenshot selection                   |            mod+p |
+| **i3**                   |                 ⌨ | Random paper                           |            mod+u |
 | Reload i3 config         |       mod+Shift+c | Add paper to star list                 |            mod+a |
 | Restart i3 inplace       |       mod+Shift+r | Delete paper                           |      mod+Shift+a |

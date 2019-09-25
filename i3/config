@@ -129,12 +129,13 @@ bindsym $mod+F7                         exec --no-startup-id audacity
 bindsym $mod+F8                         exec --no-startup-id mixxx
 # Cadence
 bindsym $mod+F9                         exec --no-startup-id pamac-manager
-#
-# bindsym $mod+F10                      
+# Typora
+bindsym $mod+F10                        exec --no-startup-id typora
 # Sticky Terminal
 bindsym $mod+F11                        exec $term --title stickyterm
 # Calculator
 bindsym $mod+F12                        exec --no-startup-id gitkraken
+
 # Close focused window
 bindsym $mod+Shift+q                    kill
 # Xkill
@@ -305,6 +306,7 @@ assign [class="GitKraken"]                              workspace number $ws4
 assign [class="Gimp"]                                   workspace number $ws5
 assign [class="Audacity"]                               workspace number $ws6
 assign [class="Mixxx" window_type="normal"]             workspace number $ws8
+assign [class="Typora"]                                 workspace number $ws9
 
 # Autostart
 
