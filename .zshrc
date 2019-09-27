@@ -105,6 +105,7 @@ bindkey -s '^o' 'lfcd\n'
 
 source $ZSH/oh-my-zsh.sh
 
+/mnt/Gog/repos/system/Scripts/ufetch.sh
 fortune oblique-strategies | lolcat
 
 eval $(thefuck --alias)
