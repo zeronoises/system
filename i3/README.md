@@ -15,7 +15,6 @@
 | Typora |           mod+F10 | Move to scratchpad                     |        mod+minus |
 | Sticky Terminal          |           mod+F11 | Dropdown JACK patchbay                 |            mod+j |
 | Gitkraken                |           mod+F12 | Dropdown email                         |            mod+m |
-|                          |                   |                                        |                  |
 | **Windows & Workspaces** |                   |                                        |                💻 |
 | Move focus               |       mod+[arrow] | Move workspace to other monitor        |            mod+x |
 | Move container           | mod+Shift+[arrow] | Move container to other monitor        |      mod+Shift+x |
@@ -26,11 +25,10 @@
 | Toggle gaps              |             mod+t  | Move container to next empty workspace |            mod+n |
 | Fullscreen toggle        |             mod+f | New workspace                          |            mod+z |
 | Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
-| Toggle tiled/floating    |         mod+space |                                        |                  |
-|                          |                   | **Screen**                             |                📷 |
-| Clock | mod+k | Screenshot full                        |        mod+Print |
-| Restart Carla | mod+Shift+j | Screenshot screen                      |  mod+Shift+Print |
-|                          |                   | Screenshot selection                   |            mod+p |
-| **i3**                   |                 ⌨ | Random paper                           |            mod+u |
+| Toggle tiled/floating    |         mod+space | **Screen** | 📷 |
+| Toggle Sticky | mod +Shift+s | Screenshot full                        |        mod+Print |
+|                          |                 ⌨ | Screenshot screen            | mod+Shift+Print |
+| Restart Polybar | mod +Shift+b | Screenshot selection                   |            mod+p |
+| Restart Carla      |      mod+Shift+j | Random paper                           |            mod+u |
 | Reload i3 config         |       mod+Shift+c | Add paper to star list                 |            mod+a |
 | Restart i3 inplace       |       mod+Shift+r | Delete paper                           |      mod+Shift+a |

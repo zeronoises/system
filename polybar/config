@@ -6,20 +6,16 @@
 [colors]
 ;==========================================================
 
-background =                        #70000000
-background-alt =                    #20000000
-background-alt-alt =                #50000000
-foreground =                        #dfdfdf
-foreground-alt =                    #555
+background =                        #80000000
+background-alt =                    #80FFFFFF
+foreground =                        #DFDFDF
+foreground-alt =                    #555555
 
-gold   =                            #FFD700
-white  =                            #FFFFFF
-red    =                            #FF0000
+dgrey  =                            #1A1A1A
+grey   =                            #595959
 lblue  =                            #3597F0
-black  =                            #000000
-dgrey  =                            #2E2E2E
-grey   =                            #929292
-salmon =                            #FF8393
+red    =                            #FF0000
+gold   =                            #FFD700
 
 ;==========================================================
 [bar/master]
@@ -47,9 +43,9 @@ padding-right =                     2
 module-margin-left =                1
 module-margin-right =               1
 
-font-0 =                            Noto Sans Regular:size=11;3
+font-0 =                            Noto Sans:style=bold:size=11;5
 font-1 =                            Font Awesome 5 Free:style=Solid:size=12;3
-font-2 =                            Weather Icons:size=12;2
+font-2 =                            Weather Icons:size=12;1
 
 enable-ipc =                        true
 
@@ -65,7 +61,7 @@ monitor =                           DVI-D-0
 
 modules-left =                      disco i3
 modules-center =                    popup-calendar
-modules-right =                     openweathermap-fullfeatured network-traffic
+modules-right =                     network-traffic
 
 tray-position =                     none
 
@@ -77,12 +73,20 @@ inherit =                           bar/master
 monitor =                           HDMI-0
 
 modules-left =                      disco i3
-modules-center =                    
+modules-center =                    time
 modules-right =                     f1 f2 f3 f4 f5 memory cpu 
 
 tray-position =                     right
 tray-padding =                      1
 tray-maxsize =                      20
+
+;==========================================================
+[module/time]
+;==========================================================
+type =                              internal/date
+time =                              %H:%M
+label =                             %time%
+interval =                          5
 
 ;==========================================================
 [module/disco]
@@ -185,7 +189,7 @@ strip-wsnumbers =                   true
 
 ; focused = Active workspace on focused monitor
 label-focused =                     %name%
-label-focused-foreground =          ${colors.lblue}
+label-focused-foreground =          ${colors.foreground}
 label-focused-background =          ${colors.background-alt}
 label-focused-overline =            ${colors.background}
 label-focused-padding =             2
@@ -193,20 +197,22 @@ label-focused-padding =             2
 ; unfocused = Inactive workspace on any monitor
 label-unfocused =                   %name%
 label-unfocused-foreground =        ${colors.grey}
-label-unfocused-background =        ${colors.background-alt-alt}
+label-unfocused-background =        ${colors.background-alt}
 label-unfocused-overline =          ${colors.background}
 label-unfocused-padding =           2
 
 ; visible = Active workspace on unfocused monitor
 label-visible =                     %name%
-label-visible-foreground =          ${colors.salmon}
+label-visible-foreground =          ${colors.dgrey}
 label-visible-background =          ${colors.background-alt}
 label-visible-overline =            ${colors.background}
 label-visible-padding =             2
 
 ; urgent = Workspace with urgency hint set
 label-urgent =                      %name%
-label-urgent-background =           ${colors.red}
+label-urgent-background =           ${colors.gold}
+label-urgent-foreground =           ${colors.red}
+label-urgent-overline =             ${colors.background}
 label-urgent-padding =              2
 
 ; Separator in between workspaces
@@ -220,7 +226,7 @@ label-separator-overline =          ${colors.background}
 type =                              internal/cpu
 interval =                          2
 format-prefix =                     "  "
-format-prefix-foreground =          ${colors.red}
+format-prefix-foreground =          ${colors.lblue}
 label =                             %percentage:2%%
 
 ;==========================================================
@@ -230,17 +236,17 @@ label =                             %percentage:2%%
 type =                              internal/memory
 interval =                          2
 format-prefix =                     "  "
-format-prefix-foreground =          ${colors.red}
+format-prefix-foreground =          ${colors.lblue}
 label =                             %percentage_used:2%%
 
 ;==========================================================
 [module/popup-calendar]
 ;==========================================================
 
-type = custom/script
-exec = /mnt/Gog/repos/system/Scripts/polybar-scripts/popup-calendar.sh
-interval = 5
-click-left = /mnt/Gog/repos/system/Scripts/polybar-scripts/popup-calendar.sh --popup
+type =                              custom/script
+exec =                              /mnt/Gog/repos/system/Scripts/polybar-scripts/popup-calendar.sh
+interval =                          5
+click-left =                        /mnt/Gog/repos/system/Scripts/polybar-scripts/popup-calendar.sh --popup
 
 ;==========================================================
 [module/just-time]
@@ -251,21 +257,12 @@ interval =                          5
 date =                              "%H:%M"
 
 ;==========================================================
-[module/openweathermap-fullfeatured]
-;==========================================================
-
-type =                              custom/script
-exec =                              /mnt/Gog/Scripts/polybar-scripts/openweathermap-fullfeatured.sh
-interval =                          600
-label-font =                        3
-
-;==========================================================
 [module/network-traffic]
 ;==========================================================
 
 type =                              custom/script
 exec =                              /mnt/Gog/repos/system/Scripts/polybar-scripts/network-traffic.sh
-format-foreground =                 ${colors.salmon}
+format-foreground =                 ${colors.lblue}
 tail =                              true
 format-prefix =                     "  "
 

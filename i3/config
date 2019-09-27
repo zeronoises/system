@@ -142,7 +142,7 @@ bindsym $mod+Shift+q                    kill
 bindsym $mod+Escape --release           exec --no-startup-id $xkiller
 
 # Run menu
-bindsym $mod+d                          exec --no-startup-id rofi -show drun
+bindsym $mod+d                          exec --no-startup-id rofi -show drun -display-drun ""
 # Window menu
 bindsym $mod+g                          exec --no-startup-id rofi -show window
 # Clipboard menu
@@ -159,6 +159,8 @@ bindsym $mod+o                          exec --no-startup-id rofi -show run
 bindsym $mod+h                          split h; exec notify-send 'horizontal split'
 # Split vertical
 bindsym $mod+v                          split v; exec notify-send 'vertical split'
+# Sticky toggle
+bindsym $mod+Shift+s                    sticky toggle
 # Toggle gaps
 bindsym $mod+t                          exec $gtoggle
 # Fullscreen toggle
@@ -185,6 +187,8 @@ bindsym $mod+y                          exec --no-startup-id $dswap
 bindsym $mod+Shift+c                    reload
 # Restart i3 inplace
 bindsym $mod+Shift+r                    restart
+# Restart Polybar
+bindsym $mod+Shift+b                    exec $polybar
 # Move to scratchpad
 bindsym $mod+minus                      move scratchpad
 # Dropdown JACK patchbay
@@ -279,7 +283,6 @@ for_window [class="Surf"]                               floating enable, resize 
 for_window [class="Clementine"]                         floating enable
 for_window [class="Gucharmap"]                          floating enable
 for_window [class="dupeGuru"]                           floating enable, move position center
-for_window [class="Pyrenamer"]				            floating enable, move position center
 for_window [class="Cadence"]                            floating enable, move position center
 for_window [class="qwinff"]                             floating enable, move position center
 
