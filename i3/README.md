@@ -18,13 +18,14 @@
 | **Windows & Workspaces** |                   |                                        |                💻 |
 | Move focus               |       mod+[arrow] | Move workspace to other monitor        |            mod+x |
 | Move container           | mod+Shift+[arrow] | Move container to other monitor        |      mod+Shift+x |
-| Close focused window     |       mod+Shift+q | Prev workspace                         |  mod+bracketleft |
-| Xkill                    |        mod+Escape | Next workspace                         | mod+bracketright |
-| Split horizontal         |             mod+h | Workspace n                            |          mod+[n] |
-| Split vertical           |             mod+v | Move container to ws n                 |    mod+Shift+[n] |
-| Toggle gaps              |             mod+t  | Move container to next empty workspace |            mod+n |
-| Fullscreen toggle        |             mod+f | New workspace                          |            mod+z |
-| Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
+| Centre container         | mod+b             | Prev workspace                         | mod+bracketleft  |
+| Close focused window     |       mod+Shift+q | Next workspace                         | mod+bracketright |
+| Xkill                    |        mod+Escape | Workspace n                            |          mod+[n] |
+| Split horizontal         |             mod+h | Move container to ws n                 |    mod+Shift+[n] |
+| Split vertical           |             mod+v | Move container to next empty workspace |            mod+n |
+| Toggle gaps              |             mod+t | New workspace                          |            mod+z |
+| Fullscreen toggle        |             mod+f | Swap displays                          |            mod+y |
+| Global fullscreen        |       mod+Shift+f |                                        |                  |
 | Toggle tiled/floating    |         mod+space | **Screen** | 📷 |
 | Toggle Sticky | mod +Shift+s | Screenshot full                        |        mod+Print |
 |                          |                 ⌨ | Screenshot screen            | mod+Shift+Print |
