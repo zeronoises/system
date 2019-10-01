@@ -25,7 +25,7 @@
 | Split vertical           |             mod+v | Move container to next empty workspace |            mod+n |
 | Toggle gaps              |             mod+t | New workspace                          |            mod+z |
 | Fullscreen toggle        |             mod+f | Swap displays                          |            mod+y |
-| Global fullscreen        |       mod+Shift+f |                                        |                  |
+| Global fullscreen        |       mod+Shift+f | Toggle focus | mod+period |
 | Toggle tiled/floating    |         mod+space | **Screen** | 📷 |
 | Toggle Sticky | mod +Shift+s | Screenshot full                        |        mod+Print |
 |                          |                 ⌨ | Screenshot screen            | mod+Shift+Print |

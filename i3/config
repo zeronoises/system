@@ -1,6 +1,6 @@
 ## i3 config zero@discordia 2019
 
-font                                    xft:FontAwesome, Noto Sans Regular 10
+font                                    xft:FontAwesome, Cantarell 10
 title_align                             left
 floating_modifier                       $mod
 focus_follows_mouse                     yes
@@ -8,8 +8,8 @@ mouse_warping                           output
 popup_during_fullscreen                 leave_fullscreen
 
 # i3-gaps
-gaps inner                              18
-gaps outer                              -10
+gaps inner                              12
+gaps outer                              -6
 
 ## SET VARIABLES
 
@@ -66,7 +66,7 @@ set $ws9                                "9"
 set $ws10                               "10"
 
 # Next empty workspace
-set $nempty                             $(($(wmctrl -d | wc -l) + 2))
+set $nempty                             $(($(wmctrl -d | wc -l) +2))
 
 ## KEY BINDINGS
 
@@ -75,6 +75,7 @@ bindsym $mod+Left                       focus left
 bindsym $mod+Down                       focus down
 bindsym $mod+Up                         focus up
 bindsym $mod+Right                      focus right
+bindsym $mod+period                     focus mode_toggle
 
 # move focused window
 bindsym $mod+Shift+Left                 move left 20 px
@@ -106,7 +107,6 @@ bindsym $mod+Shift+8                    move container to workspace number $ws8
 bindsym $mod+Shift+9                    move container to workspace number $ws9
 bindsym $mod+Shift+0                    move container to workspace number $ws10
 
-bindsym $mod+Shift+w                    exec markdown_previewer $cheat
 
 ## LAUNCHERS
 
@@ -202,7 +202,7 @@ bindsym $mod+Print                      exec flameshot full -p $scrotd
 bindsym $mod+Shift+Print                exec flameshot screen -p $scrotd
 # Screenshot - selection
 bindsym $mod+p                          exec flameshot gui -p $temp
-# Tabbed container
+# Terminal clock
 bindsym $mod+k                          exec $term --title Clock tty-clock -s -c -n
 
 ## YAWS
@@ -217,7 +217,8 @@ bindsym $mod+Shift+u			        exec --no-startup-id $rofiyaws
 
 # Restart Carla
 bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
-
+# Cheatsheet
+bindsym $mod+w                          exec markdown_previewer $cheat
 
 ## EVERYTHING ELSE
 
@@ -298,6 +299,7 @@ for_window [class="code-oss"]                           focus
 for_window [class="Audacity"]                           focus
 for_window [class="Vivaldi-stable"]                     focus
 for_window [class="GitKraken"]                          focus
+for_window [class="Typora"]                             focus
 
 for_window [title="Carla - carla_default.carxp"]        move scratchpad
 for_window [class="Rambox"]                             move scratchpad
