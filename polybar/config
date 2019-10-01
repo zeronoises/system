@@ -1,5 +1,5 @@
 ;==========================================================
-;   Polybar https://github.com/polybar/polybar
+;   Polybar https://github.com/polybar/polybar/wiki
 ;==========================================================
 
 ;==========================================================
@@ -7,15 +7,14 @@
 ;==========================================================
 
 background =                        #80000000
-background-alt =                    #80FFFFFF
-foreground =                        #DFDFDF
+background-alt =                    #80FFD700
+foreground =                        #FFD700
 foreground-alt =                    #555555
 
 dgrey  =                            #1A1A1A
 grey   =                            #595959
 lblue  =                            #3597F0
 red    =                            #FF0000
-gold   =                            #FFD700
 
 ;==========================================================
 [bar/master]
@@ -31,8 +30,8 @@ foreground =                        ${colors.foreground}
 
 line-size =                         4
 
-border-left-size =                  8
-border-right-size =                 8
+border-left-size =                  7
+border-right-size =                 7
 border-top-size =                   4
 border-bottom-size =                0
 border-color =                      #00000000
@@ -40,12 +39,12 @@ border-color =                      #00000000
 padding-left =                      2
 padding-right =                     2
 
-module-margin-left =                1
-module-margin-right =               1
+module-margin-left =                2
+module-margin-right =               2
 
-font-0 =                            Noto Sans:style=bold:size=11;5
-font-1 =                            Font Awesome 5 Free:style=Solid:size=12;3
-font-2 =                            Weather Icons:size=12;1
+font-0 =                            Cantarell:size=12;5
+font-1 =                            Font Awesome 5 Free:style=Solid:size=12;4
+font-2 =                            Cantarell:style=bold:size=12;5
 
 enable-ipc =                        true
 
@@ -94,14 +93,12 @@ interval =                          5
 
 type =                              custom/text
 content =                           
-content-foreground =                ${colors.gold}
 
 ;==========================================================
 [module/xwindow]
 ;==========================================================
 
 type =                              internal/xwindow
-format-foreground =                 ${colors.gold}
 label =                             %title:0:30:...%
 format-prefix =                     "  "
 
@@ -113,7 +110,6 @@ type =                              internal/fs
 interval =                          25
 fixed-values =                      true
 
-
 ;==========================================================
 [module/f1]
 ;==========================================================
@@ -123,7 +119,7 @@ inherit =                           network/master
 mount-0 =                           /
 
 label-mounted =                     %{F#3597F0}root:%{F-} %percentage_used:02%%
-label-unmounted =                   %mountpoint% not mounted
+label-unmounted =                   root not mounted
 label-unmounted-foreground =        ${colors.foreground-alt}
 
 ;==========================================================
@@ -135,7 +131,7 @@ inherit =                           network/master
 mount-0 =                           /home
 
 label-mounted =                     %{F#3597F0}home:%{F-} %percentage_used:02%%
-label-unmounted =                   %mountpoint% not mounted
+label-unmounted =                   home not mounted
 label-unmounted-foreground =        ${colors.foreground-alt}
 
 ;==========================================================
@@ -147,7 +143,7 @@ inherit =                           network/master
 mount-0 =                           /mnt/Gog
 
 label-mounted =                     %{F#3597F0}Gog:%{F-} %percentage_used:02%%
-label-unmounted =                   %mountpoint% not mounted
+label-unmounted =                   Gog not mounted
 label-unmounted-foreground =        ${colors.foreground-alt}
 
 ;==========================================================
@@ -159,7 +155,7 @@ inherit =                           network/master
 mount-0 =                           /mnt/Magog
 
 label-mounted =                     %{F#3597F0}Magog:%{F-} %percentage_used:02%%
-label-unmounted =                   %mountpoint% not mounted
+label-unmounted =                   Magog not mounted
 label-unmounted-foreground =        ${colors.foreground-alt}
 
 ;==========================================================
@@ -171,7 +167,7 @@ inherit =                           network/master
 mount-0 =                           /mnt/Angel
 
 label-mounted =                     %{F#3597F0}Angel:%{F-} %percentage_used:02%%
-label-unmounted =                   %mountpoint% not mounted
+label-unmounted =                   Angel not mounted
 label-unmounted-foreground =        ${colors.foreground-alt}
 
 ;==========================================================
@@ -189,17 +185,19 @@ strip-wsnumbers =                   true
 
 ; focused = Active workspace on focused monitor
 label-focused =                     %name%
-label-focused-foreground =          ${colors.foreground}
-label-focused-background =          ${colors.background-alt}
+label-focused-foreground =          ${colors.dgrey}
+label-focused-background =          ${colors.foreground}
 label-focused-overline =            ${colors.background}
 label-focused-padding =             2
+label-focused-font =                3
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused =                   %name%
-label-unfocused-foreground =        ${colors.grey}
+label-unfocused-foreground =        ${colors.dgrey}
 label-unfocused-background =        ${colors.background-alt}
 label-unfocused-overline =          ${colors.background}
 label-unfocused-padding =           2
+label-unfocused-font =              1
 
 ; visible = Active workspace on unfocused monitor
 label-visible =                     %name%
@@ -207,13 +205,15 @@ label-visible-foreground =          ${colors.dgrey}
 label-visible-background =          ${colors.background-alt}
 label-visible-overline =            ${colors.background}
 label-visible-padding =             2
+label-visible-font =                3
 
 ; urgent = Workspace with urgency hint set
 label-urgent =                      %name%
-label-urgent-background =           ${colors.gold}
-label-urgent-foreground =           ${colors.red}
+label-urgent-background =           ${colors.red}
+label-urgent-foreground =           ${colors.foreground}
 label-urgent-overline =             ${colors.background}
 label-urgent-padding =              2
+label-urgent-font =                 3
 
 ; Separator in between workspaces
 label-separator =                   " "
@@ -227,7 +227,8 @@ type =                              internal/cpu
 interval =                          2
 format-prefix =                     "  "
 format-prefix-foreground =          ${colors.lblue}
-label =                             %percentage:2%%
+label =                             %percentage:02%%
+format-prefix-font =                2
 
 ;==========================================================
 [module/memory]
@@ -237,7 +238,8 @@ type =                              internal/memory
 interval =                          2
 format-prefix =                     "  "
 format-prefix-foreground =          ${colors.lblue}
-label =                             %percentage_used:2%%
+label =                             %percentage_used:02%%
+format-prefix-font =                2
 
 ;==========================================================
 [module/popup-calendar]
@@ -264,7 +266,6 @@ type =                              custom/script
 exec =                              /mnt/Gog/repos/system/Scripts/polybar-scripts/network-traffic.sh
 format-foreground =                 ${colors.lblue}
 tail =                              true
-format-prefix =                     "  "
 
 ;==========================================================
 [settings]
