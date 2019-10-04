@@ -39,12 +39,13 @@ border-color =                      #00000000
 padding-left =                      2
 padding-right =                     2
 
-module-margin-left =                2
-module-margin-right =               2
+module-margin-left =                1
+module-margin-right =               1
 
-font-0 =                            Cantarell:size=12;5
-font-1 =                            Font Awesome 5 Free:style=Solid:size=12;4
-font-2 =                            Cantarell:style=bold:size=12;5
+font-0 =                            Inconsolata:size=12;4
+font-1 =                            fontawesome-regular:style=Solid:size=12;4
+font-2 =                            Inconsolata:style=bold:size=12;4
+font-3 =                            Inconsolata-italic:size=11;4
 
 enable-ipc =                        true
 
@@ -188,7 +189,7 @@ label-focused =                     %name%
 label-focused-foreground =          ${colors.dgrey}
 label-focused-background =          ${colors.foreground}
 label-focused-overline =            ${colors.background}
-label-focused-padding =             2
+label-focused-padding =             1
 label-focused-font =                3
 
 ; unfocused = Inactive workspace on any monitor
@@ -196,15 +197,15 @@ label-unfocused =                   %name%
 label-unfocused-foreground =        ${colors.dgrey}
 label-unfocused-background =        ${colors.background-alt}
 label-unfocused-overline =          ${colors.background}
-label-unfocused-padding =           2
-label-unfocused-font =              1
+label-unfocused-padding =           1
+label-unfocused-font =              4
 
 ; visible = Active workspace on unfocused monitor
 label-visible =                     %name%
 label-visible-foreground =          ${colors.dgrey}
 label-visible-background =          ${colors.background-alt}
 label-visible-overline =            ${colors.background}
-label-visible-padding =             2
+label-visible-padding =             1
 label-visible-font =                3
 
 ; urgent = Workspace with urgency hint set
@@ -212,7 +213,7 @@ label-urgent =                      %name%
 label-urgent-background =           ${colors.red}
 label-urgent-foreground =           ${colors.foreground}
 label-urgent-overline =             ${colors.background}
-label-urgent-padding =              2
+label-urgent-padding =              1
 label-urgent-font =                 3
 
 ; Separator in between workspaces
