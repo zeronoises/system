@@ -182,6 +182,8 @@ bindsym $mod+bracketright               workspace next_on_output
 bindsym $mod+n                          exec --no-startup-id i3-msg move to container workspace $nempty
 # New workspace
 bindsym $mod+z                          exec --no-startup-id $wsnew
+# Layout manager
+bindsym $mod+l                          exec --no-startup-id i3-layout-manager
 # Swap displays
 bindsym $mod+y                          exec --no-startup-id $dswap
 # Reload i3 config
@@ -216,7 +218,7 @@ bindsym $mod+Shift+a                    exec --no-startup-id $yaws jp
 bindsym $mod+Shift+u			        exec --no-startup-id $rofiyaws
 
 # Restart Carla
-bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
+bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
 # Cheatsheet
 bindsym $mod+w                          exec markdown_previewer $cheat
 
@@ -301,7 +303,7 @@ for_window [class="Vivaldi-stable"]                     focus
 for_window [class="GitKraken"]                          focus
 for_window [class="Typora"]                             focus
 
-for_window [title="Carla - carla_default.carxp"]        move scratchpad
+for_window [class="Carla2-Multi-Client"]                move scratchpad
 for_window [class="Rambox"]                             move scratchpad
 
 # Program assignments
@@ -325,7 +327,7 @@ exec --no-startup-id                                    $dpmsoff
 exec --no-startup-id                                    rambox
 exec --no-startup-id 					                sh /home/zero/.fehbg
 exec --no-startup-id 					                cadence --minimized
-exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla_default.carxp
+exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
 exec_always --no-startup-id                             udiskie -t
 exec_always --no-startup-id                             nm-applet
 exec_always --no-startup-id                             i3altlayout
