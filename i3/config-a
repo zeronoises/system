@@ -1,0 +1,337 @@
+## i3 config-a zero@discordia 2019
+
+font                                    xft:FontAwesome, Cantarell 10
+title_align                             left
+floating_modifier                       $mod
+focus_follows_mouse                     yes
+mouse_warping                           output
+popup_during_fullscreen                 leave_fullscreen
+
+# i3-gaps
+gaps inner                              12
+gaps outer                              -6
+
+## SET VARIABLES
+
+set $mod                                Mod4
+
+# Colours
+set $trans                              "#00000080"
+set $gold                               "#FFD700"
+set $white                              "#FFFFFF"
+set $red                                "#FF0000"
+set $lblue                              "#3597F0"
+set $black                              "#000000"
+set $dgrey                              "#2E2E2E"
+set $grey                               "#929292"
+set $salmon                             "#FF8393"
+
+# Monitors
+set $Lmon                               "DVI-D-0"
+set $Rmon                               "HDMI-0"
+
+# Terminal
+set $term                               kitty
+
+# Scripts
+set $mclip                              /mnt/Gog/Scripts/mclip.py
+set $pmenu                              /mnt/Gog/Scripts/rofi-power.sh
+set $scard                              /mnt/Gog/Scripts/soundcard2.sh
+set $wsnew                              /mnt/Gog/Scripts/workspace-new.py
+set $dpmsoff                            /mnt/Gog/Scripts/dpms_off.sh
+set $cheat                              /mnt/Gog/repos/system/i3/README.md
+set $i3msg                              /mnt/Gog/Scripts/rofi_i3_msg.sh
+set $xkiller                            /mnt/Gog/Scripts/xkiller.sh
+set $dswap                              /mnt/Gog/Scripts/display-swap.sh
+set $yaws                               /mnt/Gog/repos/yaws/yaws.sh
+set $gtoggle                            /mnt/Gog/Scripts/gapstoggle.sh
+set $rofiyaws                           /mnt/Gog/repos/yaws/yaws_rofi.sh
+set $polybar                            /mnt/Gog/Scripts/polylaunch.sh
+
+# Directories
+set $scrotd                             /mnt/Gog/Pictures/scrots/
+set $zome                               /mnt/Gog/
+set $temp				                /mnt/Gog/Temp
+
+# Default workspaces
+set $ws1                                "1"
+set $ws2                                "2"
+set $ws3                                "3"
+set $ws4                                "4"
+set $ws5                                "5"
+set $ws6                                "6"
+set $ws7                                "7"
+set $ws8                                "8"
+set $ws9                                "9"
+set $ws10                               "10"
+
+# Next empty workspace
+set $nempty                             $(($(wmctrl -d | wc -l) +2))
+
+## KEY BINDINGS
+
+# Change focus
+bindsym $mod+Left                       focus left
+bindsym $mod+Down                       focus down
+bindsym $mod+Up                         focus up
+bindsym $mod+Right                      focus right
+bindsym $mod+period                     focus mode_toggle
+
+# move focused window
+bindsym $mod+Shift+Left                 move left 20 px
+bindsym $mod+Shift+Down                 move down 20 px
+bindsym $mod+Shift+Up                   move up 20 px
+bindsym $mod+Shift+Right                move right 20 px
+bindsym $mod+b                          move position center
+
+# Workspaces
+bindsym $mod+1                          workspace number $ws1
+bindsym $mod+2                          workspace number $ws2
+bindsym $mod+3                          workspace number $ws3
+bindsym $mod+4                          workspace number $ws4
+bindsym $mod+5                          workspace number $ws5
+bindsym $mod+6                          workspace number $ws6
+bindsym $mod+7                          workspace number $ws7
+bindsym $mod+8                          workspace number $ws8
+bindsym $mod+9                          workspace number $ws9
+bindsym $mod+0                          workspace number $ws10
+
+bindsym $mod+Shift+1                    move container to workspace number $ws1
+bindsym $mod+Shift+2                    move container to workspace number $ws2
+bindsym $mod+Shift+3                    move container to workspace number $ws3
+bindsym $mod+Shift+4                    move container to workspace number $ws4
+bindsym $mod+Shift+5                    move container to workspace number $ws5
+bindsym $mod+Shift+6                    move container to workspace number $ws6
+bindsym $mod+Shift+7                    move container to workspace number $ws7
+bindsym $mod+Shift+8                    move container to workspace number $ws8
+bindsym $mod+Shift+9                    move container to workspace number $ws9
+bindsym $mod+Shift+0                    move container to workspace number $ws10
+
+
+## LAUNCHERS
+
+# Terminal
+bindsym $mod+Return                     exec $term
+# Vivaldi
+bindsym $mod+F1                         exec --no-startup-id vivaldi-stable
+# VS Code
+bindsym $mod+F2                         exec --no-startup-id code
+# PCmanFM
+bindsym $mod+F3                         exec --no-startup-id pcmanfm $zome
+# Gimp
+bindsym $mod+F4                         exec --no-startup-id gimp
+# VCV Rack
+bindsym $mod+F5                         exec --no-startup-id vcvrack
+# Gedit
+bindsym $mod+F6                         exec --no-startup-id gedit
+# Audacity
+bindsym $mod+F7                         exec --no-startup-id audacity
+# Mixxx
+bindsym $mod+F8                         exec --no-startup-id mixxx
+# Pamac
+bindsym $mod+F9                         exec --no-startup-id pamac-manager
+# Typora
+bindsym $mod+F10                        exec --no-startup-id typora
+# Sticky Terminal
+bindsym $mod+F11                        exec $term --title stickyterm
+# Gitkraken
+bindsym $mod+F12                        exec --no-startup-id gitkraken
+
+# Close focused window
+bindsym $mod+Shift+q                    kill
+# Xkill
+bindsym $mod+Escape --release           exec --no-startup-id $xkiller
+
+# Run menu
+bindsym $mod+d                          exec --no-startup-id rofi -show drun -display-drun ""
+# Window menu
+bindsym $mod+g                          exec --no-startup-id rofi -show window
+# Clipboard menu
+bindsym $mod+c                          exec --no-startup-id rofi -modi "clipboard:$mclip menu" -show clipboard && $mclip paste
+# i3-msg menu
+bindsym $mod+i                          exec --no-startup-id rofi -show i3-msg -modi i3-msg:$i3msg
+# Power menu
+bindsym $mod+Delete                     exec --no-startup-id $pmenu
+# Emoji menu
+bindsym $mod+e                          exec --no-startup-id rofimoji
+# Run dialogue
+bindsym $mod+o                          exec --no-startup-id rofi -show run
+# Split horizontal
+bindsym $mod+h                          split h; exec notify-send 'horizontal split'
+# Split vertical
+bindsym $mod+v                          split v; exec notify-send 'vertical split'
+# Sticky toggle
+bindsym $mod+Shift+s                    sticky toggle
+# Toggle gaps
+bindsym $mod+t                          exec $gtoggle
+# Fullscreen toggle
+bindsym $mod+f                          fullscreen toggle
+# Global fullscreen
+bindsym $mod+Shift+f                    fullscreen toggle global
+# Toggle tiled/floating
+bindsym $mod+space                      floating toggle
+# Move workspace to other monitor
+bindsym $mod+x                          move workspace to output right
+# Move container to other monitor
+bindsym $mod+Shift+x                    move container to output right
+# Previous workspace on_output
+bindsym $mod+bracketleft                workspace prev_on_output
+# Next workspace on_output
+bindsym $mod+bracketright               workspace next_on_output
+# Move container to next empty workspace
+bindsym $mod+n                          exec --no-startup-id i3-msg move to container workspace $nempty
+# New workspace
+bindsym $mod+z                          exec --no-startup-id $wsnew
+# Layout manager
+bindsym $mod+l                          exec --no-startup-id i3-layout-manager
+# Swap displays
+bindsym $mod+y                          exec --no-startup-id $dswap
+# Reload i3 config
+bindsym $mod+Shift+c                    reload
+# Restart i3 inplace
+bindsym $mod+Shift+r                    restart
+# Restart Polybar
+bindsym $mod+Shift+b                    exec $polybar
+# Move to scratchpad
+bindsym $mod+minus                      move scratchpad
+# Dropdown JACK patchbay
+bindsym $mod+j                          [title="Carla"] scratchpad show, resize set 1400 800, move position center
+# Dropdown email
+bindsym $mod+m                          [class="Rambox"] scratchpad show, resize set 1400 800, move position center
+# Screenshot - full
+bindsym $mod+Print                      exec flameshot full -p $scrotd
+# Screenshot - screen
+bindsym $mod+Shift+Print                exec flameshot screen -p $scrotd
+# Screenshot - selection
+bindsym $mod+p                          exec flameshot gui -p $temp
+# Terminal clock
+bindsym $mod+k                          exec $term --title Clock tty-clock -s -c -n
+
+## YAWS
+# Random paper
+bindsym $mod+u                          exec --no-startup-id $yaws nr
+# Add paper to ? list
+bindsym $mod+a                          exec --no-startup-id $yaws sp
+# Delete paper
+bindsym $mod+Shift+a                    exec --no-startup-id $yaws jp
+# YAWS rofi menu
+bindsym $mod+Shift+u			        exec --no-startup-id $rofiyaws
+
+# Restart Carla
+bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
+# Cheatsheet
+bindsym $mod+w                          exec markdown_previewer $cheat
+
+## EVERYTHING ELSE
+
+# Assign workspaces to monitors
+workspace $ws1                                          output $Lmon
+workspace $ws2                                          output $Rmon
+workspace $ws3                                          output $Lmon
+workspace $ws4                                          output $Rmon
+workspace $ws5                                          output $Lmon
+workspace $ws6                                          output $Rmon
+workspace $ws7                                          output $Lmon
+workspace $ws8                                          output $Rmon
+workspace $ws9                                          output $Lmon
+workspace $ws10                                         output $Rmon
+
+# Window colours                                        border  backgr  text    indicator
+client.focused                                          $black  $black  $gold   $gold
+client.unfocused                                        $trans  $trans  $salmon $gold
+client.focused_inactive                                 $trans  $trans  $lblue  $gold
+client.urgent                                           $red    $red    $white  $gold
+
+# Window rules
+for_window [class="^.*"]                                border pixel 0
+for_window [class="^.*"]                                title_format "%class: <i>%title</i>"
+
+for_window [window_role="pop-up"]                       floating enable
+for_window [window_role="bubble"]                       floating enable
+for_window [window_role="task_dialog"]                  floating enable
+for_window [window_role="Preferences"]                  floating enable
+for_window [window_type="dialog"]                       floating enable
+for_window [window_type="menu"]                         floating enable
+
+for_window [class="Galculator"]                         floating enable
+for_window [class="Xmj"]                                floating enable
+for_window [class="SimpleScreenRecorder"]               floating enable
+for_window [class="Lightdm-gtk-greeter-settings"]       floating enable
+for_window [class="Manjaro Settings Manager"]           floating enable
+for_window [class="luckybackup"]                        floating enable
+for_window [class="Gpick"]                              floating enable
+for_window [class="Uget-gtk"]                           floating enable
+for_window [class="Nm-connection-editor"]               floating enable
+for_window [class="Gksu-properties"]                    floating enable
+for_window [class="Pamac-manager"]                      floating enable
+for_window [class="Pamac-updater"]                      floating enable
+for_window [class="System-config-printer.py"]           floating enable
+for_window [class="GParted"]                            floating enable
+for_window [class="Gnome-disks"]                        floating enable
+for_window [class="Lightdm-settings"]                   floating enable
+for_window [class="Yad"]                                floating enable
+for_window [class="Sol"]                                floating enable
+for_window [class="Kvantum"]                            floating enable
+for_window [class="Lxappearance"]                       floating enable
+for_window [class="Arandr"]                             floating enable
+for_window [class="flameshot"]                          floating enable
+for_window [class="multibootusb"]                       floating enable
+for_window [title="Event Tester"]                       floating enable
+for_window [class="Bleachbit"]                          floating enable
+for_window [title="yaws" class="Yad"]                   floating enable
+for_window [title="yaws" class="feh"]                   floating enable
+for_window [class="Nvidia-settings"]                    floating enable
+for_window [title="butt 0.1.18"]                        floating enable, move position center
+for_window [title="Clock"]                              floating enable, resize set 600 250
+for_window [class="Surf"]                               floating enable, resize set 1400 800, move position center
+for_window [class="Clementine"]                         floating enable
+for_window [class="Gucharmap"]                          floating enable
+for_window [class="dupeGuru"]                           floating enable, move position center
+for_window [class="Cadence"]                            floating enable, move position center
+for_window [class="qwinff"]                             floating enable, move position center
+
+for_window [class="Mixxx" title="Preferences"]		    move position center
+
+for_window [title="stickyterm"]                         floating enable, sticky enable, resize set 1100 600, move position center
+
+for_window [class="GLFW-Application"]                   focus
+for_window [class="Gimp"]                               focus
+for_window [class="Mixxx"]                              focus
+for_window [class="code-oss"]                           focus
+for_window [class="Audacity"]                           focus
+for_window [class="Vivaldi-stable"]                     focus
+for_window [class="GitKraken"]                          focus
+for_window [class="Typora"]                             focus
+
+for_window [class="Carla2-Multi-Client"]                move scratchpad
+for_window [class="Rambox"]                             move scratchpad
+
+# Program assignments
+assign [class="Vivaldi-stable" window_type="normal"]    workspace number $ws1
+assign [class="code-oss" window_type="normal"]          workspace number $ws2
+assign [class="GLFW-Application"]                       workspace number $ws3
+assign [class="GitKraken"]                              workspace number $ws4
+assign [class="Gimp"]                                   workspace number $ws5
+assign [class="Audacity"]                               workspace number $ws6
+assign [class="Mixxx" window_type="normal"]             workspace number $ws8
+assign [class="Typora"]                                 workspace number $ws9
+
+# Autostart
+
+exec --no-startup-id                                    compton --config ~/.config/compton/compton.conf -b &
+exec --no-startup-id                                    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id                                    numlockx on
+exec --no-startup-id                                    megasync
+exec --no-startup-id                                    pamac-tray
+exec --no-startup-id                                    $dpmsoff
+exec --no-startup-id                                    rambox
+exec --no-startup-id 					                sh /home/zero/.fehbg
+exec --no-startup-id 					                cadence --minimized
+exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
+exec_always --no-startup-id                             udiskie -t
+exec_always --no-startup-id                             nm-applet
+exec_always --no-startup-id                             i3altlayout
+exec_always --no-startup-id                             i3wsr
+exec_always --no-startup-id                             $scard
+exec_always --no-startup-id                             $mclip daemon
+exec_always --no-startup-id                             $polybar
