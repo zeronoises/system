@@ -206,6 +206,8 @@ bindsym $mod+Shift+Print                exec flameshot screen -p $scrotd
 bindsym $mod+p                          exec flameshot gui -p $temp
 # Terminal clock
 bindsym $mod+k                          exec $term --title Clock tty-clock -s -c -n
+# Switch to config b
+bindsym $mod+Shift+h                    exec ln -sfn ~/.config/i3/config-b ~/.config/i3/config && i3-msg restart
 
 ## YAWS
 # Random paper

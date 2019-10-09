@@ -28,7 +28,7 @@
 | Global fullscreen        |       mod+Shift+f | Toggle focus | mod+period |
 | Toggle tiled/floating    |         mod+space | **Screen** | 📷 |
 | Toggle Sticky | mod +Shift+s | Screenshot full                        |        mod+Print |
-|                          |                 ⌨ | Screenshot screen            | mod+Shift+Print |
+| Switch configs (a/b) |       mod+Shift+h | Screenshot screen            | mod+Shift+Print |
 | Restart Polybar | mod +Shift+b | Screenshot selection                   |            mod+p |
 | Restart Carla      |      mod+Shift+j | Random paper                           |            mod+u |
 | Reload i3 config         |       mod+Shift+c | Add paper to star list                 |            mod+a |
