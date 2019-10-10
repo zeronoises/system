@@ -11,10 +11,10 @@ background-alt =                    #80FFFFFF
 foreground =                        #FFFFFF
 foreground-alt =                    #555555
 
-dgrey  =                            #1A1A1A
-grey   =                            #595959
-lblue  =                            #3597F0
-red    =                            #FF0000
+dgrey =                             #1A1A1A
+grey =                              #595959
+blue =                              #3597F0
+red =                               #FF0000
 
 ;==========================================================
 [bar/master]
@@ -28,8 +28,6 @@ fixed-center =                      true
 background =                        ${colors.background}
 foreground =                        ${colors.foreground}
 
-line-size =                         4
-
 border-left-size =                  7
 border-right-size =                 7
 border-top-size =                   5
@@ -42,10 +40,9 @@ padding-right =                     2
 module-margin-left =                1
 module-margin-right =               1
 
-font-0 =                            Inconsolata:size=12;4
-font-1 =                            fontawesome-regular:style=Solid:size=12;4
-font-2 =                            Inconsolata:style=bold:size=12;4
-font-3 =                            Inconsolata-italic:size=11;4
+font-0 =                            Inconsolata:size=12;3
+font-1 =                            fontawesome-regular:style=Solid:size=12;3
+font-2 =                            Inconsolata:style=bold:size=12;3
 
 enable-ipc =                        true
 
@@ -132,14 +129,6 @@ type =                              custom/text
 content =                           
 
 ;==========================================================
-[module/xwindow]
-;==========================================================
-
-type =                              internal/xwindow
-label =                             %title:0:30:...%
-format-prefix =                     "  "
-
-;==========================================================
 [network/master]
 ;==========================================================
 
@@ -224,7 +213,6 @@ strip-wsnumbers =                   true
 label-focused =                     %name%
 label-focused-foreground =          ${colors.dgrey}
 label-focused-background =          ${colors.foreground}
-label-focused-overline =            ${colors.background}
 label-focused-padding =             1
 label-focused-font =                3
 
@@ -232,7 +220,6 @@ label-focused-font =                3
 label-unfocused =                   %name%
 label-unfocused-foreground =        ${colors.dgrey}
 label-unfocused-background =        ${colors.background-alt}
-label-unfocused-overline =          ${colors.background}
 label-unfocused-padding =           1
 label-unfocused-font =              4
 
@@ -240,7 +227,6 @@ label-unfocused-font =              4
 label-visible =                     %name%
 label-visible-foreground =          ${colors.dgrey}
 label-visible-background =          ${colors.background-alt}
-label-visible-overline =            ${colors.background}
 label-visible-padding =             1
 label-visible-font =                3
 
@@ -248,13 +234,11 @@ label-visible-font =                3
 label-urgent =                      %name%
 label-urgent-background =           ${colors.red}
 label-urgent-foreground =           ${colors.foreground}
-label-urgent-overline =             ${colors.background}
 label-urgent-padding =              1
 label-urgent-font =                 3
 
 ; Separator in between workspaces
 label-separator =                   " "
-label-separator-overline =          ${colors.background}
 
 ;==========================================================
 [module/cpu]
@@ -263,7 +247,7 @@ label-separator-overline =          ${colors.background}
 type =                              internal/cpu
 interval =                          2
 format-prefix =                     "  "
-format-prefix-foreground =          ${colors.lblue}
+format-prefix-foreground =          ${colors.blue}
 label =                             %percentage:02%%
 format-prefix-font =                2
 
@@ -274,7 +258,7 @@ format-prefix-font =                2
 type =                              internal/memory
 interval =                          2
 format-prefix =                     "  "
-format-prefix-foreground =          ${colors.lblue}
+format-prefix-foreground =          ${colors.blue}
 label =                             %percentage_used:02%%
 format-prefix-font =                2
 
@@ -289,20 +273,12 @@ label-font =                        3
 click-left =                        /mnt/Gog/repos/system/Scripts/polybar-scripts/popup-calendar.sh --popup
 
 ;==========================================================
-[module/just-time]
-;==========================================================
-
-type =                              internal/date
-interval =                          5
-date =                              "%H:%M"
-
-;==========================================================
 [module/network-traffic]
 ;==========================================================
 
 type =                              custom/script
 exec =                              /mnt/Gog/repos/system/Scripts/polybar-scripts/network-traffic.sh
-format-foreground =                 ${colors.lblue}
+format-foreground =                 ${colors.blue}
 tail =                              true
 
 ;==========================================================
