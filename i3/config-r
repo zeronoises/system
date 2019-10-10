@@ -47,7 +47,7 @@ bindsym $mod+d                                          exec --no-startup-id rof
 # Window menu               
 bindsym $mod+g                                          exec --no-startup-id rofi -show window
 # Power menu                
-bindsym $mod+Delete                                     exec --no-startup-id $pmenu
+bindsym $mod+Delete                                     exec ln -sfn ~/.config/i3/config-a ~/.config/i3/config && i3-msg exit
 # Fullscreen toggle             
 bindsym $mod+f                                          fullscreen toggle
 # Global fullscreen             

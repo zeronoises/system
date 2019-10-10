@@ -1,6 +1,6 @@
 ## i3 config-b zero@discordia 2019
 
-font                                    xft:FontAwesome, Cantarell 10
+font                                    xft:FontAwesome, Inconsolata-g 11
 title_align                             left
 floating_modifier                       $mod
 focus_follows_mouse                     yes
@@ -208,6 +208,8 @@ bindsym $mod+p                          exec flameshot gui -p $temp
 bindsym $mod+k                          exec $term --title Clock tty-clock -s -c -n
 # Switch to config a
 bindsym $mod+Shift+h                    exec ln -sfn ~/.config/i3/config-a ~/.config/i3/config && i3-msg restart
+# Switch to Rack config & logout
+bindsym $mod+Shift+v                    exec ln -sfn ~/.config/i3/config-r ~/.config/i3/config && i3-msg exit
 
 ## YAWS
 # Random paper
@@ -245,7 +247,7 @@ client.focused_inactive                                 $black  $black  $lblue  
 client.urgent                                           $red    $red    $white  $gold
 
 # Window rules
-# for_window [class="^.*"]                                border pixel 0
+for_window [class="^.*"]                                border pixel 0
 for_window [class="^.*"]                                title_format "%class: <i>%title</i>"
 
 for_window [window_role="pop-up"]                       floating enable
