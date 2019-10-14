@@ -112,6 +112,11 @@ eval $(thefuck --alias)
 
 export LESS=" -iMFXR"
 
+# set PATH to include local bin
+if [ -d "/mnt/Gog/bin" ] ; then
+  PATH="/mnt/Gog/bin:$PATH"
+fi
+
 autoload -Uz compinit
 compinit
 # Completion for kitty
