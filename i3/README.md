@@ -23,10 +23,9 @@
 | Xkill                    |        mod+Escape | Workspace n                            |          mod+[n] |
 | Split horizontal         |             mod+h | Move container to ws n                 |    mod+Shift+[n] |
 | Split vertical           |             mod+v | Move container to next empty workspace |            mod+n |
-| Toggle gaps              |             mod+t | New workspace                          |            mod+z |
-| Fullscreen toggle        |             mod+f | Swap displays                          |            mod+y |
-| Global fullscreen        |       mod+Shift+f | Toggle focus | mod+period |
-| Toggle tiled/floating | mod+space |  |  |
+| Fullscreen toggle        |             mod+f | New workspace                          |            mod+z |
+| Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
+| Toggle tiled/floating    |         mod+space | Toggle focus | mod+period |
 | Toggle Sticky            |      mod +Shift+s | **Screen** | 📷 |
 | Switch configs (a/b)     |       mod+Shift+h | Screenshot full                        |        mod+Print |
 | Switch to config-r       |       mod+Shift+v | Screenshot screen            | mod+Shift+Print |
