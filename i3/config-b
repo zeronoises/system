@@ -44,7 +44,6 @@ set $i3msg                              /mnt/Gog/Scripts/rofi_i3_msg.sh
 set $xkiller                            /mnt/Gog/Scripts/xkiller.sh
 set $dswap                              /mnt/Gog/Scripts/display-swap.sh
 set $yaws                               /mnt/Gog/repos/yaws/yaws.sh
-set $gtoggle                            /mnt/Gog/Scripts/gapstoggle.sh
 set $rofiyaws                           /mnt/Gog/repos/yaws/yaws_rofi.sh
 set $polybar                            /mnt/Gog/Scripts/polylaunch-b.sh
 
@@ -162,8 +161,6 @@ bindsym $mod+h                          split h; exec notify-send 'horizontal sp
 bindsym $mod+v                          split v; exec notify-send 'vertical split'
 # Sticky toggle
 bindsym $mod+Shift+s                    sticky toggle
-# Toggle gaps
-bindsym $mod+t                          exec $gtoggle
 # Fullscreen toggle
 bindsym $mod+f                          fullscreen toggle
 # Global fullscreen
