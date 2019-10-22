@@ -34,10 +34,10 @@ border-top-size =                   5
 border-bottom-size =                0
 border-color =                      #00000000
 
-padding-left =                      2
-padding-right =                     2
+padding-left =                      1
+padding-right =                     1
 
-module-margin-left =                1
+module-margin-left =                0
 module-margin-right =               1
 
 font-0 =                            Inconsolata:size=12;3
@@ -56,7 +56,7 @@ cursor-scroll =                     ns-resize
 inherit =                           bar/master
 monitor =                           DVI-D-0
 
-modules-left =                      disco i3
+modules-left =                      i3
 modules-center =                    popup-calendar
 modules-right =                     network-traffic
 
@@ -86,7 +86,7 @@ border-bottom-size =                0
 inherit =                           bar/master
 monitor =                           HDMI-0
 
-modules-left =                      disco i3
+modules-left =                      i3
 modules-center =                    time
 modules-right =                     f1 f2 f3 f4 f5 memory cpu 
 
@@ -120,13 +120,6 @@ time =                              %H:%M
 label =                             %time%
 label-font =                        3
 interval =                          5
-
-;==========================================================
-[module/disco]
-;==========================================================
-
-type =                              custom/text
-content =                           
 
 ;==========================================================
 [network/master]
@@ -221,7 +214,7 @@ label-unfocused =                   %name%
 label-unfocused-foreground =        ${colors.dgrey}
 label-unfocused-background =        ${colors.background-alt}
 label-unfocused-padding =           1
-label-unfocused-font =              4
+label-unfocused-font =              1
 
 ; visible = Active workspace on unfocused monitor
 label-visible =                     %name%
