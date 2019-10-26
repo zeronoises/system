@@ -27,9 +27,9 @@
 | Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
 | Toggle tiled/floating    |         mod+space | Toggle focus | mod+period |
 | Toggle Sticky            |      mod +Shift+s | **Screen** | 📷 |
-| Switch configs (a/b)     |       mod+Shift+h | Screenshot full                        |        mod+Print |
-| Switch to config-r       |       mod+Shift+v | Screenshot screen            | mod+Shift+Print |
-| Restart Polybar | mod +Shift+b | Screenshot selection                   |            mod+p |
-| Restart Carla      |      mod+Shift+j | Random paper                           |            mod+u |
-| Reload i3 config         |       mod+Shift+c | Add paper to star list                 |            mod+a |
-| Restart i3 inplace       |       mod+Shift+r | Delete paper                           |      mod+Shift+a |
+| Restart Polybar          |      mod +Shift+b | Screenshot full                        |        mod+Print |
+| Restart Carla | mod+Shift+j | Screenshot screen            | mod+Shift+Print |
+| Reload i3 config         |       mod+Shift+c | Screenshot selection                   |            mod+p |
+| Restart i3 inplace       |       mod+Shift+r | Random paper                           |            mod+u |
+|          |        | Add paper to star list                 |            mod+a |
+|                          |                   | Delete paper                           |      mod+Shift+a |
