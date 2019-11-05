@@ -19,4 +19,3 @@ alias sync_noises="rsync -h --progress --stats -r -tgo -p -l -D -C --update /mnt
 alias pinfo="pamac info"
 alias max="unimatrix -a -n -f -l knsgGc -s 100 | lolcat -t -a -s 500"
 alias icat="kitty +kitten icat"
-alias set_real="sudo setcap cap_sys_nice=ep /opt/vcvrack/Rack"
