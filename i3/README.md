@@ -10,7 +10,7 @@
 | VCV Rack                 |            mod+F5 | Emoji menu                             |            mod+e |
 | Gedit                    |            mod+F6 | Run menu                               |            mod+o |
 | Audacity                 |            mod+F7 | Yaws menu                              |      mod+Shift+u |
-| Mixxx                    |            mod+F8 |                                        |                  |
+| Mixxx                    |            mod+F8 | VBox Menu | mod+Control+v |
 | Pamac GUI                |            mod+F9 | **Scratchpad**                         |                🗒 |
 | Typora |           mod+F10 | Move to scratchpad                     |        mod+minus |
 | Sticky Terminal          |           mod+F11 | Dropdown JACK patchbay                 |            mod+j |

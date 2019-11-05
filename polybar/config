@@ -71,7 +71,7 @@ monitor =                           HDMI-0
 
 modules-left =                      i3
 modules-center =                    time
-modules-right =                     f1 f2 f3 f4 f5 memory cpu 
+modules-right =                     f1 f2 f6 f3 f4 f5 memory cpu 
 
 tray-position =                     right
 tray-padding =                      1
@@ -153,6 +153,18 @@ mount-0 =                           /mnt/Angel
 
 label-mounted =                     %{F#3597F0}Angel:%{F-} %percentage_used:02%%
 label-unmounted =                   Angel not mounted
+label-unmounted-foreground =        ${colors.foreground-alt}
+
+;==========================================================
+[module/f6]
+;==========================================================
+
+inherit =                           network/master
+
+mount-0 =                           /mnt/scratch
+
+label-mounted =                     %{F#3597F0}scratch:%{F-} %percentage_used:02%%
+label-unmounted =                   scratch not mounted
 label-unmounted-foreground =        ${colors.foreground-alt}
 
 ;==========================================================
