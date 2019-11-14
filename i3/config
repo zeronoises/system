@@ -197,7 +197,7 @@ bindsym $mod+minus                      move scratchpad
 # Dropdown JACK patchbay
 bindsym $mod+j                          [title="Carla"] scratchpad show, resize set 1200 700, move position center
 # Dropdown email
-bindsym $mod+m                          [class="Surf" title="Inbox"] scratchpad show, resize set 1200 700, move position center
+bindsym $mod+m                          [class="Geary"] scratchpad show, resize set 1200 700, move position center
 # Screenshot - full
 bindsym $mod+Print                      exec flameshot full -p $scrotd
 # Screenshot - screen
@@ -306,7 +306,7 @@ for_window [class="Typora"]                             focus
 for_window [class="VirtualBox Machine"]                 focus
 
 for_window [class="Carla2-Multi-Client" window_type="normal"] move scratchpad
-for_window [class="Surf" window_type="normal"]                move scratchpad
+for_window [class="Geary"]                                    move scratchpad
 
 # Program assignments
 assign [class="Vivaldi-stable" window_type="normal"]    workspace number $ws1
@@ -327,10 +327,9 @@ exec --no-startup-id                                    numlockx on
 exec --no-startup-id                                    megasync
 exec --no-startup-id                                    pamac-tray
 exec --no-startup-id                                    $dpmsoff
-exec --no-startup-id                                    surf -z 1.2 https://mail.google.com/mail/u/0/#inbox
+exec --no-startup-id                                    geary
 exec --no-startup-id 					                sh /home/zero/.fehbg
-#exec --no-startup-id 					                cadence --minimized
-exec --no-startup-id                                    qjackctl
+exec --no-startup-id 					                cadence --minimized
 exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
 exec --no-startup-id                                    udiskie -t
 exec --no-startup-id                                    gnome-gmail-notifier
