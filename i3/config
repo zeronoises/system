@@ -306,7 +306,7 @@ for_window [class="Typora"]                             focus
 for_window [class="VirtualBox Machine"]                 focus
 
 for_window [class="Carla2-Multi-Client" window_type="normal"] move scratchpad
-for_window [class="Geary"]                                    move scratchpad
+for_window [class="Geary" window_type="normal"]               move scratchpad
 
 # Program assignments
 assign [class="Vivaldi-stable" window_type="normal"]    workspace number $ws1
@@ -332,7 +332,6 @@ exec --no-startup-id 					                sh /home/zero/.fehbg
 exec --no-startup-id 					                cadence --minimized
 exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
 exec --no-startup-id                                    udiskie -t
-exec --no-startup-id                                    gnome-gmail-notifier
 exec_always --no-startup-id                             nm-applet
 exec_always --no-startup-id                             i3altlayout
 exec_always --no-startup-id                             i3wsr
