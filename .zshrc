@@ -3,7 +3,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/mnt/Gog/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH=/usr/share/oh-my-zsh/
@@ -109,7 +109,7 @@ bindkey -s '^o' 'lfcd\n'
 
 source $ZSH/oh-my-zsh.sh
 
-/mnt/Gog/repos/system/Scripts/ufetch.sh | lolcat
+ufetch | lolcat
 fortune oblique-strategies | lolcat
 
 eval $(thefuck --alias)
