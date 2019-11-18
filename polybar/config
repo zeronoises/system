@@ -25,7 +25,17 @@ width =                             100%
 radius =                            0.0
 fixed-center =                      true
 
-background =                        ${colors.background}
+background-0 =                      #C8000000
+background-1 =                      #C0000000
+background-2 =                      #B8000000
+background-3 =                      #B0000000
+background-4 =                      #A8000000
+background-5 =                      #A0000000
+background-6 =                      #98000000
+background-7 =                      #90000000
+background-8 =                      #88000000
+background-9 =                      #80000000
+
 foreground =                        ${colors.foreground}
 
 border-left-size =                  7
@@ -58,7 +68,7 @@ monitor =                           DVI-D-0
 
 modules-left =                      i3
 modules-center =                    popup-calendar
-modules-right =                     network-traffic
+modules-right =                     arch-updates network-traffic
 
 tray-position =                     none
 
@@ -251,6 +261,15 @@ type =                              custom/script
 exec =                              /mnt/Gog/repos/system/Scripts/polybar-scripts/network-traffic.sh
 format-foreground =                 ${colors.blue}
 tail =                              true
+
+;==========================================================
+[module/arch-updates]
+;==========================================================
+
+type =                              custom/script
+exec =                              /mnt/Gog/repos/system/Scripts/polybar-scripts/arch-updates.sh
+format-foreground =                 ${colors.red}
+interval =                          600
 
 ;==========================================================
 [settings]
