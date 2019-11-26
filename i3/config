@@ -111,7 +111,7 @@ bindsym $mod+Shift+0                    move container to workspace number $ws10
 ## LAUNCHERS
 
 # Terminal
-bindsym $mod+Return                     exec $term
+bindsym $mod+Return                     exec $term -d $zome
 # Vivaldi
 bindsym $mod+F1                         exec --no-startup-id vivaldi-stable
 # VS Code
@@ -321,11 +321,10 @@ assign [class="Typora"]                                 workspace number $ws9
 
 # Autostart
 
-exec_always --no-startup-id                             compton --config ~/.config/compton/compton.conf -b &
+exec_always --no-startup-id                             compton -b
 exec --no-startup-id                                    /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id                                    numlockx on
 exec --no-startup-id                                    megasync
-exec --no-startup-id                                    pamac-tray
 exec --no-startup-id                                    $dpmsoff
 exec --no-startup-id                                    geary
 exec --no-startup-id 					                sh /home/zero/.fehbg
