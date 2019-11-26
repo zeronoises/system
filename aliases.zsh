@@ -8,7 +8,7 @@ alias update='yay -Syyuu --devel'
 alias ..='cd ..'
 alias clock="tty-clock -s -c -n"
 alias c='clear'
-alias neo='clear && neofetch | lolcat'
+alias neo='clear && neofetch'
 alias gitpac='cd ~/.pacmanity/pacmanity && git pull && cd -'
 alias lsd='lsd -ahl1'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
@@ -22,3 +22,17 @@ alias icat="kitty +kitten icat"
 alias cp="cp -i"                                                # Confirm before overwriting something
 alias df='df -h'                                                # Human-readable sizes
 alias free='free -m'                                            # Show sizes in MB
+
+# suffix
+alias -s txt=mousepad
+alias -s mp4=mplayer
+alias -s mp3=mplayer
+alias -s wav=mplayer
+alias -s png="feh --scale-down"
+alias -s jpg="feh --scale-down --auto-rotate"
+alias -s JPG="feh --scale-down --auto-rotate"
+alias -s jpeg="feh --scale-down --auto-rotate"
+alias -s gif="feh --scale-down"
+alias -s bmp="feh --scale-down"
+alias -s tif="feh --scale-down"
+alias -s svg="feh --conversion-timeout 1"
