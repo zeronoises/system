@@ -6,7 +6,7 @@
 # and turns it into full link within the table
 
 awk -v FS=\| -v OFS=\| '
-NR>2 {$(NF-1) = "[🔗](http://www.discogs.com/release/" $(NF-1) "){:target=\"_blank\"}"}
+NR>2 {$(NF-1) = "[link](http://www.discogs.com/release/" $(NF-1) "){:target=\"_blank\"}"}
 1
 ' discogs.md > discogs_links.md
 
