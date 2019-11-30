@@ -1,3 +1,4 @@
+# discordia 2019
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -10,7 +11,7 @@ alias clock="tty-clock -s -c -n"
 alias c='clear'
 alias neo='clear && neofetch'
 alias gitpac='cd ~/.pacmanity/pacmanity && git pull && cd -'
-alias lsd='lsd -ahl1'
+alias ls='lsd -ahl1'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
@@ -19,9 +20,14 @@ alias sync_noises="rsync -h --progress --stats -r -tgo -p -l -D -C --update /mnt
 alias pinfo="pamac info"
 alias max="unimatrix -a -n -f -l knsgGc -s 100 | lolcat -t -a -s 500"
 alias icat="kitty +kitten icat"
-alias cp="cp -i"                                                # Confirm before overwriting something
-alias df='df -h'                                                # Human-readable sizes
-alias free='free -m'                                            # Show sizes in MB
+alias feh="feh --scale-down"
+alias w="wd"
+alias wl="wd list"
+alias sn_capture="jack_capture --channels 3 --port Decks:capture_1 --port Decks:capture_2 --port system:capture_2"
+# alias on_capture="jack_capture --channels 3 --port Mixxx:out_2 --port Mixxx:out_3 --port system:capture_2"
+alias cp="cp -i"
+alias df='df -h'
+alias free='free -m'
 
 # suffix
 alias -s txt=mousepad
@@ -36,3 +42,4 @@ alias -s gif="feh --scale-down"
 alias -s bmp="feh --scale-down"
 alias -s tif="feh --scale-down"
 alias -s svg="feh --conversion-timeout 1"
+alias -s md=mdv
