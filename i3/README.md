@@ -3,7 +3,7 @@
 | :----------------------- | ----------------: | :------------------------------------- | ---------------: |
 | **Launchers**            |                 🚀 | **Rofi Menus**                         |                ✅ |
 | Terminal                 |        mod+Return | DRun menu                              |            mod+d |
-| Vivaldi                  |            mod+F1 | Window menu                            |            mod+g |
+| Firefox                  |            mod+F1 | Window menu                            |            mod+g |
 | VS Code                  |            mod+F2 | Clipboard menu                         |            mod+c |
 | PCmanFM                  |            mod+F3 | i3-msg menu                            |            mod+i |
 | Gimp                     |            mod+F4 | Power menu                             |       mod+Delete |

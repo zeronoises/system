@@ -51,7 +51,7 @@ set $vbox                               /mnt/Gog/Scripts/rofi-vbox.sh
 # Directories
 set $scrotd                             /mnt/Gog/Pictures/scrots/
 set $zome                               /mnt/Gog/
-set $temp				                        /mnt/Gog/Temp
+set $temp				                /mnt/Gog/Temp
 
 # Default workspaces
 set $ws1                                "1"
@@ -112,8 +112,8 @@ bindsym $mod+Shift+0                    move container to workspace number $ws10
 
 # Terminal
 bindsym $mod+Return                     exec $term -d $zome
-# Vivaldi
-bindsym $mod+F1                         exec --no-startup-id vivaldi-stable
+# Firefox
+bindsym $mod+F1                         exec --no-startup-id firefox
 # VS Code
 bindsym $mod+F2                         exec --no-startup-id code
 # PCmanFM
@@ -122,8 +122,8 @@ bindsym $mod+F3                         exec --no-startup-id pcmanfm $zome
 bindsym $mod+F4                         exec --no-startup-id gimp
 # VCV Rack
 bindsym $mod+F5                         exec --no-startup-id vcvrack
-# Gedit
-bindsym $mod+F6                         exec --no-startup-id gedit
+# Mousepad
+bindsym $mod+F6                         exec --no-startup-id mousepad
 # Audacity
 bindsym $mod+F7                         exec --no-startup-id audacity
 # Mixxx
@@ -133,7 +133,7 @@ bindsym $mod+F9                         exec --no-startup-id pamac-manager
 # Typora
 bindsym $mod+F10                        exec --no-startup-id typora
 # Sticky Terminal
-bindsym $mod+F11                        exec $term --title stickyterm
+bindsym $mod+F11                        exec $term --title stickyterm -d $zome
 # Gitkraken
 bindsym $mod+F12                        exec --no-startup-id gitkraken
 
@@ -197,7 +197,7 @@ bindsym $mod+minus                      move scratchpad
 # Dropdown JACK patchbay
 bindsym $mod+j                          [title="Carla"] scratchpad show, resize set 1200 700, move position center
 # Dropdown email
-bindsym $mod+m                          [class="Geary"] scratchpad show, resize set 1200 700, move position center
+bindsym $mod+m                          [class="Thunderbird"] scratchpad show, resize set 1200 700, move position center
 # Screenshot - full
 bindsym $mod+Print                      exec flameshot full -p $scrotd
 # Screenshot - screen
@@ -215,7 +215,7 @@ bindsym $mod+a                          exec --no-startup-id $yaws sp
 # Delete paper
 bindsym $mod+Shift+a                    exec --no-startup-id $yaws jp
 # YAWS rofi menu
-bindsym $mod+Shift+u			              exec --no-startup-id $rofiyaws
+bindsym $mod+Shift+u			        exec --no-startup-id $rofiyaws
 
 # Restart Carla
 bindsym $mod+Shift+j                    exec carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
@@ -252,6 +252,8 @@ for_window [window_role="task_dialog"]                  floating enable
 for_window [window_role="Preferences"]                  floating enable
 for_window [window_type="dialog"]                       floating enable
 for_window [window_type="menu"]                         floating enable
+for_window [window_role="About"]                        floating enable
+
 
 for_window [class="Galculator"]                         floating enable
 for_window [class="Xmj"]                                floating enable
@@ -290,8 +292,10 @@ for_window [class="dupeGuru"]                           floating enable, move po
 for_window [class="QjackCtl"]                           floating enable, move position center
 for_window [class="qwinff"]                             floating enable, move position center
 for_window [class="VirtualBox Manager"]                 floating enable, move position center
+for_window [class="Msgcompose" class="Thunderbird"]     floating enable, move position center
 
-for_window [class="Mixxx" title="Preferences"]		      move position center
+
+for_window [class="Mixxx" title="Preferences"]		    move position center
 
 for_window [title="stickyterm"]                         floating enable, sticky enable, resize set 1100 600, move position center
 
@@ -300,16 +304,16 @@ for_window [class="Gimp"]                               focus
 for_window [class="Mixxx"]                              focus
 for_window [class="code-oss"]                           focus
 for_window [class="Audacity"]                           focus
-for_window [class="Vivaldi-stable"]                     focus
+for_window [class="firefox"]                            focus
 for_window [class="GitKraken"]                          focus
 for_window [class="Typora"]                             focus
 for_window [class="VirtualBox Machine"]                 focus
 
-for_window [class="Carla2-Multi-Client" window_type="normal"] move scratchpad
-for_window [class="Geary" window_type="normal"]               move scratchpad
+for_window [class="Carla2-Multi-Client" window_type="normal"]               move scratchpad
+for_window [class="Thunderbird" instance="Mail" window_type="normal"]       move scratchpad
 
 # Program assignments
-assign [class="Vivaldi-stable" window_type="normal"]    workspace number $ws1
+assign [class="firefox" window_type="normal"]           workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
 assign [class="GLFW-Application"]                       workspace number $ws3
 assign [class="GitKraken"]                              workspace number $ws4
@@ -326,14 +330,14 @@ exec --no-startup-id                                    /usr/lib/polkit-gnome/po
 exec --no-startup-id                                    numlockx on
 exec --no-startup-id                                    megasync
 exec --no-startup-id                                    $dpmsoff
-exec --no-startup-id                                    geary
+exec --no-startup-id                                    thunderbird
 exec --no-startup-id 					                sh /home/zero/.fehbg
 exec --no-startup-id 					                cadence --minimized
 exec --no-startup-id                                    carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp
 exec --no-startup-id                                    udiskie -t
 exec_always --no-startup-id                             nm-applet
 exec_always --no-startup-id                             i3altlayout
-exec_always --no-startup-id                             i3wsr
+exec_always --no-startup-id                             i3wsr --config ~/.config/i3wsr/config.toml --icons awesome
 exec_always --no-startup-id                             $scard
 exec_always --no-startup-id                             $mclip daemon
 exec_always --no-startup-id                             $polybar
