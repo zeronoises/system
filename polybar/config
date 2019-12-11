@@ -14,6 +14,7 @@ foreground-alt =                    #555555
 dgrey =                             #1A1A1A
 grey =                              #595959
 blue =                              #3597F0
+blue-trans =                        #C03597F0
 red =                               #FF0000
 
 ;==========================================================
@@ -192,22 +193,22 @@ strip-wsnumbers =                   true
 
 ; focused = Active workspace on focused monitor
 label-focused =                     %name%
-label-focused-foreground =          ${colors.dgrey}
-label-focused-background =          ${colors.foreground}
+label-focused-foreground =          ${colors.foreground}
+label-focused-background =          ${colors.blue}
 label-focused-padding =             1
 label-focused-font =                3
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused =                   %name%
 label-unfocused-foreground =        ${colors.dgrey}
-label-unfocused-background =        ${colors.background-alt}
+label-unfocused-background =        ${colors.blue-trans}
 label-unfocused-padding =           1
 label-unfocused-font =              1
 
 ; visible = Active workspace on unfocused monitor
 label-visible =                     %name%
 label-visible-foreground =          ${colors.dgrey}
-label-visible-background =          ${colors.background-alt}
+label-visible-background =          ${colors.blue-trans}
 label-visible-padding =             1
 label-visible-font =                3
 
