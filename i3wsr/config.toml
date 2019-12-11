@@ -1,6 +1,7 @@
 [icons]
 # font awesome
 firefox = ""
+Vivaldi-stable = ""
 Thunderbird = ""
 Sol = ""
 Mousepad = ""
@@ -29,6 +30,7 @@ GitKraken = ""
 
 [aliases]
 firefox = "Firefox"
+Vivaldi-stable = "Vivaldi"
 Gnubg = "Backgammon"
 "VirtualBox Manager" = " VBox"
 SimpleScreenRecorder = "Screen Rec"
