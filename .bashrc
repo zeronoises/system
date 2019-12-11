@@ -23,25 +23,22 @@ alias i3console='/mnt/Gog/Scripts/ipc-trace.py'
 alias ll="ls -Hal | less"
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
 
-# PS1="\[\e[33m\]\A\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\] \[\e[35m\][\[\e[m\]\[\e[35m\]\W\[\e[m\]\[\e[35m\]]\[\e[m\] > "
+PS1="\[\e[33m\]\A\[\e[m\] \[\e[31m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\] \[\e[35m\][\[\e[m\]\[\e[35m\]\W\[\e[m\]\[\e[35m\]]\[\e[m\] > "
 
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
-}
+#function _update_ps1() {
+#    PS1=$(powerline-shell $?)
+#}
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+#if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
 complete -cf sudo man
 shopt -s checkwinsize
 export LESS=" -iMFXR"
 
-if [[ -z "$minimal" ]]; then
+    ufetch | lolcat
     fortune oblique-strategies | lolcat
-    echo " "
-else
-    unset minimal
-fi
+
 
 eval "$(thefuck --alias)"
