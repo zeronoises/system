@@ -33,16 +33,9 @@ alias mdisco="sshfs disco:/ /mnt/Gog/disco"
 alias udisco="umount /mnt/Gog/disco"
 
 # suffix
-alias -s txt=mousepad
-alias -s mp4=mplayer
-alias -s mp3=mplayer
-alias -s wav=mplayer
-alias -s png="feh --scale-down"
-alias -s jpg="feh --scale-down --auto-rotate"
-alias -s JPG="feh --scale-down --auto-rotate"
-alias -s jpeg="feh --scale-down --auto-rotate"
-alias -s gif="feh --scale-down"
-alias -s bmp="feh --scale-down"
-alias -s tif="feh --scale-down"
+alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano
+alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,rm,wav,webm}=mplayer
+alias -s {png,gif,bmp,tif}="feh --scale-down"
+alias -s {jpg,JPG,jpeg}="feh --scale-down --auto-rotate"
 alias -s svg="feh --conversion-timeout 1"
 alias -s md=mdv
