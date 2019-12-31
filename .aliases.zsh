@@ -28,6 +28,9 @@ alias sn_capture="jack_capture --channels 3 --port Decks:capture_1 --port Decks:
 alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
+alias disco='TERM=vt100 ssh disco'
+alias mdisco="sshfs disco:/ /mnt/Gog/disco"
+alias udisco="umount /mnt/Gog/disco"
 
 # suffix
 alias -s txt=mousepad

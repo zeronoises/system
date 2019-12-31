@@ -37,7 +37,7 @@ complete -cf sudo man
 shopt -s checkwinsize
 export LESS=" -iMFXR"
 
-    ufetch | lolcat
+    /mnt/Gog/bin/ufetch | lolcat
     fortune oblique-strategies | lolcat
 
 
