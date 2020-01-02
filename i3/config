@@ -290,8 +290,7 @@ for_window [class="QjackCtl"]                           floating enable, move po
 for_window [class="qwinff"]                             floating enable, move position center
 for_window [class="VirtualBox Manager"]                 floating enable, move position center
 for_window [class="Msgcompose" class="Thunderbird"]     floating enable, move position center
-
-
+for_window [class="Maitreya8.bin"]                      floating enable
 for_window [class="Mixxx" title="Preferences"]		    move position center
 
 for_window [title="stickyterm"]                         floating enable, sticky enable, resize set 1100 600, move position center
