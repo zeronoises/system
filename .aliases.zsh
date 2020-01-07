@@ -39,3 +39,5 @@ alias -s {png,gif,bmp,tif}="feh --scale-down"
 alias -s {jpg,JPG,jpeg}="feh --scale-down --auto-rotate"
 alias -s svg="feh --conversion-timeout 1"
 alias -s md=mdv
+alias -s {pdf,ps,djvu}=zathura
+alias -s {cbr,cbz}=mcomix
