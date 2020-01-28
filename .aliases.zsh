@@ -34,7 +34,7 @@ alias udisco="umount /mnt/Gog/disco"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano
-alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,rm,wav,webm}=mplayer
+alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,rm,wav,webm}=mpv
 alias -s {png,gif,bmp,tif}="feh --scale-down"
 alias -s {jpg,JPG,jpeg}="feh --scale-down --auto-rotate"
 alias -s svg="feh --conversion-timeout 1"
