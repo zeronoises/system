@@ -64,9 +64,6 @@ set $ws8                                "8"
 set $ws9                                "9"
 set $ws10                               "10"
 
-# Next empty workspace
-set $nempty                             $(($(wmctrl -d | wc -l) +2))
-
 ## KEY BINDINGS
 
 # Change focus
@@ -175,8 +172,6 @@ bindsym $mod+Shift+x                    move container to output right
 bindsym $mod+bracketleft                workspace prev_on_output
 # Next workspace on_output
 bindsym $mod+bracketright               workspace next_on_output
-# Move container to next empty workspace
-bindsym $mod+n                          exec --no-startup-id i3-msg move to container workspace $nempty
 # New workspace
 bindsym $mod+z                          exec --no-startup-id $wsnew
 # Layout manager
