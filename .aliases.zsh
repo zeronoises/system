@@ -31,6 +31,7 @@ alias free='free -m'
 alias disco='TERM=vt100 ssh disco'
 alias mdisco="sshfs disco:/ /mnt/Gog/disco"
 alias udisco="umount /mnt/Gog/disco"
+alias paclist="pacman -Qqe > /mnt/Gog/repos/system/packages.txt"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano
