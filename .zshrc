@@ -84,8 +84,8 @@ setopt prompt_subst
 # Maia prompt
 # PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b " 
 # Print a greeting message when shell is started
-#echo $USER@$HOST $(lsb_release -is)  $(uname -sr)
-ufetch | lolcat
+echo $(lsb_release -is)  $(uname -sr)
+
 echo $(fortune oblique-strategies) | lolcat
 
 ## Prompt on right side:
@@ -218,4 +218,3 @@ esac
 
 eval "$(starship init zsh)"
 source /home/zero/.config/broot/launcher/bash/br
-source <(cod init $$ zsh)

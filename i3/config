@@ -27,8 +27,8 @@ set $grey                               "#929292"
 set $salmon                             "#FF8393"
 
 # Monitors
-set $Lmon                               "DVI-D-0"
-set $Rmon                               "HDMI-0"
+set $Lmon                               "DVI-D-1"
+set $Rmon                               "HDMI-1"
 
 # Terminal
 set $term                               kitty
