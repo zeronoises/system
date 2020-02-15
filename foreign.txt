@@ -51,8 +51,6 @@ tty-clock
 typora
 unimatrix-git
 vcvrack-bin
-vivaldi-codecs-ffmpeg-extra-bin
-vivaldi-widevine
 xcursor-breeze-neutral-git
 yay-bin
 zsh-plugin-wd-git

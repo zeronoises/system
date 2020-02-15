@@ -72,6 +72,7 @@ ffmpegthumbnailer
 file
 filesystem
 findutils
+firefox
 flameshot
 flex
 fortune-mod
