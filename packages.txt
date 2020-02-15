@@ -56,6 +56,7 @@ dos2unix
 dosfstools
 dpf-plugins
 dragonfly-reverb
+dunst
 e2fsprogs
 easytag
 ecryptfs-utils
@@ -169,6 +170,7 @@ make
 man-db
 man-pages
 mcomix
+mdp
 meld
 memtest86+
 mesa
@@ -204,6 +206,7 @@ os-prober
 otf-font-awesome
 p7zip
 pacman
+pacman-contrib
 pacmanlogviewer
 patch
 patchutils
