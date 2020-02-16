@@ -10,6 +10,7 @@ gtk-theme-numix-solarized-git
 gtk3-mushrooms
 gtkdialog
 htop-solarized
+hw-probe
 i3-layout-manager-git
 i3ipc-python-git
 i3wsr-git
