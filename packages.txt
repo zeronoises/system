@@ -244,7 +244,6 @@ python2-pygments
 python2-pyperclip
 qt5-styleplugins
 qt5ct
-ranger
 realtime-privileges
 reiserfsprogs
 rofi
