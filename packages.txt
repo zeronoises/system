@@ -137,6 +137,7 @@ jshon
 jsoncpp
 kitty
 kvantum-theme-arc
+leafpad
 lhasa
 lib32-flex
 lib32-libva-vdpau-driver
@@ -181,7 +182,6 @@ mixxx
 mlocate
 modemmanager
 moreutils
-mousepad
 mplayer
 mpv
 nano
