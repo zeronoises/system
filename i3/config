@@ -1,6 +1,6 @@
 ## i3 config-a zero@discordia 2019
 
-font                                    xft:FontAwesome, Cantarell 10
+font                                    xft:FontAwesome, RobotoRegular 10
 title_align                             left
 floating_modifier                       $mod
 focus_follows_mouse                     yes

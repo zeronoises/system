@@ -45,15 +45,15 @@ border-top-size =                   5
 border-bottom-size =                0
 border-color =                      #00000000
 
-padding-left =                      1
-padding-right =                     1
+padding-left =                      3
+padding-right =                     3
 
 module-margin-left =                0
 module-margin-right =               1
 
-font-0 =                            Liberation-mono-regular:size=8;3
+font-0 =                            Roboto-regular:size=13;3
 font-1 =                            fontawesome-regular:style=Solid:size=12;3
-font-2 =                            Liberation-mono-bold:size=8;3
+font-2 =                            Roboto-bold:size=13;3
 
 enable-ipc =                        true
 
