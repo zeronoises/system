@@ -147,7 +147,7 @@ bindsym $mod+c                          exec --no-startup-id rofi -modi "clipboa
 # i3-msg menu
 bindsym $mod+i                          exec --no-startup-id rofi -show i3-msg -modi i3-msg:$i3msg
 # Power menu
-bindsym $mod+Delete                     exec --no-startup-id $pmenu
+bindsym $mod+Pause                      exec --no-startup-id $pmenu
 # Emoji menu
 bindsym $mod+e                          exec --no-startup-id rofimoji
 # Run dialogue
