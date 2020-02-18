@@ -21,6 +21,7 @@ libuser
 luckybackup
 mahjong
 maitreya
+markdown_previewer
 megasync
 multibootusb-git
 multimarkdown
