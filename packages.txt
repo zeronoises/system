@@ -25,6 +25,7 @@ bat
 beets
 binutils
 bison
+broot
 btrfs-progs
 bzip2
 cadence
