@@ -94,7 +94,7 @@ tray-background =                   ${colors.background}
 ;==========================================================
 type =                              custom/script
 exec =                              fortune oblique-strategies
-interval =                          300
+interval =                          3000
 
 ;==========================================================
 [module/time]
