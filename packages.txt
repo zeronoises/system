@@ -251,6 +251,7 @@ rofi
 rofimoji
 rsync
 ruby
+ruby-bundler
 ruby-rake
 rust
 s-nail
@@ -282,6 +283,7 @@ texinfo
 thefuck
 thunderbird
 tldr
+tmux
 transmission-gtk
 tree
 ttf-bitstream-vera
