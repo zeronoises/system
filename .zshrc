@@ -217,5 +217,4 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
 esac
 
 eval "$(starship init zsh)"
-source /home/zero/.config/broot/launcher/bash/br
 source <(cod init $$ zsh)
