@@ -23,10 +23,10 @@
 | Xkill                    |        mod+Escape | Workspace n                            |          mod+[n] |
 | Split horizontal         |             mod+h | Move container to ws n                 |    mod+Shift+[n] |
 | Split vertical           |             mod+v | Move container to next empty workspace |            mod+n |
-| Fullscreen toggle        |             mod+f | New workspace                          |            mod+z |
-| Global fullscreen        |       mod+Shift+f | Swap displays                          |            mod+y |
-| Toggle tiled/floating    |         mod+space | Toggle focus                           |       mod+period |
-| Toggle Sticky            |      mod +Shift+s | 📷 **Screen **                             |                  |
+| Fullscreen toggle        |             mod+f | Toggle tiled/floating     |   mod+space |
+| Global fullscreen        |       mod+Shift+f | Toggle Sticky             | mod +Shift+s |
+| Toggle Sticky              |      mod +Shift+s | Toggle focus                           |       mod+period |
+| ♻**Reload**                |                   | 📷 **Screen **                             |                  |
 | Restart Polybar          |      mod +Shift+b | Screenshot full                        |        mod+Print |
 | Restart Carla            |       mod+Shift+j | Screenshot screen                      |  mod+Shift+Print |
 | Reload i3 config         |       mod+Shift+c | Screenshot selection                   |            mod+p |
