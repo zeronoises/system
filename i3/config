@@ -37,12 +37,10 @@ set $term                               kitty
 set $mclip                              /mnt/Gog/Scripts/mclip.py
 set $pmenu                              /mnt/Gog/Scripts/rofi-power.sh
 set $scard                              /mnt/Gog/Scripts/soundcard2.sh
-set $wsnew                              /mnt/Gog/Scripts/workspace-new.py
 set $dpmsoff                            /mnt/Gog/Scripts/dpms_off.sh
 set $cheat                              /mnt/Gog/repos/system/i3/README.md
 set $i3msg                              /mnt/Gog/Scripts/rofi_i3_msg.sh
 set $xkiller                            /mnt/Gog/Scripts/xkiller.sh
-set $dswap                              /mnt/Gog/Scripts/display-swap.sh
 set $yaws                               /mnt/Gog/repos/yaws/yaws.sh
 set $rofiyaws                           /mnt/Gog/repos/yaws/yaws_rofi.sh
 set $polybar                            /mnt/Gog/Scripts/polylaunch.sh
@@ -172,12 +170,8 @@ bindsym $mod+Shift+x                    move container to output right
 bindsym $mod+bracketleft                workspace prev_on_output
 # Next workspace on_output
 bindsym $mod+bracketright               workspace next_on_output
-# New workspace
-bindsym $mod+z                          exec --no-startup-id $wsnew
 # Layout manager
 bindsym $mod+l                          exec --no-startup-id i3-layout-manager
-# Swap displays
-bindsym $mod+y                          exec --no-startup-id $dswap
 # Reload i3 config
 bindsym $mod+Shift+c                    reload
 # Restart i3 inplace
