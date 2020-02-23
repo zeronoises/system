@@ -25,7 +25,6 @@ bat
 beets
 binutils
 bison
-broot
 btrfs-progs
 bzip2
 cadence
@@ -246,6 +245,7 @@ python2-pyperclip
 qt5-styleplugins
 qt5ct
 realtime-privileges
+reflector
 reiserfsprogs
 rofi
 rofimoji
@@ -283,7 +283,6 @@ texinfo
 thefuck
 thunderbird
 tldr
-tmux
 transmission-gtk
 tree
 ttf-bitstream-vera
