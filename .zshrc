@@ -72,9 +72,11 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 source "$HOME/.aliases.zsh"
 
 # Theming section  
-autoload -U compinit colors zcalc
+autoload -Uz compinit colors zcalc
 compinit -d
 colors
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
 
 # enable substitution for prompt
 setopt prompt_subst

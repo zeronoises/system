@@ -81,20 +81,13 @@ inherit =                           bar/master
 monitor =                           HDMI-1
 
 modules-left =                      i3
-modules-center =                    obstrat
+modules-center =                    time
 modules-right =                     f1 f2 f3 f4 f5 memory cpu 
 
 tray-position =                     right
 tray-padding =                      1
 tray-maxsize =                      20
 tray-background =                   ${colors.background}
-
-;==========================================================
-[module/obstrat]
-;==========================================================
-type =                              custom/script
-exec =                              fortune oblique-strategies
-interval =                          3000
 
 ;==========================================================
 [module/time]
