@@ -139,12 +139,6 @@ kitty
 kvantum-theme-arc
 leafpad
 lhasa
-lib32-flex
-lib32-libva-vdpau-driver
-lib32-mesa-demos
-lib32-mesa-vdpau
-lib32-vulkan-intel
-lib32-vulkan-radeon
 libdvdcss
 libmatroska
 libtar

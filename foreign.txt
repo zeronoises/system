@@ -1,5 +1,6 @@
 adwaita-qt
 archdroid-icon-theme
+brave-bin
 c-lolcat
 checkupdates-aur
 dupeguru

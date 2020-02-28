@@ -28,6 +28,7 @@ Cadence = ""
 Typora = ""
 GitKraken = ""
 "Maitreya8.bin" = ""
+"Brave-browser" =""
 
 [aliases]
 firefox = "Firefox"
@@ -46,3 +47,4 @@ Pamac-manager = "Pamac"
 "Gimp-2.10" = "Gimp"
 "GLFW-Application" = "VCV Rack"
 "Maitreya8.bin" = "Maitreya"
+"Brave-browser" = "Brave"

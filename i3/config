@@ -106,8 +106,8 @@ bindsym $mod+Shift+0                    move container to workspace number $ws10
 
 # Terminal
 bindsym $mod+Return                     exec $term -d $zome
-# Firefox
-bindsym $mod+F1                         exec --no-startup-id firefox
+# Brave
+bindsym $mod+F1                         exec --no-startup-id brave
 # VS Code
 bindsym $mod+F2                         exec --no-startup-id code
 # PCmanFM
@@ -289,7 +289,7 @@ for_window [class="Gimp"]                               focus
 for_window [class="Mixxx"]                              focus
 for_window [class="code-oss"]                           focus
 for_window [class="Audacity"]                           focus
-for_window [class="firefox"]                            focus
+for_window [class="Brave-browser"]                      focus
 for_window [class="GitKraken"]                          focus
 for_window [class="Typora"]                             focus
 for_window [class="VirtualBox Machine"]                 focus
@@ -298,7 +298,7 @@ for_window [class="Carla2-Multi-Client" window_type="normal"]               move
 for_window [class="Thunderbird" instance="Mail" window_type="normal"]       move scratchpad
 
 # Program assignments
-assign [class="firefox" window_type="normal"]           workspace number $ws1
+assign [class="Brave-browser" window_type="normal"]     workspace number $ws1
 assign [class="code-oss" window_type="normal"]          workspace number $ws2
 assign [class="GLFW-Application"]                       workspace number $ws3
 assign [class="GitKraken"]                              workspace number $ws4
