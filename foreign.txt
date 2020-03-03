@@ -1,10 +1,7 @@
 adwaita-qt
 archdroid-icon-theme
-brave-bin
 c-lolcat
 checkupdates-aur
-dupeguru
-fontfinder
 fortune-mod-oblique-strategies
 gitkraken
 gtk-theme-numix-solarized-git
@@ -12,7 +9,6 @@ gtk3-mushrooms
 gtkdialog
 htop-solarized
 hw-probe
-i3-layout-manager-git
 i3ipc-python-git
 i3wsr-git
 jekyll
@@ -37,9 +33,7 @@ python-i3-py
 python2-discogs-client
 python2-pmw
 qtwebkit-bin
-qwinff
 ruby-kramdown-1
-shc
 shellcheck-static
 siji-git
 starship-bin
