@@ -105,7 +105,7 @@ bindsym $mod+Shift+0                    move container to workspace number $ws10
 ## LAUNCHERS
 
 # Terminal
-bindsym $mod+Return                     exec $term -d $zome
+bindsym $mod+Return                     exec $term
 # Firefox
 bindsym $mod+F1                         exec --no-startup-id firefox
 # VS Code
@@ -127,7 +127,7 @@ bindsym $mod+F9                         exec --no-startup-id pamac-manager
 # Typora
 bindsym $mod+F10                        exec --no-startup-id typora
 # Sticky Terminal
-bindsym $mod+F11                        exec $term --title stickyterm -d $zome
+bindsym $mod+F11                        exec $term --title stickyterm
 # Gitkraken
 bindsym $mod+F12                        exec --no-startup-id gitkraken
 
@@ -277,6 +277,7 @@ for_window [class="QjackCtl"]                           floating enable, move po
 for_window [class="qwinff"]                             floating enable, move position center
 for_window [class="VirtualBox Manager"]                 floating enable, move position center
 for_window [class="Msgcompose" class="Thunderbird"]     floating enable, move position center
+for_window [class="firefox" title="Video player"]       floating enable, move position center
 for_window [class="Maitreya8.bin"]                      floating enable
 for_window [class="Mixxx" title="Preferences"]		    move position center
 

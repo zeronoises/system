@@ -33,7 +33,6 @@ python-i3-py
 python2-discogs-client
 python2-pmw
 qtwebkit-bin
-ruby-kramdown-1
 shellcheck-static
 siji-git
 starship-bin
@@ -48,6 +47,7 @@ tty-clock
 typora
 unimatrix-git
 vcvrack-bin
+vimix-cursors
 xcursor-breeze-neutral-git
 yay-bin
 zsh-plugin-wd-git

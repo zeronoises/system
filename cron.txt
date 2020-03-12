@@ -1,0 +1,4 @@
+@hourly pacman -Qqen > /mnt/Gog/repos/system/packages.txt && pacman -Qqem > /mnt/Gog/repos/syatem/foreign.txt
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ luckybackup entries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+0 3 * * *	env DISPLAY=:0 /usr/bin/luckybackup --silent --skip-critical /home/zero/.luckyBackup/profiles/default.profile > /home/zero/.luckyBackup/logs/default-LastCronLog.log 2>&1
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end of luckybackup entries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

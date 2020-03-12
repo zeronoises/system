@@ -19,13 +19,11 @@ automake
 b43-fwcutter
 baobab
 base
-bash
 bat
 beets
 binutils
 bison
 btrfs-progs
-bzip2
 cadence
 calf
 caps
@@ -35,7 +33,6 @@ clementine
 cmake
 code
 converseen
-coreutils
 cpio
 cpupower
 crda
@@ -54,7 +51,6 @@ dosfstools
 dpf-plugins
 dragonfly-reverb
 dunst
-e2fsprogs
 easytag
 ecryptfs-utils
 efibootmgr
@@ -67,7 +63,6 @@ fakeroot
 feh
 ffmpegthumbnailer
 file
-filesystem
 findutils
 firefox
 flameshot
@@ -76,11 +71,9 @@ fortune-mod
 galculator
 gawk
 gcc
-gcc-libs
 gettext
 gimp
 git
-glibc
 gnome-disk-utility
 gnome-keyring
 gnubg
@@ -112,8 +105,6 @@ i3lock
 imagemagick
 inkscape
 intel-ucode
-iproute2
-iputils
 ipw2100-fw
 ipw2200-fw
 jack2
@@ -125,6 +116,7 @@ jre8-openjdk-headless
 jshon
 jsoncpp
 kitty
+kvantum-qt5
 kvantum-theme-arc
 leafpad
 lhasa
@@ -134,7 +126,6 @@ libtar
 libtool
 libva-mesa-driver
 libva-vdpau-driver
-licenses
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -188,7 +179,6 @@ pacman
 pacman-contrib
 patch
 patchutils
-pciutils
 pcmanfm-gtk3
 pepper-flash
 perl-anyevent-i3
@@ -198,8 +188,6 @@ picom
 pkgconf
 pkgfile
 polkit-gnome
-procps-ng
-psmisc
 python
 python-flask
 python-lxml
@@ -228,8 +216,8 @@ ruby-bundler
 ruby-rake
 rust
 s-nail
+scrot
 sed
-shadow
 shfmt
 shotwell
 simplescreenrecorder
@@ -242,9 +230,6 @@ surf
 syslog-ng
 sysstat
 system-config-printer
-systemd
-systemd-sysvcompat
-tar
 telepathy-accounts-signon
 terminus-font
 texinfo
@@ -270,8 +255,6 @@ unzip
 upower
 usb_modeswitch
 usbutils
-util-linux
-vi
 vulkan-intel
 vulkan-radeon
 w3m
@@ -280,7 +263,6 @@ which
 whois
 wireless_tools
 wmctrl
-wpa_supplicant
 xarchiver-gtk2
 xautomation
 xclip
@@ -336,7 +318,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xsel
-xz
 yad
 zathura
 zathura-cb

@@ -128,4 +128,3 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
 esac
 
 eval "$(starship init zsh)"
-source <(cod init $$ zsh)
