@@ -30,6 +30,7 @@ alias disco='TERM=vt100 ssh disco'
 alias mdisco="sshfs disco:/ /mnt/Gog/disco"
 alias udisco="umount /mnt/Gog/disco"
 alias paclist="pacman -Qqen > /mnt/Gog/repos/system/packages.txt && pacman -Qqem > /mnt/Gog/repos/system/foreign.txt"
+alias check="checkupdates && yay -Qum"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano

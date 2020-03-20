@@ -23,6 +23,7 @@ bat
 beets
 binutils
 bison
+broadcom-wl-dkms
 btrfs-progs
 cadence
 calf
@@ -51,7 +52,6 @@ dosfstools
 dpf-plugins
 dragonfly-reverb
 dunst
-easytag
 ecryptfs-utils
 efibootmgr
 espeak-ng
@@ -127,8 +127,6 @@ libtool
 libva-mesa-driver
 libva-vdpau-driver
 lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 linux-firmware
 linux-lts
 linux-lts-headers
@@ -202,7 +200,6 @@ python-zita-audiotools
 python-zita-jacktools
 python2-lxml
 python2-pygments
-python2-pyperclip
 qt5-styleplugins
 qt5ct
 realtime-privileges
