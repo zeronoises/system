@@ -16,16 +16,16 @@
 | Sticky Terminal          |           mod+F11 | Dropdown JACK patchbay                 |            mod+j |
 | Gitkraken                |           mod+F12 | Dropdown email                         |            mod+m |
 | 💻 **Windows & Workspaces**  |                   |                                        |                  |
-| Move focus               |       mod+[arrow] | Move workspace to other monitor        |            mod+x |
+| Move focus               |       mod+[arrow] | Swap displays                          |            mod+x |
 | Move container           | mod+Shift+[arrow] | Move container to other monitor        |      mod+Shift+x |
 | Centre container         |             mod+b | Prev workspace                         |  mod+bracketleft |
 | Close focused window     |       mod+Shift+q | Next workspace                         | mod+bracketright |
 | Xkill                    |        mod+Escape | Workspace n                            |          mod+[n] |
 | Split horizontal         |             mod+h | Move container to ws n                 |    mod+Shift+[n] |
-| Split vertical           |             mod+v | Move container to next empty workspace |            mod+n |
+| Split vertical           |             mod+v | Toggle focus                           |       mod+period |
 | Fullscreen toggle        |             mod+f | Toggle tiled/floating                  |        mod+space |
 | Global fullscreen        |       mod+Shift+f | Toggle Sticky                          |     mod +Shift+s |
-| Toggle Sticky            |      mod +Shift+s | Toggle focus                           |       mod+period |
+| Toggle Sticky            |      mod +Shift+s |                                        |                  |
 | ♻  **Reload**                |                   | 📷 **Screen **                             |                  |
 | Restart Polybar          |      mod +Shift+b | Screenshot full                        |        mod+Print |
 | Restart Carla            |       mod+Shift+j | Screenshot screen                      |  mod+Shift+Print |
