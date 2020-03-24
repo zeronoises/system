@@ -32,7 +32,6 @@ carla
 clang
 clementine
 cmake
-code
 converseen
 cpio
 cpupower
@@ -71,6 +70,7 @@ fortune-mod
 galculator
 gawk
 gcc
+geany-plugins
 gettext
 gimp
 git
@@ -118,7 +118,6 @@ jsoncpp
 kitty
 kvantum-qt5
 kvantum-theme-arc
-leafpad
 lhasa
 libdvdcss
 libmatroska
@@ -156,7 +155,6 @@ modemmanager
 mpv
 nano
 neofetch
-neovim
 netctl
 network-manager-applet
 networkmanager

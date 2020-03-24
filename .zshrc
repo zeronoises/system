@@ -71,6 +71,14 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 ## Alias section 
 source "$HOME/.aliases.zsh"
 
+## Funtcions
+
+# Move to dir and ls it
+cl () {
+  cd $1
+  ls
+}
+
 # Theming section  
 autoload -Uz compinit colors zcalc
 compinit -d

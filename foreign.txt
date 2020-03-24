@@ -3,6 +3,7 @@ archdroid-icon-theme
 c-lolcat
 checkupdates-aur
 fortune-mod-oblique-strategies
+geany-themes-git
 gitkraken
 gtk-theme-numix-solarized-git
 gtk3-mushrooms
@@ -15,6 +16,7 @@ jekyll
 lf-bin
 libshout-git
 libuser
+lightdm-slick-greeter
 luckybackup
 mahjong
 maitreya
@@ -32,7 +34,9 @@ python-enum-compat
 python-i3-py
 python2-discogs-client
 python2-pmw
+python2-pyperclip
 qtwebkit-bin
+ruby-kramdown-1
 shellcheck-static
 siji-git
 starship-bin
