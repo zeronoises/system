@@ -8,7 +8,7 @@
 | PCmanFM                  |            mod+F3 | i3-msg menu                            |            mod+i |
 | Gimp                     |            mod+F4 | Power menu                             |        mod+Pause |
 | VCV Rack                 |            mod+F5 | Emoji menu                             |            mod+e |
-| Leafpad                  |            mod+F6 | Run menu                               |            mod+o |
+| Geany simple             |            mod+F6 | Run menu                               |            mod+o |
 | Audacity                 |            mod+F7 | Yaws menu                              |      mod+Shift+u |
 | Mixxx                    |            mod+F8 |                                        |                  |
 | Pamac GUI                |            mod+F9 | 🗒  **Scratchpad**                          |                  |
