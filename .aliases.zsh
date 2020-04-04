@@ -22,7 +22,7 @@ alias icat="kitty +kitten icat"
 alias feh="feh --scale-down"
 alias w="wd"
 alias wl="wd list"
-alias sn_capture="jack_capture --channels 3 --port Decks:capture_1 --port Decks:capture_2 --port system:capture_2"
+alias sncapture="jack_capture --channels 3 --port Decks:capture_1 --port Decks:capture_2 --port system:capture_2"
 alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
@@ -31,6 +31,7 @@ alias mdisco="sshfs disco:/ /mnt/Gog/disco"
 alias udisco="umount /mnt/Gog/disco"
 alias paclist="pacman -Qqen > /mnt/Gog/repos/system/packages.txt && pacman -Qqem > /mnt/Gog/repos/system/foreign.txt"
 alias check="checkupdates && yay -Qum"
+alias aargh="sudo systemctl restart lightdm"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano

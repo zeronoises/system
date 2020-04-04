@@ -1,0 +1,1 @@
+/mnt/Gog/repos/yaws/yaws_rofi.sh

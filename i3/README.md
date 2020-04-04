@@ -25,7 +25,6 @@
 | Split vertical           |             mod+v | Toggle focus                           |       mod+period |
 | Fullscreen toggle        |             mod+f | Toggle tiled/floating                  |        mod+space |
 | Global fullscreen        |       mod+Shift+f | Toggle Sticky                          |     mod +Shift+s |
-| Toggle Sticky            |      mod +Shift+s |                                        |                  |
 | ♻  **Reload**                |                   | 📷 **Screen **                             |                  |
 | Restart Polybar          |      mod +Shift+b | Screenshot full                        |        mod+Print |
 | Restart Carla            |       mod+Shift+j | Screenshot screen                      |  mod+Shift+Print |

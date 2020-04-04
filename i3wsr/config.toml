@@ -30,6 +30,8 @@ Typora = ""
 GitKraken = ""
 "Maitreya8.bin" = ""
 "Brave-browser" =""
+Abiword = ""
+"Transmission-gtk" = ""
 
 [aliases]
 firefox = "Firefox"
@@ -49,3 +51,4 @@ Pamac-manager = "Pamac"
 "GLFW-Application" = "VCV Rack"
 "Maitreya8.bin" = "Maitreya"
 "Brave-browser" = "Brave"
+"Transmission-gtk" = "Transmission"
