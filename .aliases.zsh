@@ -9,7 +9,6 @@ alias update='yay -Syyuu --devel'
 alias ..='cd ..'
 alias clock="tty-clock -s -c -n"
 alias c='clear'
-alias neo='clear && neofetch'
 alias ls='lsd -ahl1'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias i3console='/mnt/Gog/Scripts/ipc-trace.py'

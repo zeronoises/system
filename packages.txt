@@ -92,7 +92,6 @@ gtk-engine-murrine
 gtk-engines
 gtk-theme-switch2
 gtkspell3
-gucharmap
 gutenprint
 gvfs
 gvfs-afc
@@ -102,7 +101,6 @@ gvfs-smb
 gzip
 haveged
 hunspell-en_GB
-i3-gaps
 i3lock
 imagemagick
 inkscape
@@ -156,7 +154,6 @@ mlocate
 modemmanager
 mpv
 nano
-neofetch
 netctl
 network-manager-applet
 networkmanager
@@ -179,14 +176,12 @@ patch
 patchutils
 pcmanfm-gtk3
 pepper-flash
-perl-anyevent-i3
 perl-file-mimeinfo
 perl-json-xs
 picom
 pkgconf
 pkgfile
 polkit-gnome
-polybar
 python
 python-flask
 python-lxml
@@ -224,7 +219,6 @@ smartmontools
 sqlitebrowser
 sshfs
 sudo
-surf
 sxhkd
 syslog-ng
 sysstat

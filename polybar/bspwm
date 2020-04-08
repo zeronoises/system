@@ -43,7 +43,7 @@ module-margin-left =                2
 module-margin-right =               2
 
 font-0 =                            Roboto-regular:size=13;3
-font-1 =                            fontawesome-regular:style=Solid:size=12;3
+font-1 =                            fontawesome-regular:style=Solid:size=14;3
 font-2 =                            Roboto-bold:size=13;3
 
 enable-ipc =                        true
@@ -59,7 +59,7 @@ inherit =                           bar/master
 monitor =                           DVI-D-1
 
 modules-left =                      bspwm
-modules-center =                    time popup-calendar
+modules-center =                    popup-calendar time
 modules-right =                     arch-updates network-traffic
 
 tray-position =                     none
@@ -174,19 +174,19 @@ ws-icon-4 = 5;
 ws-icon-5 = 6;
 ws-icon-6 = 7;
 
-label-focused = %name% %icon%
+label-focused = %icon%
 label-focused-background = ${colours.blue}
 label-focused-padding = 2
 
-label-occupied = %name% %icon%
+label-occupied = %icon%
 label-occupied-foreground = ${colours.blue}
 label-occupied-padding = 2
 
-label-urgent = %name% %icon%
+label-urgent = %icon%
 label-urgent-background = ${colours.red}
 label-urgent-padding = 2
 
-label-empty = %name% %icon%
+label-empty = %icon%
 label-empty-padding = 2
 
 ;==========================================================
@@ -249,8 +249,6 @@ screenchange-reload =               true
 [global/wm]
 ;==========================================================
 
-margin-top = 0
-margin-bottom = 0
 wm-restack = bspwm
 
 ;==========================================================

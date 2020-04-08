@@ -36,27 +36,31 @@ super + p
 super + {_,shift} + Print
 	flameshot {full,screen} -p /mnt/Gog/Pictures/scrots
 # sxhkd reload
-super + Escape
+super + shift + r
 	pkill -USR1 -x sxhkd
 # launchers
 super + {F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12}
 	{vivaldi-stable,geany,pcmanfm,gimp,vcvrack,beaver,audacity,mixxx, \
-	meld, \
-	typora,kitty --class=floaterm,gitkraken}
+	simplescreenrecorder,typora,kitty --class=floaterm,gitkraken}	
 super + shift + F1
 	vivaldi-stable --restore-last-session
+	
 # mail dropdown
 super + m
-	/mnt/Gog/Scripts/scratch.sh thunderbird
+	/mnt/Gog/Scripts/xpad.sh Mail.Thunderbird
 # jack dropdown
 super + j
-	/mnt/Gog/Scripts/scratch.sh Carla2-Multi-Client
+	/mnt/Gog/Scripts/xpad.sh carla-jack-multi.Carla2-Multi-Client
+	
 # quit/restart bspwm
 super + ctrl + r
 	bspc wm -r
 # kill
 super + shift + q
 	bspc node -k
+# xkiller
+super + @Escape
+	/mnt/Gog/Scripts/xkiller.sh
 # alternate between the tiled and monocle layout
 super + o
 	bspc desktop -l next
@@ -66,9 +70,9 @@ super + {t,shift + t,s,f}
 # set the node flags
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
-# focus/swap the node in the given direction
+# focus/swap the node in the given direction on the current monitor
 super + {_,shift + }{Left,Down,Up,Right}
-	bspc node -{f,s} {west,south,north,east}
+	bspc node -{f,s} {west,south,north,east}.local
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local

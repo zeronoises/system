@@ -89,8 +89,10 @@ kitty + complete setup zsh | source /dev/stdin
 # enable substitution for prompt
 setopt prompt_subst
 
+# the opening stanza
+icat --align left /mnt/Gog/Pictures/archlogo.png
 echo $(lsb_release -is)  $(uname -sr)
-
+echo
 echo $(fortune oblique-strategies) | lolcat
 
 # Color man pages
@@ -136,7 +138,7 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
 esac
 
 export LF_ICONS="\
-di=:\
+di=:\
 fi=:\
 ln=:\
 or=:\
@@ -295,3 +297,4 @@ ex=:\
 "
 
 eval "$(starship init zsh)"
+

@@ -1,0 +1,14 @@
+/mnt/Gog/Scripts/soundcard2.sh &
+/mnt/Gog/Scripts/dpms_off.sh &
+picom -b &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+xdotool key --clearmodifiers Num_Lock &
+udiskie -t &
+greenclip daemon &
+cadence --minimized &
+sxhkd &
+sh /home/zero/.fehbg &
+thunderbird &
+carla-jack-multi /mnt/Magog/Audio_Projects/carla patches/carla_default.carxp &
+nm-applet &
+megasync &

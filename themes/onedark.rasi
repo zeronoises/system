@@ -26,7 +26,7 @@
   spacing: 0;
   background-color: transparent;
 
-  font: "NotoSans Regular 14";
+  font: "Robot Regular 14";
   text-color: @text;
 }
 
