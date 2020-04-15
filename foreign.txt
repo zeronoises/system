@@ -7,7 +7,6 @@ fortune-mod-oblique-strategies
 geany-themes-git
 gitkraken
 gtk-theme-numix-solarized-git
-gtk3-mushrooms
 gtkdialog
 htop-solarized
 hw-probe
@@ -22,6 +21,7 @@ mahjong
 maitreya
 markdown_previewer
 megasync
+micro-nightly-bin
 multibootusb-git
 multimarkdown
 nerd-fonts-complete
@@ -29,6 +29,7 @@ nerd-fonts-noto-sans-regular-complete
 otf-font-awesome-4
 pamac-cli
 pandoc-bin
+pixterm
 polybar-git
 python-discogs-client
 python-enum-compat

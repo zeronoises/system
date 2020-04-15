@@ -1,5 +1,5 @@
-/mnt/Gog/Scripts/soundcard2.sh &
-/mnt/Gog/Scripts/dpms_off.sh &
+soundcard2 &
+dpms_off &
 picom -b &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xdotool key --clearmodifiers Num_Lock &

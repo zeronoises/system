@@ -1,6 +1,6 @@
 #!/bin/bash
 
-xpad_index=8
+xpad_index=7
 xpad_name=Xpad
 
 desk=$(wmctrl -lx | grep $1 | awk '{print $2;}')

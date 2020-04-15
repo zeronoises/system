@@ -57,6 +57,8 @@ cursor-scroll =                     ns-resize
 
 inherit =                           bar/master
 monitor =                           DVI-D-1
+wm-restack = 						bspwm
+override-redirect = 				true
 
 modules-left =                      bspwm
 modules-center =                    popup-calendar time
@@ -70,6 +72,8 @@ tray-position =                     none
 
 inherit =                           bar/master
 monitor =                           HDMI-1
+wm-restack = 						bspwm
+override-redirect = 				true
 
 modules-left =                      bspwm
 modules-center =                    time
@@ -166,13 +170,13 @@ type =                              internal/bspwm
 enable-scroll = 	                false
 pin-workspaces =                    true
 
-ws-icon-0 = 1;
-ws-icon-1 = 2;
-ws-icon-2 = 3;
-ws-icon-3 = 4;
-ws-icon-4 = 5;
-ws-icon-5 = 6;
-ws-icon-6 = 7;
+ws-icon-0 = H;
+ws-icon-1 = I;
+ws-icon-2 = L;
+ws-icon-3 = V;
+ws-icon-4 = W;
+ws-icon-5 = X;
+ws-icon-6 = Y;
 
 label-focused = %icon%
 label-focused-background = ${colours.blue}
@@ -216,17 +220,17 @@ format-prefix-font =                2
 ;==========================================================
 
 type =                              custom/script
-exec =                              /mnt/Gog/Scripts/polybar-scripts/popup-calendar.sh
+exec =                              popup-calendar
 interval =                          5
 label-font =                        3
-click-left =                        /mnt/Gog/Scripts/polybar-scripts/popup-calendar.sh --popup
+click-left =                        popup-calendar --popup
 
 ;==========================================================
 [module/network-traffic]
 ;==========================================================
 
 type =                              custom/script
-exec =                              /mnt/Gog/Scripts/polybar-scripts/network-traffic.sh
+exec =                              network-traffic
 format-foreground =                 ${colours.blue}
 tail =                              true
 
@@ -235,7 +239,7 @@ tail =                              true
 ;==========================================================
 
 type =                              custom/script
-exec =                              /mnt/Gog/Scripts/polybar-scripts/arch-updates.sh
+exec =                              arch-updates
 format-foreground =                 ${colours.red}
 interval =                          600
 
@@ -244,11 +248,5 @@ interval =                          600
 ;==========================================================
 
 screenchange-reload =               true
-
-;==========================================================
-[global/wm]
-;==========================================================
-
-wm-restack = bspwm
 
 ;==========================================================

@@ -1,7 +1,5 @@
 
-# terminal emulator
-super + Return
-	kitty
+## rofi menus
 # program launcher
 super + d
 	rofi -show drun -display-drun ""
@@ -10,7 +8,7 @@ super + c
 	rofi -modi "clipboard:greenclip print" -show clipboard
 # power menu
 super + Pause
-	/mnt/Gog/Scripts/rofi-powerb.sh
+	rofi-power
 # emoji picker	
 super + e
 	rofimoji
@@ -20,39 +18,126 @@ super + g
 # run menu
 super + r
 	rofi -show run
-# wallpaper chooser
+# wallpaper menu
 super + shift + u
-	/mnt/Gog/Scripts/yaws_rofi.sh
+	yaws_rofi
+	
+## screen
 # random wallpaper
 super + u
-	/mnt/Gog/Scripts/yaws.sh nr
+	yaws nr
 # star/junk paper
 super {_,shift} + a
-	/mnt/Gog/Scripts/yaws.sh {sp,jp}
+	yaws {sp,jp}
 # GUI scrot
 super + p
 	flameshot gui -p /mnt/Gog/Temp
-# dual/single scrot
-super + {_,shift} + Print
-	flameshot {full,screen} -p /mnt/Gog/Pictures/scrots
+# full scrot
+super + Print
+	flameshot full -p /mnt/Gog/Pictures/scrots
+# toggle bar
+super + b
+	polybar-msg cmd toggle
+
+## launchers
+# terminal emulator
+super + Return
+	kitty
+# vivaldi/restore session
+super + {_,shift +} F1
+	bspc desktop H -f; {vivaldi-stable,vivaldi-stable --restore-last-session}
+# geany
+super + F2
+	bspc desktop V -f; geany
+# pcmanfm
+super + F3
+	bspc desktop I -f; pcmanfm
+# gimp
+super + F4
+	bspc desktop L -f; gimp
+# vcvrack
+super + F5
+	vcvrack
+# mousepad
+super + F6
+	mousepad
+# audacity
+super + F7
+	bspc desktop L -f; audacity
+# mixxx
+super + F8
+	bspc desktop W -f; mixxx
+# screen recorder
+super + F9
+	simplescreenrecorder
+# typora
+super + F10
+	bspc desktop L -f; typora
+# floaterm
+super + F11
+	kitty --class=floaterm
+#gitkraken
+super + F12
+	bspc desktop X -f; gitkraken
+	
+## dropdowns
+# mail dropdown
+super + m
+	xpad Mail.Thunderbird
+# jack dropdown
+super + j
+	xpad carla-jack-multi.Carla2-Multi-Client
+
+## wm
+# alternate between the tiled and monocle layout
+super + o
+	bspc desktop -l next
+# set the window state
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+# set sticky/private/hidden
+super + {_,shift +,ctrl +} z
+	bspc node -g {sticky,private,hidden}
+# unhide from stack
+super + ctrl + u
+	bspc node $(bspc query -N -n .hidden | tail -n1) -g hidden=off
+# focus/swap the node in the given direction on the current monitor
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}.local
+# focus the next/previous desktop in the current monitor
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+# focus on desktop
+super + {h,i,l,v,w,x,y}
+	bspc desktop -f {H,I,L,V,W,X,Y}
+# move to desktop
+super + shift + {h,i,l,v,w,x,y}
+	bspc node -d {H,I,L,V,W,X,Y}
+# preselect the directioniil
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -p {west,south,north,east}
+# preselect the ratio
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+# cancel the preselection for the focused node
+super + space
+	bspc node -p cancel
+# focus other monitor
+super + n
+	bspc monitor last -f
+# move to other monitor
+super + shift + n
+	bspc node -m last
+# swap focused desktops
+super + ctrl + n
+    bspc desktop HDMI-1:focused -s DVI-D-1:focused
+# swap with given desktop
+super + ctrl + {h,i,l,v,w,x,y}
+	bspc desktop -s {H,I,L,V,W,X,Y}
 # sxhkd reload
 super + shift + r
 	pkill -USR1 -x sxhkd
-# launchers
-super + {F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12}
-	{vivaldi-stable,geany,pcmanfm,gimp,vcvrack,beaver,audacity,mixxx, \
-	simplescreenrecorder,typora,kitty --class=floaterm,gitkraken}	
-super + shift + F1
-	vivaldi-stable --restore-last-session
-	
-# mail dropdown
-super + m
-	/mnt/Gog/Scripts/xpad.sh Mail.Thunderbird
-# jack dropdown
-super + j
-	/mnt/Gog/Scripts/xpad.sh carla-jack-multi.Carla2-Multi-Client
-	
-# quit/restart bspwm
+# restart bspwm
 super + ctrl + r
 	bspc wm -r
 # kill
@@ -60,31 +145,4 @@ super + shift + q
 	bspc node -k
 # xkiller
 super + @Escape
-	/mnt/Gog/Scripts/xkiller.sh
-# alternate between the tiled and monocle layout
-super + o
-	bspc desktop -l next
-# set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
-# set the node flags
-super + ctrl + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
-# focus/swap the node in the given direction on the current monitor
-super + {_,shift + }{Left,Down,Up,Right}
-	bspc node -{f,s} {west,south,north,east}.local
-# focus the next/previous desktop in the current monitor
-super + bracket{left,right}
-	bspc desktop -f {prev,next}.local
-# focus or send to the given desktop
-super + {_,shift + }{1-7}
-	bspc {desktop -f,node -d} '^{1-7}'
-# preselect the direction
-super + ctrl + {Left,Down,Up,Right}
-	bspc node -p {west,south,north,east}
-# preselect the ratio
-super + ctrl + {1-7}
-	bspc node -o 0.{1-7}
-# cancel the preselection for the focused node
-super + shift + space
-	bspc node -p cancel
+	xkiller

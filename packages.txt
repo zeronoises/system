@@ -20,7 +20,6 @@ b43-fwcutter
 baobab
 base
 bat
-beaver
 beets
 binutils
 bison
@@ -80,6 +79,7 @@ gnome-disk-utility
 gnome-keyring
 gnome-themes-extra
 gnubg
+go
 gparted
 grep
 groff
@@ -101,7 +101,6 @@ gvfs-smb
 gzip
 haveged
 hunspell-en_GB
-i3lock
 imagemagick
 inkscape
 intel-ucode
@@ -152,8 +151,10 @@ mesa-vdpau
 mixxx
 mlocate
 modemmanager
+mousepad
 mpv
 nano
+nano-syntax-highlighting
 netctl
 network-manager-applet
 networkmanager
@@ -178,6 +179,7 @@ pcmanfm-gtk3
 pepper-flash
 perl-file-mimeinfo
 perl-json-xs
+physlock
 picom
 pkgconf
 pkgfile

@@ -1,22 +1,21 @@
-#! /bin/sh
+#!/bin/sh
 
 bspc rule -r "*"
-bspc monitor -r PAD
-bspc monitor -r WIDE
 
-orig_mon_list=$(bspc query -M --names)
+bspc monitor PAD -r
+bspc monitor RACK -r
 
 bspc wm -a PAD 1920x1080+3840+0
-bspc wm -a WIDE 3840x1080+0+0
+bspc wm -a RACK 3840x1080+0+0
 
-bspc wm --reorder-monitors $(echo "$orig_mon_list"$'\n'"$(bspc query -M --names)" | awk '!($0 in a) { a[$0]; print }')
-
-bspc monitor DVI-D-1 -d 1 2 3
-bspc monitor HDMI-1 -d 4 5 6 7
+bspc monitor DVI-D-1 -d H I L
+bspc monitor HDMI-1 -d V W X Y
 bspc monitor PAD -d Xpad
-bspc monitor WIDE -d Xwide
+bspc monitor RACK -d Xrack
 
-/mnt/Gog/Scripts/polybspwm.sh &
+bspc wm --reorder-monitors DVI-D-1 HDMI-1 PAD RACK
+
+polybspwm &
 
 bspc config border_width         			2
 bspc config window_gap          			10
@@ -30,28 +29,20 @@ bspc config top_monocle_padding				-30
 bspc config focus_follows_pointer 			true
 bspc config pointer_follows_monitor			true
 bspc config ignore_ewmh_focus 				true
+bspc config automatic_scheme				spiral
+bspc config top_padding 					30
 
 bspc config pointer_modifier				mod4
 bspc config pointer_action1					move
 bspc config pointer_action2					resize_corner
 
-bspc rule -a Vivaldi-stable 				desktop='^1' follow=on
-bspc rule -a Geany 							desktop='^4' follow=on
-bspc rule -a Pcmanfm 						desktop='^2' follow=on
-bspc rule -a Mixxx 							desktop='^5' follow=on
-bspc rule -a Audacity 						desktop='^5' follow=on
-bspc rule -a Meld 							desktop='^6' follow=on
-bspc rule -a GitKraken	 					desktop='^6' follow=on
-bspc rule -a Gimp 							desktop='^3' follow=on
-bspc rule -a Typora 						desktop='^3' follow=on
+bspc rule -a GLFW-Application				desktop='Xrack' follow=on
 
-bspc rule -a GLFW-Application				desktop='Xwide' follow=on
+bspc rule -a Carla2-Multi-Client -o			desktop='Xpad' state=floating center=on rectangle=1200x700+0+0
+bspc rule -a Thunderbird -o					desktop='Xpad' state=floating center=on rectangle=1200x900+0+0
 
-bspc rule -a Carla2-Multi-Client -o			desktop='Xpad' follow=off state=floating center=on rectangle=1200x700+0+0
-bspc rule -a Thunderbird -o					desktop='Xpad' follow=off state=floating center=on rectangle=1200x900+0+0
-
-bspc rule -a Carla2-Multi-Client			state=floating center=on rectangle=1200x700+0+0
-bspc rule -a Thunderbird					state=floating center=on rectangle=1200x900+0+0
+bspc rule -a Carla2-Multi-Client			state=floating center=on follow=on rectangle=1200x700+0+0
+bspc rule -a Thunderbird					state=floating center=on follow=on rectangle=1200x900+0+0
 bspc rule -a feh							state=pseudo_tiled center=on
 bspc rule -a Yad							state=floating
 bspc rule -a floaterm						state=floating center=on rectangle=1100x600+0+0

@@ -24,10 +24,10 @@ export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/nano
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
-# set PATH to include local bin
-if [ -d "/mnt/Gog/bin" ] ; then
-	PATH="/mnt/Gog/bin:$PATH"
-fi
+## set PATH to include local bin
+#if [ -d "/mnt/Gog/bin" ] ; then
+	#PATH="/mnt/Gog/bin:$PATH"
+#fi
 
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
@@ -69,7 +69,7 @@ bindkey '^H' backward-kill-word                                 # delete previou
 bindkey '^[[Z' undo                                             # Shift+tab undo last action
 
 ## Alias section 
-source "$HOME/.aliases.zsh"
+source "$HOME/.aliases"
 
 ## Funtcions
 
