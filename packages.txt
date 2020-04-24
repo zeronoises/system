@@ -33,6 +33,7 @@ carla
 clang
 clementine
 cmake
+code
 converseen
 cpio
 cpupower
@@ -179,7 +180,6 @@ pcmanfm-gtk3
 pepper-flash
 perl-file-mimeinfo
 perl-json-xs
-physlock
 picom
 pkgconf
 pkgfile
@@ -302,6 +302,7 @@ xorg-xkbutils
 xorg-xkill
 xorg-xlsatoms
 xorg-xlsclients
+xorg-xlsfonts
 xorg-xmodmap
 xorg-xpr
 xorg-xprop

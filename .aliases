@@ -4,7 +4,7 @@
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias update='yay -Syyuu --devel'
+alias update='yay -Syu --devel'
 alias ..='cd ..'
 alias clock="tty-clock -s -c -n"
 alias c='clear'

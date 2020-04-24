@@ -39,6 +39,10 @@ super + Print
 super + b
 	polybar-msg cmd toggle
 
+# cheatsheet
+super + q
+	feh -N $HOME/.keys &
+
 ## launchers
 # terminal emulator
 super + Return
@@ -48,7 +52,7 @@ super + {_,shift +} F1
 	bspc desktop H -f; {vivaldi-stable,vivaldi-stable --restore-last-session}
 # geany
 super + F2
-	bspc desktop V -f; geany
+	bspc desktop V -f; code
 # pcmanfm
 super + F3
 	bspc desktop I -f; pcmanfm

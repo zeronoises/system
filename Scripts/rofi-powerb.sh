@@ -4,7 +4,7 @@ res=$(echo "lock|logout|reboot|shutdown" | rofi -sep "|" -dmenu -i -p 'power men
 
 case $res in
 lock)
-    lock_dpms
+    dm-tool lock
     ;;
 logout)
     bspc quit

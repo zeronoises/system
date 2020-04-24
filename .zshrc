@@ -90,9 +90,9 @@ kitty + complete setup zsh | source /dev/stdin
 setopt prompt_subst
 
 # the opening stanza
-icat --align left /mnt/Gog/Pictures/archlogo.png
-echo $(lsb_release -is)  $(uname -sr)
+icat --align left --z-index -1 $HOME/.archlogo
 echo
+echo $(lsb_release -is)  $(uname -sr)
 echo $(fortune oblique-strategies) | lolcat
 
 # Color man pages

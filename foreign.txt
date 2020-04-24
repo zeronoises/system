@@ -11,6 +11,7 @@ gtkdialog
 htop-solarized
 hw-probe
 jekyll
+kvantum-theme-nordic-git
 lf-bin
 libshout-git
 libuser
@@ -26,6 +27,8 @@ multibootusb-git
 multimarkdown
 nerd-fonts-complete
 nerd-fonts-noto-sans-regular-complete
+nord-gedit
+nordic-theme-git
 otf-font-awesome-4
 pamac-cli
 pandoc-bin
