@@ -30,12 +30,10 @@ alias check="checkupdates && yay -Qum"
 alias aargh="sudo systemctl restart lightdm"
 
 # edit with micro
-alias eb="cd /mnt/Gog/repos/system/; micro bspwm/bspwmrc && cd $OLDPWD"
-alias es="cd /mnt/Gog/repos/system/; micro bspwm/sxhkdrc && cd $OLDPWD"
-alias ez="cd /mnt/Gog/repos/system/; micro .zshrc && cd $OLDPWD"
-alias ea="cd /mnt/Gog/repos/system/; micro .aliases && cd $OLDPWD"
-alias en="cd /mnt/Gog/repos/noises/; micro && cd $OLDPWD"
-
+alias eb="nano /mnt/Gog/repos/system/bspwm/bspwmrc"
+alias es="nano /mnt/Gog/repos/system/bspwm/sxhkdrc"
+alias ez="nano /mnt/Gog/repos/system/.zshrc"
+alias ea="nano /mnt/Gog/repos/system/.aliases"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano

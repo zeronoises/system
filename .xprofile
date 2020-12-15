@@ -6,3 +6,4 @@ udiskie -t &
 cadence --minimized &
 sh /home/zero/.fehbg &
 nm-applet &
+dropbox &

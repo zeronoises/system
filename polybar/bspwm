@@ -183,7 +183,8 @@ label-focused-background = ${colours.blue}
 label-focused-padding = 2
 
 label-occupied = %icon%
-label-occupied-foreground = ${colours.blue}
+label-occupied-background = ${colours.blue}
+label-occupied-foreground = ${colours.background}
 label-occupied-padding = 2
 
 label-urgent = %icon%
@@ -231,7 +232,6 @@ click-left =                        popup-calendar --popup
 
 type =                              custom/script
 exec =                              network-traffic
-format-foreground =                 ${colours.blue}
 tail =                              true
 
 ;==========================================================

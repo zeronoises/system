@@ -1,29 +1,5 @@
 
 add_newline = true
-prompt_order = [
-    "time",
-    "hostname",
-    "kubernetes",
-    "directory",
-    "git_branch",
-    "git_state",
-    "git_status",
-    "package",
-    "golang",
-    "java",
-    "nodejs",
-    "python",
-    "ruby",
-    "rust",
-    "nix_shell",
-    "memory_usage",
-    "env_var",
-    "cmd_duration",
-    "line_break",
-    "username",
-    "jobs",
-    "character",
-]
 
 [aws]
 disabled = true
@@ -44,7 +20,7 @@ disabled = true
 truncation_length = 5
 
 [character]
-symbol = "﬌"
+success_symbol = "﬌"
 error_symbol = "✗"
 use_symbol_for_status = true
 

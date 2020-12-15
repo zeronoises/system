@@ -15,8 +15,18 @@ bspc monitor RACK -d Xrack
 
 bspc wm --reorder-monitors DVI-D-1 HDMI-1 PAD RACK
 
+# master/stack layout
+bsp-layout set tall H
+bsp-layout set tall I
+bsp-layout set tall L 
+bsp-layout set tall V
+bsp-layout set tall W
+bsp-layout set tall X
+bsp-layout set tall Y
+
 # polybspwm &
 autostart &
+pidof bspswallow || bspswallow &
 
 bspc config border_width         			2
 bspc config window_gap          			10
@@ -42,8 +52,8 @@ bspc rule -a GLFW-Application				desktop='Xrack' follow=on
 bspc rule -a Carla2-Multi-Client -o			desktop='Xpad' state=floating center=on rectangle=1200x700+0+0
 bspc rule -a Thunderbird -o					desktop='Xpad' state=floating center=on rectangle=1200x900+0+0
 
-bspc rule -a Carla2-Multi-Client			state=floating center=on follow=on rectangle=1200x700+0+0
-bspc rule -a Thunderbird					state=floating center=on follow=on rectangle=1200x900+0+0
+bspc rule -a Carla2-Multi-Client			state=floating center=on follow=on
+bspc rule -a Thunderbird					state=floating center=on follow=on
 bspc rule -a feh							state=floating center=on
 bspc rule -a Yad							state=floating
 bspc rule -a floaterm						state=floating center=on rectangle=1100x730+0+0
@@ -56,3 +66,4 @@ bspc rule -a Gnome-disks 					state=floating
 bspc rule -a Sol							state=floating center=on
 bspc rule -a Maitreya8.bin 					state=floating
 bspc rule -a Xmj		 					state=floating center=on
+bspc rule -a GParted		 				state=floating center=on
