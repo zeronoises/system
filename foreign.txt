@@ -42,7 +42,6 @@ python-enum-compat
 python2-pmw
 qt5-styleplugins
 qtwebkit-bin
-rofi-greenclip
 shellcheck-static
 siji-git
 starship-bin

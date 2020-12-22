@@ -63,7 +63,7 @@ bspc rule -a SimpleScreenRecorder			state=floating center=on
 bspc rule -a Lxappearance					state=floating center=on
 bspc rule -a Zathura 						state=tiled
 bspc rule -a Gnome-disks 					state=floating
-bspc rule -a Sol							state=floating center=on
+# bspc rule -a Sol							state=floating center=on
 bspc rule -a Maitreya8.bin 					state=floating
 bspc rule -a Xmj		 					state=floating center=on
 bspc rule -a GParted		 				state=floating center=on
