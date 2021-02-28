@@ -61,7 +61,7 @@ wm-restack = 						bspwm
 override-redirect = 				true
 
 modules-left =                      bspwm
-modules-center =                    popup-calendar time
+modules-center =                    popup-calendar
 modules-right =                     arch-updates network-traffic
 
 tray-position =                     none

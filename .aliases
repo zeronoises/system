@@ -28,12 +28,7 @@ alias udisco="umount /mnt/Gog/disco"
 alias paclist="pacman -Qqen > /mnt/Gog/repos/system/packages.txt && pacman -Qqem > /mnt/Gog/repos/system/foreign.txt"
 alias check="checkupdates && yay -Qum"
 alias aargh="sudo systemctl restart lightdm"
-
-# edit with micro
-alias eb="nano /mnt/Gog/repos/system/bspwm/bspwmrc"
-alias es="nano /mnt/Gog/repos/system/bspwm/sxhkdrc"
-alias ez="nano /mnt/Gog/repos/system/.zshrc"
-alias ea="nano /mnt/Gog/repos/system/.aliases"
+alias sprop="xprop | grep -E \"^(WM_CLASS|_NET_WM_NAME|WM_NAME)\""
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano

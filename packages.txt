@@ -13,12 +13,12 @@ arc-solid-gtk-theme
 aria2
 arj
 asciidoc
-audacity
 autoconf
 automake
 b43-fwcutter
 baobab
 base
+bat
 beets
 binutils
 bison
@@ -108,6 +108,7 @@ hunspell-en_GB
 imagemagick
 inkscape
 intel-ucode
+intltool
 ipw2100-fw
 ipw2200-fw
 itstool
@@ -140,6 +141,7 @@ logrotate
 lrzip
 lsb-release
 lsd
+lshw
 lsof
 luit
 lvm2
@@ -163,6 +165,7 @@ modemmanager
 mpv
 nano
 nano-syntax-highlighting
+neofetch
 netctl
 netpbm
 network-manager-applet
@@ -185,7 +188,6 @@ pacman-contrib
 patch
 patchutils
 pcmanfm-gtk3
-pepper-flash
 perl-file-mimeinfo
 perl-json-xs
 pkgconf
@@ -194,6 +196,7 @@ polkit-gnome
 python
 python-anytree
 python-beaker
+python-discogs-client
 python-flask
 python-lxml
 python-mako
@@ -228,6 +231,7 @@ shotwell
 simplescreenrecorder
 slop
 smartmontools
+spectrwm
 sqlitebrowser
 sshfs
 sudo

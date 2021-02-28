@@ -2,8 +2,10 @@ soundcard2 &
 dpms_off &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 xdotool key --clearmodifiers Num_Lock &
+picom -b --experimental-backend &
 udiskie -t &
+nm-applet &
 cadence --minimized &
 sh /home/zero/.fehbg &
-nm-applet &
+killall dropbox
 dropbox &

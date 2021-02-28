@@ -4,6 +4,7 @@ archdroid-icon-theme
 bsp-layout
 c-lolcat
 checkupdates-aur
+conky-cli
 dropbox
 etcher-bin
 faba-icon-theme
@@ -24,7 +25,6 @@ lightdm-settings
 lightdm-slick-greeter
 luckybackup
 mahjong
-maitreya
 markdown_previewer
 multibootusb
 multimarkdown
@@ -32,19 +32,17 @@ nerd-fonts-complete
 nerd-fonts-noto-sans-regular-complete
 nordic-theme-git
 otf-font-awesome-4
-pamac-cli
+pamac-aur
 pandoc-bin
+pepper-flash
 picom-jonaburg-git
 pixterm
 polybar-git
-python-discogs-client
 python-enum-compat
 python2-pmw
 qt5-styleplugins
-qtwebkit-bin
 shellcheck-static
 siji-git
-starship-bin
 surf
 terminal-markdown-viewer
 timeshift
@@ -61,4 +59,5 @@ vcvrack-bin
 vimix-cursors
 xcursor-breeze-neutral-git
 yay-bin
+youtubedl-gui
 zsh-plugin-wd-git

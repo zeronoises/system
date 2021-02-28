@@ -29,6 +29,8 @@ WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider
 	#PATH="/mnt/Gog/bin:$PATH"
 #fi
 
+fpath+=$HOME/.zsh/pure
+
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
     tmp="$(mktemp)"
@@ -90,8 +92,8 @@ kitty + complete setup zsh | source /dev/stdin
 setopt prompt_subst
 
 # the opening stanza
-icat --align left --z-index -1 $HOME/.archlogo
-echo
+# icat --align left --z-index -1 $HOME/.archlogo
+# echo
 echo $(lsb_release -is)  $(uname -sr)
 echo $(fortune oblique-strategies) | lolcat
 
@@ -296,6 +298,11 @@ ex=:\
 *.nix=:\
 "
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 
+autoload -U promptinit; promptinit
+prompt pure
+
+# Only load Liquidprompt in interactive shells, not from a script or from scp
+# [[ $- = *i* ]] && source ~/.config/liquidprompt/liquidpromptrc

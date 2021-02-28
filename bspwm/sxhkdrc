@@ -81,7 +81,7 @@ super + F9
 	simplescreenrecorder
 # typora
 super + F10
-	bspc desktop L -f; typora
+	kitty htop
 # floaterm
 super + F11
 	kitty --class=floaterm
