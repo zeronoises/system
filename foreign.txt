@@ -31,13 +31,13 @@ multimarkdown
 nerd-fonts-complete
 nerd-fonts-noto-sans-regular-complete
 nordic-theme-git
+ocenaudio
 otf-font-awesome-4
 pamac-aur
 pandoc-bin
 pepper-flash
 picom-jonaburg-git
 pixterm
-polybar-git
 python-enum-compat
 python2-pmw
 qt5-styleplugins

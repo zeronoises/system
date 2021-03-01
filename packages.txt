@@ -23,7 +23,6 @@ beets
 binutils
 bison
 broadcom-wl-dkms
-bspwm
 btrfs-progs
 cadence
 calf
@@ -237,7 +236,6 @@ sshfs
 sudo
 surfraw
 svt-hevc
-sxhkd
 syslog-ng
 sysstat
 system-config-printer
