@@ -1,10 +1,12 @@
 abiword-gtk2
 adwaita-qt
 archdroid-icon-theme
+audacity-wxgtk2
 bsp-layout
 c-lolcat
 checkupdates-aur
 conky-cli
+dmenu-distrotube-git
 dropbox
 etcher-bin
 faba-icon-theme
@@ -14,6 +16,7 @@ gtk-theme-switch2
 gtkdialog
 htop-solarized
 hw-probe
+j4-dmenu-desktop
 jekyll
 kvantum-theme-arc
 kvantum-theme-nordic-git
@@ -31,7 +34,6 @@ multimarkdown
 nerd-fonts-complete
 nerd-fonts-noto-sans-regular-complete
 nordic-theme-git
-ocenaudio
 otf-font-awesome-4
 pamac-aur
 pandoc-bin
@@ -43,7 +45,9 @@ python2-pmw
 qt5-styleplugins
 shellcheck-static
 siji-git
+spectrwm-git
 surf
+tdrop-git
 terminal-markdown-viewer
 timeshift
 ttf-font-awesome-4
@@ -58,6 +62,7 @@ unimatrix-git
 vcvrack-bin
 vimix-cursors
 xcursor-breeze-neutral-git
+xwinfo-git
 yay-bin
 youtubedl-gui
 zsh-plugin-wd-git

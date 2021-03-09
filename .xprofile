@@ -1,9 +1,0 @@
-soundcard2 &
-dpms_off &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-xdotool key --clearmodifiers Num_Lock &
-picom -b --experimental-backend &
-udiskie &
-sh /home/zero/.fehbg &
-killall dropbox
-dropbox &

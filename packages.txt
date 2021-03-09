@@ -51,7 +51,6 @@ dos2unix
 dosfstools
 dpf-plugins
 dragonfly-reverb
-dunst
 ecryptfs-utils
 efibootmgr
 electron
@@ -215,7 +214,6 @@ qt5ct
 realtime-privileges
 reflector
 reiserfsprogs
-rofi
 rofimoji
 rsync
 ruby
@@ -230,7 +228,6 @@ shotwell
 simplescreenrecorder
 slop
 smartmontools
-spectrwm
 sqlitebrowser
 sshfs
 sudo

@@ -22,6 +22,7 @@ HISTSIZE=1000
 SAVEHIST=500
 export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/nano
+export TERMINAL=/usr/bin/kitty
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 ## set PATH to include local bin

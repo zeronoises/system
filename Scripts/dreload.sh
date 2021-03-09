@@ -1,8 +1,5 @@
 #!/bin/bash
 
-pkill dunst
-dunst -config ~/.config/dunst/dunstrc &
-
 notify-send -u critical "Test message: critical test 1"
 notify-send -u critical "Test message: critical test 2"
 notify-send -u critical "Test message: critical test 3"
