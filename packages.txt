@@ -214,7 +214,6 @@ qt5ct
 realtime-privileges
 reflector
 reiserfsprogs
-rofimoji
 rsync
 ruby
 ruby-bundler
