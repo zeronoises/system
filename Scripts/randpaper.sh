@@ -3,7 +3,7 @@
 path=/mnt/Gog/Papers/
 
 new_paper() {
-    image=$(ls $path | sort -R | tail -1)
+    image=$(ls $path | shuf -n 1)
     feh --bg-fill --no-xinerama $path$image
     notify-send "New Wallpaper" $image
     choose
@@ -29,4 +29,4 @@ choose() {
 }
 
 new_paper
-choose
+
