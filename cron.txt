@@ -1,5 +1,5 @@
 @hourly pacman -Qqen > /mnt/Gog/repos/system/packages.txt && pacman -Qqem > /mnt/Gog/repos/system/foreign.txt
-15 * * * *  checkupdates > /mnt/Gog/updates.txt && yay -Qum >> /mnt/Gog/updates.txt
+15 * * * *  checkupdates > /mnt/Gog/updates.txt && paru -Qum >> /mnt/Gog/updates.txt
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ luckybackup entries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 0 3 * * *	env DISPLAY=:0 /usr/bin/luckybackup --silent --skip-critical /home/zero/.luckyBackup/profiles/default.profile > /home/zero/.luckyBackup/logs/default-LastCronLog.log 2>&1
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ end of luckybackup entries ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -7,5 +7,5 @@ conky.config = {
 }
 
 conky.text = [[
-+@fg=1;免 ${downspeedf enp3s0}K   +@fg=2;勤 ${upspeedf enp3s0}K   +@fg=1; ${cpu}%   +@fg=2; ${memperc}%   +@fg=1; ${lines /mnt/Gog/updates.txt}   +@fg=2; ${time %a %b %d}+@fg=1;    ${time %R}
++@bg=3;+@fg=2;  r  +@fg=0;${fs_used_perc /}%  +@fg=2; h  +@fg=0;${fs_used_perc /home/zero}%  +@fg=2; G  +@fg=0;${fs_used_perc /mnt/Gog}%  +@fg=2; M  +@fg=0;${fs_used_perc /mnt/Magog}%  +@fg=2; A  +@fg=0;${fs_used_perc /mnt/Angel}%  +@bg=0;   +@bg=3;+@fg=2;  免  +@fg=0;${downspeedf enp3s0}K  +@fg=2;勤  +@fg=0;${upspeedf enp3s0}K   +@fg=2;  +@fg=0;${cpu}%   +@fg=2;  +@fg=0;${memperc}%   +@fg=2;  +@fg=0;${lines /mnt/Gog/updates.txt}  +@bg=0;   +@bg=3;  +@fg=2;  +@fg=0;${time %a %b %d}+@fg=2;     +@fg=0;${time %R}  
 ]]

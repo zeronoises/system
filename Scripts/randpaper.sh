@@ -5,17 +5,17 @@ path=/mnt/Gog/Papers/
 new_paper() {
     image=$(ls $path | shuf -n 1)
     feh --bg-fill --no-xinerama $path$image
-    notify-send "New Wallpaper" $image
+    notify-send -t 5000 "New Wallpaper" $image
     choose
 }
 
-trash_paper (){
+trash_paper() {
     rm $path$image
-    notify-send "Trashed" $image
+    notify-send -t 5000 "Trashed" $image
 }
 
 choose() {
-    choice=$(printf "Keep\nTrash\nNext" | dmenu -i -bw 2 -c -fn "Droid Sans Mono-14")
+    choice=$(printf "Keep\nTrash\nNext" | dmenu -p $image -i -fn "Droid Sans Mono-14")
     case "$choice" in
     Keep) exit 0
         ;;
@@ -29,4 +29,3 @@ choose() {
 }
 
 new_paper
-

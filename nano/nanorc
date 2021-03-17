@@ -39,7 +39,7 @@ set atblanks
 # set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
-# set breaklonglines
+set breaklonglines
 
 ## Do case-sensitive searches by default.
 # set casesensitive
@@ -57,7 +57,7 @@ set constantshow
 ## Set the target width for automatic hard-wrapping and for justifying
 ## paragraphs.  If the specified value is 0 or less, the wrapping point
 ## will be the terminal's width minus this number.
-# set fill -8
+set fill -8
 
 ## Remember the used search/replace strings for the next session.
 # set historylog
@@ -146,7 +146,7 @@ set positionlog
 # set smarthome
 
 ## Enable soft line wrapping (AKA full-line display).
-# set softwrap
+set softwrap
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not have a default value.
@@ -165,7 +165,7 @@ set positionlog
 # set tempfile
 
 ## Snip whitespace at the end of lines when justifying or hard-wrapping.
-# set trimblanks
+set trimblanks
 
 ## Disallow file modification.  Why would you want this in an rcfile? ;)
 # set view

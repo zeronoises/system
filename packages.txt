@@ -131,7 +131,6 @@ libtool
 libva-mesa-driver
 libva-vdpau-driver
 libxcrypt
-lightdm
 linux-firmware
 linux-lts
 linux-lts-headers
@@ -225,6 +224,7 @@ sed
 shfmt
 shotwell
 simplescreenrecorder
+slock
 slop
 smartmontools
 sqlitebrowser

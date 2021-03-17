@@ -1,10 +1,7 @@
 # discordia 2019
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
 
-alias update='yay -Syu --devel'
+alias update='paru -Syu --devel'
+alias pinfo='paru -Si'
 alias ..='cd ..'
 alias clock="tty-clock -s -c -n"
 alias c='clear'
@@ -12,7 +9,6 @@ alias ls='lsd -Ahl1'
 alias getkey="xev -event keyboard  | egrep -o 'keycode.*\)'"
 alias noises="cd /mnt/Gog/repos/noises/; bundle exec jekyll serve; cd $OLDPWD"
 alias sync_noises="rsync -h --progress --stats -r -tgo -p -l -D -C --update /mnt/Gog/repos/noises/_site/ /mnt/Gog/repos/compiled\ noises"
-alias pinfo="pamac info"
 alias max="unimatrix -a -f -s 95 -l aAcCgGknS -c cyan"
 alias icat="kitty +kitten icat"
 alias feh="feh --scale-down"
