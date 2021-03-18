@@ -8,7 +8,7 @@ if [[ $height -gt 30 ]]
 	else heightfit=$height
 fi
 
-num=$(wmctrl -l | sed 's/  / /' | cut -d " " -f 4- | nl -w 3 -n rn | sed -r 's/^([ 0-9]+)[ \t]*(.*)$/\1 - \2/' | dmenu -i -c -bw 2 -fn "Droid Sans Mono-14" -l $heightfit | cut -d '-' -f -1)
+num=$(wmctrl -l | sed 's/  / /' | cut -d " " -f 4- | nl -w 3 -n rn | sed -r 's/^([ 0-9]+)[ \t]*(.*)$/\1 - \2/' | dmenu -i -c  -sb '#4586A6' -bw 2 -fn "Droid Sans Mono-14" -l $heightfit | cut -d '-' -f -1)
 [[ -z "$num" ]] && exit
 wmctrl -l | sed -n "$num p" | cut -c -10 | xargs wmctrl -i -a
 

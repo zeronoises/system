@@ -15,7 +15,7 @@ trash_paper() {
 }
 
 choose() {
-    choice=$(printf "Keep\nTrash\nNext" | dmenu -p $image -i -fn "Droid Sans Mono-14")
+    choice=$(printf "Keep\nTrash\nNext" | dmenu -p $image -i -sb '#4586A6' -fn "Droid Sans Mono-14")
     case "$choice" in
     Keep) exit 0
         ;;
