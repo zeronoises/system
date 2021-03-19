@@ -1,9 +1,9 @@
 #!/bin/bash
 
-notify-send "Test message" "critical test" -t 10000
+notify-send "Test message" "critical test" -u critical
 
-notify-send "Test message" "normal test" -t 5000
+notify-send "Test message" "normal test" -u normal
 
-notify-send "Test message" "low test" -t 2000
+notify-send "Test message" "low test" -u low
 
 

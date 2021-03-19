@@ -51,6 +51,7 @@ dos2unix
 dosfstools
 dpf-plugins
 dragonfly-reverb
+dunst
 ecryptfs-utils
 efibootmgr
 electron
