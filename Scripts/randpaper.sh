@@ -5,13 +5,13 @@ path=/mnt/Gog/Papers/
 new_paper() {
     image=$(ls $path | shuf -n 1)
     feh --bg-fill --no-xinerama $path$image
-    notify-send -t 5000 "New Wallpaper" $image
+    notify-send -i $path$image "New Wallpaper" $image
     choose
 }
 
 trash_paper() {
     rm $path$image
-    notify-send -t 5000 "Trashed" $image
+    notify-send -i $path$image "Trashed" $image
 }
 
 choose() {
