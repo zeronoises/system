@@ -32,7 +32,6 @@ clang
 clementine
 clipmenu
 cmake
-code
 converseen
 cpio
 cppunit

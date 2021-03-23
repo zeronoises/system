@@ -5,8 +5,10 @@ audacity-wxgtk2
 bsp-layout
 c-lolcat
 checkupdates-aur
+code-transparent
 conky-cli
 dmenu-distrotube-git
+doctest
 dropbox
 etcher-bin
 faba-icon-theme
@@ -43,6 +45,7 @@ pkgbrowser
 python-enum-compat
 python2-lxml
 python2-pmw
+qrcodegen
 qt5-styleplugins
 shellcheck-static
 siji-git
