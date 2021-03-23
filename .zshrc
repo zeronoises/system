@@ -75,7 +75,9 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 ## Alias section 
 source "$HOME/.aliases"
 
-## Funtcions
+## zprofile
+
+source "$HOME/.zprofile"
 
 # Move to dir and ls it
 cl () {

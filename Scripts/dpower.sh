@@ -1,16 +1,23 @@
 #!/bin/bash
 
-    choice=$(printf "LockScreen\nKillX\nLogOut\nReBoot\nPowerOff" | dmenu -p Power -i -sb '#4586A6' -fn "Droid Sans Mono-14")
-    case "$choice" in
-    LockScreen) slock  
+    gxmessage "              戀                                        ﰸ" -fn 'NotoSans Nerd Font 24' -buttons "LockScr:100","KillX:101","LogOut:102","Reboot:103","PowerOff:104","Cancel:105" -default "Cancel"
+    case $? in
+    100) slock  
         ;;
-    KillX) pkill -15 -t tty"$XDG_VTNR" Xorg
+    101) pkill -15 -t tty"$XDG_VTNR" Xorg
         ;;
-    LogOut) loginctl terminate-session ${XDG_SESSION_ID-}
+    102) loginctl terminate-session ${XDG_SESSION_ID-}
         ;;
-    ReBoot) systemctl reboot
+    103) systemctl reboot
         ;;
-    PowerOff) systemctl poweroff
+    104) systemctl poweroff
+        ;;
+    105) exit 0
+        ;;
+    *) exit 0
         ;;
     esac
     exit 0
+
+
+

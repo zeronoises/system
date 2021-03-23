@@ -1,6 +1,5 @@
 # discordia 2019
 
-alias update='paru -Syu --devel'
 alias pinfo='paru -Si'
 alias ..='cd ..'
 alias clock="tty-clock -s -c -n"
@@ -23,8 +22,6 @@ alias sncapture="jack_capture --channels 3 --port Decks:capture_1 --port Decks:c
 alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
-alias paclist="pacman -Qqen > /mnt/Gog/repos/system/packages.txt && pacman -Qqem > /mnt/Gog/repos/system/foreign.txt"
-alias check="cat /mnt/Gog/updates.txt"
 alias sprop="xprop | grep -E \"^(WM_CLASS|_NET_WM_NAME|WM_NAME)\""
 
 # suffix

@@ -35,6 +35,7 @@ cmake
 code
 converseen
 cpio
+cppunit
 cpupower
 crda
 cronie
@@ -83,6 +84,7 @@ gnome-themes-extra
 gnubg
 gobject-introspection
 gparted
+gperf
 graphviz
 grep
 groff
@@ -102,6 +104,7 @@ gvfs-afc
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
+gxmessage
 gzip
 haveged
 hunspell-en_GB
@@ -128,6 +131,7 @@ libavtp
 libdvdcss
 libmatroska
 libmicrodns
+libmspack
 libtar
 libtool
 libva-mesa-driver
@@ -240,6 +244,7 @@ telepathy-accounts-signon
 terminus-font
 texinfo
 thunderbird
+tracker3
 transmission-gtk
 tree
 ttf-bitstream-vera
@@ -273,6 +278,7 @@ which
 whois
 wireless_tools
 wmctrl
+wxgtk2
 xarchiver-gtk2
 xautomation
 xclip

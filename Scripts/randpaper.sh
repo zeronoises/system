@@ -11,18 +11,19 @@ new_paper() {
 
 trash_paper() {
     rm $path$image
-    notify-send -i $path$image "Trashed" $image
+    notify-send "Trashed" $image
 }
 
 choose() {
-    choice=$(printf "Keep\nTrash\nNext" | dmenu -p $image -i -sb '#4586A6' -fn "Droid Sans Mono-14")
-    case "$choice" in
-    Keep) exit 0
+    text="Wallpaper: "$image
+    gxmessage $text -fn 'Droid Sans Mono 11' -buttons "Keep:0","Trash:1","Next:2" -default "Next"
+    case $? in
+    0)  exit 0
         ;;
-    Trash) trash_paper
-           new_paper
+    1)  trash_paper
+        new_paper
         ;;
-    Next) new_paper
+    2)  new_paper
         ;;
     esac
     exit 0
