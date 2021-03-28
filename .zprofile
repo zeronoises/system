@@ -46,6 +46,6 @@ export QT_STYLE_OVERRIDE=kvantum
 
 # autostart x
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-  exec startx
-fi
+# if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+#   exec startx
+# fi

@@ -43,10 +43,12 @@ picom-jonaburg-git
 pixterm
 pkgbrowser
 python-enum-compat
+python-pynput
 python2-lxml
 python2-pmw
 qrcodegen
 qt5-styleplugins
+scrcpy
 shellcheck-static
 siji-git
 spectrwm-git

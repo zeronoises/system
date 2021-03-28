@@ -24,14 +24,16 @@ export EDITOR=/usr/bin/nano
 export VISUAL=/usr/bin/nano
 export TERMINAL=/usr/bin/kitty
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# custom LS_COLORS with vivid
+# FROM: ayu, jellybeans, molokai, one-dark, one-light, snazzy, solarized-dark, solarized-light
+export LS_COLORS="$(vivid generate one-dark)"
+
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
-## set PATH to include local bin
-#if [ -d "/mnt/Gog/bin" ] ; then
-	#PATH="/mnt/Gog/bin:$PATH"
-#fi
-
 fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
 
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
@@ -76,7 +78,6 @@ bindkey '^[[Z' undo                                             # Shift+tab undo
 source "$HOME/.aliases"
 
 ## zprofile
-
 source "$HOME/.zprofile"
 
 # Move to dir and ls it
@@ -301,12 +302,3 @@ ex=:\
 *.pdf=:\
 *.nix=:\
 "
-
-# eval "$(starship init zsh)"
-
-
-autoload -U promptinit; promptinit
-prompt pure
-
-# Only load Liquidprompt in interactive shells, not from a script or from scp
-# [[ $- = *i* ]] && source ~/.config/liquidprompt/liquidpromptrc

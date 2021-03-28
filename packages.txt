@@ -106,7 +106,7 @@ gvfs-smb
 gxmessage
 gzip
 haveged
-hunspell-en_GB
+hunspell-en_gb
 imagemagick
 inkscape
 intel-ucode
@@ -269,6 +269,7 @@ util-linux-libs
 vala
 vivaldi
 vivaldi-ffmpeg-codecs
+vivid
 vulkan-intel
 vulkan-radeon
 w3m

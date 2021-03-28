@@ -1,4 +1,5 @@
 conky.config = { 
+    out_to_x=false,
     out_to_stderr=true,
     out_to_console = true,
     background = false,
@@ -7,5 +8,25 @@ conky.config = {
 }
 
 conky.text = [[
-+@bg=3;+@fg=2;+@fn=1;  免  +@fn=0;+@fg=0;${downspeedf enp3s0}K  +@fg=2;+@fn=1;勤  +@fn=0;+@fg=0;${upspeedf enp3s0}K   +@fg=2;+@fn=1;  +@fn=0;+@fg=0;${cpu}%   +@fg=2;+@fn=1;  +@fn=0;+@fg=0;${memperc}%  +@bg=0;   +@bg=3;+@fg=2;  r  +@fg=0;${fs_used_perc /}%  +@fg=2; h  +@fg=0;${fs_used_perc /home/zero}%  +@fg=2; G  +@fg=0;${fs_used_perc /mnt/Gog}%  +@fg=2; M  +@fg=0;${fs_used_perc /mnt/Magog}%  +@fg=2; A  +@fg=0;${fs_used_perc /mnt/Angel}%  +@bg=0;   +@bg=3;  +@fg=2;+@fn=1;  +@fn=0;+@fg=0;${lines /mnt/Gog/updates.txt}  +@fg=2;+@fn=1;   +@fn=0;+@fg=0;${time %a %b %d}+@fg=2;+@fn=1;    +@fn=0;+@fg=0;${time %R}  
++@bg=3; \
++@fg=2;+@fn=1; 勤 +@fn=0;+@fg=0;${upspeedf enp3s0}K  \
++@fg=2;+@fn=1; 免 +@fn=0;+@fg=0;${downspeedf enp3s0}K  \
++@bg=0;  \
++@bg=3; \
++@fg=2;+@fn=1;  +@fn=0;+@fg=0;${cpu}%  \
++@fg=2;+@fn=1;  +@fn=0;+@fg=0;${memperc}%  \
++@bg=0;  \
++@bg=3; \
++@fg=2;+@fn=2; r +@fn=0;+@fg=0;${fs_used_perc /}%  \
++@fg=2;+@fn=2; h +@fn=0;+@fg=0;${fs_used_perc /home/zero}%  \
++@fg=2;+@fn=2; G +@fn=0;+@fg=0;${fs_used_perc /mnt/Gog}%  \
++@fg=2;+@fn=2; M +@fn=0;+@fg=0;${fs_used_perc /mnt/Magog}%  \
++@fg=2;+@fn=2; A +@fn=0;+@fg=0;${fs_used_perc /mnt/Angel}%  \
++@bg=0;  \
++@bg=3; \
++@fg=2;+@fn=1;  +@fn=0;+@fg=0;${lines /mnt/Gog/updates.txt}  \
++@bg=0;  \
++@bg=3; \
++@fg=2;+@fn=1;  +@fn=0;+@fg=0;${time %a %b %d}  \
++@fg=2;+@fn=1;  +@fn=0;+@fg=0;${time %R}  \
 ]]
