@@ -24,6 +24,7 @@ alias df='df -h'
 alias free='free -m'
 alias sprop="xprop | grep -E \"^(WM_CLASS|_NET_WM_NAME|WM_NAME)\""
 alias check="bat /mnt/Gog/updates.txt"
+alias killak="killall -s 9"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano

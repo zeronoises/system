@@ -32,6 +32,7 @@ clang
 clementine
 clipmenu
 cmake
+code
 converseen
 cpio
 cppunit
@@ -54,7 +55,6 @@ dragonfly-reverb
 dunst
 ecryptfs-utils
 efibootmgr
-electron
 espeak-ng
 exfat-utils
 expac
@@ -106,6 +106,7 @@ gvfs-smb
 gxmessage
 gzip
 haveged
+herbstluftwm
 hunspell-en_gb
 imagemagick
 inkscape
