@@ -53,6 +53,7 @@ dosfstools
 dpf-plugins
 dragonfly-reverb
 dunst
+dzen2
 ecryptfs-utils
 efibootmgr
 espeak-ng
@@ -179,6 +180,7 @@ networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
 nilfs-utils
+nitrogen
 noto-fonts-emoji
 nss-mdns
 ntfs-3g

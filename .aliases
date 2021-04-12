@@ -24,7 +24,8 @@ alias df='df -h'
 alias free='free -m'
 alias sprop="xprop | grep -E \"^(WM_CLASS|_NET_WM_NAME|WM_NAME)\""
 alias check="bat /mnt/Gog/updates.txt"
-alias killak="killall -s 9"
+alias kill="killall -s 9"
+alias hc="herbstclient"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano
@@ -32,6 +33,6 @@ alias -s {ape,avi,flv,m4a,mkv,mov,mp3,mp4,mpeg,mpg,ogg,ogm,rm,wav,webm}=mplayer
 alias -s {png,gif,bmp,tif}="feh --scale-down"
 alias -s {jpg,JPG,jpeg}="feh --scale-down --auto-rotate"
 alias -s svg="feh --conversion-timeout 1"
-alias -s md=mdp
+alias -s md=markdown_previewer
 alias -s {pdf,ps,djvu}=zathura
 alias -s {cbr,cbz}=mcomix

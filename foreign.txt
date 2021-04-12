@@ -31,7 +31,6 @@ linux_logo
 luckybackup
 mahjong
 markdown_previewer
-multibootusb
 multimarkdown
 nerd-fonts-complete
 nerd-fonts-noto-sans-regular-complete
@@ -66,8 +65,10 @@ tty-clock
 typora
 unimatrix-git
 vcvrack-bin
+ventoy-bin
 vimix-cursors
 xcursor-breeze-neutral-git
+xorg-transset
 xwinfo-git
 youtubedl-gui
 zsh-plugin-wd-git

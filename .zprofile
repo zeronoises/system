@@ -39,6 +39,8 @@ unset TERMCAP
 # Man is much better than us at figuring this out
 unset MANPATH
 
+# setxkbmap -layout gb
+
 export QT_QPA_PLATFORMTHEME="qt5ct"
 
 PATH="/usr/sbin:/sbin:/usr/games:$PATH"

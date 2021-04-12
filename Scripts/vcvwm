@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## for tdm session
+
+exec herbstluftwm -c /home/zero/.config/herbstluftwm/autostart.vcv --locked
