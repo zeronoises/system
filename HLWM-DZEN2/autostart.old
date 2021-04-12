@@ -49,7 +49,6 @@ hc keybind $Mod-Control-Up      resize up +$resizestep
 hc keybind $Mod-Control-Right   resize right +$resizestep
 
 # tags
-# tag_names=( "爵" "" "" "" "" "" "" )
 tag_names=( "1" "2" "3" "4" "5" "6" "7" )
 tag_keys=( {1..7} )
 
@@ -136,7 +135,8 @@ hc rule windowtype='_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
 hc rule class='feh' floating=on floatplacement=center
 hc rule class='floaterm' floating=on floatplacement=center
-# hc rule class='Gxmessage' floating=on floatplacement=center
+hc rule class='Gxmessage' floating=on floatplacement=center
+hc rule class='Yad' floating=on floatplacement=center
 
 hc set tree_style '╾│ ├└╼─┐'
 

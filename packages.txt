@@ -107,7 +107,6 @@ gvfs-smb
 gxmessage
 gzip
 haveged
-herbstluftwm
 hunspell-en_gb
 imagemagick
 inkscape
