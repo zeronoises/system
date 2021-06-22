@@ -2,10 +2,11 @@
 
 ## for tdm session
 
-picom -b --experimental-backend &
+picom -b --experimental-backend --xinerama-shadow-crop &
 dunst &
-udiskie &
+udiskie -t &
 dropbox &
 clipmenud &
-nitrogen --restore &
+~/.fehbg &
+[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.cache/wal/colors.Xresources
 exec spectrwm -c ~/.config/spectrwm/spectrwm.conf

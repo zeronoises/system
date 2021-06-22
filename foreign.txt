@@ -1,4 +1,3 @@
-abiword-gtk2
 adwaita-qt
 archdroid-icon-theme
 audacity-wxgtk2
@@ -10,10 +9,13 @@ conky-cli
 console-tdm
 dmenu-distrotube-git
 doctest
+droidcam
+droidcam-obs-plugin-git
 dropbox
 etcher-bin
 faba-icon-theme
 fortune-mod-oblique-strategies
+fzwal-git
 gitkraken
 gtk-theme-switch2
 gtkdialog
@@ -47,6 +49,7 @@ python-enum-compat
 python-pynput
 python2-lxml
 python2-pmw
+python2-pygments
 qrcodegen
 qt5-styleplugins
 shellcheck-static
@@ -67,6 +70,7 @@ unimatrix-git
 vcvrack-bin
 ventoy-bin
 vimix-cursors
+vivaldi-widevine
 xcursor-breeze-neutral-git
 xorg-transset
 xwinfo-git

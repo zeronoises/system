@@ -107,6 +107,7 @@ gvfs-smb
 gxmessage
 gzip
 haveged
+herbstluftwm
 hunspell-en_gb
 imagemagick
 inkscape
@@ -171,7 +172,6 @@ nano-syntax-highlighting
 neofetch
 netctl
 netpbm
-network-manager-applet
 networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
@@ -179,7 +179,7 @@ networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
 nilfs-utils
-nitrogen
+nomacs
 noto-fonts-emoji
 nss-mdns
 ntfs-3g
@@ -211,10 +211,10 @@ python-pygments
 python-pylast
 python-pyperclip
 python-pysmbc
+python-pywal
 python-werkzeug
 python-zita-audiotools
 python-zita-jacktools
-python2-pygments
 qt5ct
 realtime-privileges
 reflector
@@ -343,6 +343,7 @@ zathura-cb
 zathura-djvu
 zathura-pdf-mupdf
 zathura-ps
+zip
 zita-alsa-pcmi
 zita-resampler
 zsh

@@ -18,6 +18,7 @@ alias temp="wd temp && ls"
 alias repos="wd repos && ls"
 alias config="wd config && ls"
 alias system="wd system && ls"
+alias papers="wd Papers && ls"
 alias sncapture="jack_capture --channels 3 --port Decks:capture_1 --port Decks:capture_2 --port system:capture_2"
 alias cp="cp -i"
 alias df='df -h'

@@ -100,7 +100,7 @@ setopt prompt_subst
 # icat --align left --z-index -1 $HOME/.archlogo
 # echo
 echo $(lsb_release -is)  $(uname -sr)
-echo $(fortune oblique-strategies) | lolcat
+echo $(fortune oblique-strategies) | lolcat --random
 
 # Color man pages
 export LESS_TERMCAP_mb=$'\E[01;32m'
@@ -143,6 +143,24 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
+
+walt() {
+    wal -n -i "$@"
+    feh --bg-fill --no-xinerama "$(< "${HOME}/.cache/wal/wal")"
+}
+
+# Import colorscheme from 'wal' asynchronously
+# &   # Run the process in the background.
+# ( ) # Hide shell job control messages.
+# Not supported in the "fish" shell.
+(cat ~/.cache/wal/sequences &)
+
+# Alternative (blocks terminal for 0-3ms)
+cat ~/.cache/wal/sequences
+
+# To add support for TTYs this line can be optionally added.
+source ~/.cache/wal/colors-tty.sh
+
 
 export LF_ICONS="\
 di=:\
