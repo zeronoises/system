@@ -4,7 +4,6 @@ audacity-wxgtk2
 bsp-layout
 c-lolcat
 checkupdates-aur
-code-marketplace
 conky-cli
 console-tdm
 dmenu-distrotube-git
@@ -12,6 +11,7 @@ doctest
 droidcam
 droidcam-obs-plugin-git
 dropbox
+duf-bin
 etcher-bin
 faba-icon-theme
 fortune-mod-oblique-strategies
@@ -26,7 +26,6 @@ jekyll
 kvantum-theme-arc
 kvantum-theme-nordic-git
 lf-bin
-lfs
 libshout-git
 libuser
 linux_logo
@@ -45,6 +44,7 @@ pepper-flash
 picom-jonaburg-git
 pixterm
 pkgbrowser
+polybar
 python-enum-compat
 python-pynput
 python2-lxml
@@ -71,6 +71,7 @@ vcvrack-bin
 ventoy-bin
 vimix-cursors
 vivaldi-widevine
+wpgtk-git
 xcursor-breeze-neutral-git
 xorg-transset
 xwinfo-git

@@ -32,7 +32,6 @@ clang
 clementine
 clipmenu
 cmake
-code
 converseen
 cpio
 cppunit
@@ -72,6 +71,8 @@ galculator
 gawk
 gcc
 gcolor2
+gedit
+gedit-plugins
 gendesk
 gettext
 gimp
@@ -107,7 +108,6 @@ gvfs-smb
 gxmessage
 gzip
 haveged
-herbstluftwm
 hunspell-en_gb
 imagemagick
 inkscape
@@ -127,6 +127,7 @@ jshon
 jsoncpp
 kitty
 kvantum-qt5
+lfs
 lhasa
 libavtp
 libdvdcss
@@ -167,11 +168,13 @@ mixxx
 mlocate
 modemmanager
 mplayer
+mypy
 nano
 nano-syntax-highlighting
 neofetch
 netctl
 netpbm
+network-manager-applet
 networkmanager
 networkmanager-openconnect
 networkmanager-openvpn
@@ -216,6 +219,7 @@ python-werkzeug
 python-zita-audiotools
 python-zita-jacktools
 qt5ct
+qtile
 realtime-privileges
 reflector
 reiserfsprogs
@@ -295,7 +299,6 @@ xf86-input-wacom
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-intel
-xf86-video-nouveau
 xkeycaps
 xorg-bdftopcf
 xorg-iceauth
@@ -337,6 +340,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xsel
+xsettingsd
 yad
 zathura
 zathura-cb

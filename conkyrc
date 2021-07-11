@@ -2,21 +2,19 @@ conky.config = {
     out_to_stderr=true,
     out_to_console = true,
     background = false,
-    total_run_times = 0, 
+    total_run_times = 2, 
     update_interval = 1,
 }
 
 conky.text = [[\
-+@fg=2;+@fn=1; 勤 +@fn=0;+@fg=0;${upspeedf enp3s0}K  \
-+@fg=2;+@fn=1; 免 +@fn=0;+@fg=0;${downspeedf enp3s0}K  \
-+@fg=2;+@fn=1; C +@fn=0;+@fg=0;${cpu}%  \
-+@fg=2;+@fn=1; M +@fn=0;+@fg=0;${memperc}%  \
-+@fg=2;+@fn=2; r +@fn=0;+@fg=0;${fs_used_perc /}%  \
-+@fg=2;+@fn=2; h +@fn=0;+@fg=0;${fs_used_perc /home/zero}%  \
-+@fg=2;+@fn=2; G +@fn=0;+@fg=0;${fs_used_perc /mnt/Gog}%  \
-+@fg=2;+@fn=2; M +@fn=0;+@fg=0;${fs_used_perc /mnt/Magog}%  \
-+@fg=2;+@fn=2; A +@fn=0;+@fg=0;${fs_used_perc /mnt/Angel}%  \
-+@fg=2;+@fn=1;  +@fn=0;+@fg=0;${lines /mnt/Gog/updates.txt}  \
-+@fg=2;+@fn=1;  +@fn=0;+@fg=0;${time %a %b %d}  \
-+@fg=2;+@fn=1;  +@fn=0;+@fg=0;${time %R}  \
+ 勤 ${upspeedf enp3s0}K  \
+ 免 ${downspeedf enp3s0}K  \
+ C ${cpu}%  \
+ M ${memperc}%  \
+ r ${fs_used_perc /}%  \
+ h ${fs_used_perc /home/zero}%  \
+ G ${fs_used_perc /mnt/Gog}%  \
+ M ${fs_used_perc /mnt/Magog}%  \
+ A ${fs_used_perc /mnt/Angel}%  \
+  ${lines /mnt/Gog/updates.txt}  \
 ]]

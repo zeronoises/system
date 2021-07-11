@@ -1,6 +1,6 @@
 #!/bin/bash
 
-    gxmessage "                                            ﰸ" -fn 'NotoSans Nerd Font 24' -buttons "LockScr:100","LogOut:101","Reboot:102","PowerOff:103","Cancel:104" -default "Cancel" -bg red
+    gxmessage "                                            ﰸ" -fn 'NotoSans Nerd Font 20' -buttons "LockScr:100","LogOut:101","Reboot:102","PowerOff:103","Cancel:104" -default "Cancel" -bg red
     case $? in
     100) slock  
         ;;

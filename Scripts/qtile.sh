@@ -2,12 +2,13 @@
 
 ## for tdm session
 
-picom -b --experimental-backend --xinerama-shadow-crop &
+picom -b &
 cadence-session-start -s &
 dunst &
 udiskie -t &
+nm-applet &
 dropbox &
 clipmenud &
 ~/.fehbg &
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.cache/wal/colors.Xresources
-exec spectrwm -c ~/.config/spectrwm/spectrwm.conf
+exec qtile start
