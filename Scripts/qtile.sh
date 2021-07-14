@@ -2,7 +2,7 @@
 
 ## for tdm session
 
-picom -b &
+picom -b --experimental-backends &
 cadence-session-start -s &
 dunst &
 udiskie -t &

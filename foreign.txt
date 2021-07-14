@@ -41,7 +41,6 @@ otf-font-awesome-4
 pandoc-bin
 paru
 pepper-flash
-picom-jonaburg-git
 pixterm
 pkgbrowser
 polybar
@@ -71,6 +70,7 @@ vcvrack-bin
 ventoy-bin
 vimix-cursors
 vivaldi-widevine
+vscodium-bin
 wpgtk-git
 xcursor-breeze-neutral-git
 xorg-transset

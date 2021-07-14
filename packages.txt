@@ -3,6 +3,7 @@ accountsservice
 acpi
 acpid
 aisleriot
+alacritty
 alsa-firmware
 alsa-utils
 apm
@@ -197,6 +198,7 @@ patchutils
 pcmanfm-gtk3
 perl-file-mimeinfo
 perl-json-xs
+picom
 pkgconf
 pkgfile
 polkit-gnome
