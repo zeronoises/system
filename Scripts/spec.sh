@@ -2,7 +2,13 @@
 
 ## for tdm session
 
-picom -b --experimental-backend --xinerama-shadow-crop &
+xrandr --auto --output HDMI-0 --mode 1920x1080 --right-of DVI-D-0
+# picom -b &
+xmodmap ~/.Xmodmap &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+soundcard2 &
+dpms_off &
+xdotool key --clearmodifiers Num_Lock &
 cadence-session-start -s &
 dunst &
 udiskie -t &

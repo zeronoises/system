@@ -3,7 +3,6 @@ accountsservice
 acpi
 acpid
 aisleriot
-alacritty
 alsa-firmware
 alsa-utils
 apm
@@ -23,6 +22,7 @@ bat
 beets
 binutils
 bison
+bpytop
 broadcom-wl-dkms
 btrfs-progs
 cadence
@@ -196,6 +196,7 @@ pacman-contrib
 patch
 patchutils
 pcmanfm-gtk3
+pcurses
 perl-file-mimeinfo
 perl-json-xs
 picom
@@ -221,7 +222,6 @@ python-werkzeug
 python-zita-audiotools
 python-zita-jacktools
 qt5ct
-qtile
 realtime-privileges
 reflector
 reiserfsprogs
@@ -236,7 +236,6 @@ sed
 shfmt
 shotwell
 simplescreenrecorder
-slock
 slop
 smartmontools
 sqlitebrowser
@@ -301,7 +300,6 @@ xf86-input-wacom
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-intel
-xkeycaps
 xorg-bdftopcf
 xorg-iceauth
 xorg-mkfontscale

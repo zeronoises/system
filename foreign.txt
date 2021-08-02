@@ -37,13 +37,17 @@ nerd-fonts-complete
 nerd-fonts-noto-sans-regular-complete
 no-more-secrets-git
 nordic-theme-git
+nvidia-dkms-tkg
+nvidia-egl-wayland-tkg
+nvidia-settings-tkg
+nvidia-utils-tkg
+opencl-nvidia-tkg
 otf-font-awesome-4
 pandoc-bin
 paru
 pepper-flash
 pixterm
 pkgbrowser
-polybar
 python-enum-compat
 python-pynput
 python2-lxml
@@ -51,6 +55,8 @@ python2-pmw
 python2-pygments
 qrcodegen
 qt5-styleplugins
+qtile-git
+sflock-git
 shellcheck-static
 siji-git
 spectrwm-git
@@ -74,6 +80,7 @@ vscodium-bin
 wpgtk-git
 xcursor-breeze-neutral-git
 xorg-transset
+xosview
 xwinfo-git
 youtubedl-gui
 zsh-plugin-wd-git

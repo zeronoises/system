@@ -1,10 +1,12 @@
 #!/bin/bash
 
-    gxmessage "                                            ﰸ" -fn 'NotoSans Nerd Font 20' -buttons "LockScr:100","LogOut:101","Reboot:102","PowerOff:103","Cancel:104" -default "Cancel" -bg red
+. "${HOME}/.cache/wal/colors.sh"
+
+    gxmessage "                                               ﰸ " -fn 'Arimo Nerd Font 20' -buttons "LockScr:100","LogOut:101","Reboot:102","PowerOff:103","Cancel:104" -default "Cancel" -bg $color6 -fg $color7
     case $? in
-    100) slock  
+    100) sflock -h -b discordia  
         ;;
-    101) loginctl terminate-session ${XDG_SESSION_ID-}
+    101) killall spectrwm || qtile cmd-obj -o cmd -f shutdown
         ;;
     102) systemctl reboot
         ;;
