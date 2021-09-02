@@ -24,11 +24,11 @@ alias cp="cp -i"
 alias df='df -h'
 alias free='free -m'
 alias sprop="xprop | grep -E \"^(WM_CLASS|_NET_WM_NAME|WM_NAME)\""
-alias check="bat /mnt/Gog/updates.txt"
+alias check="bat $HOME/.config/zero/updates.txt"
 alias kill="killall -s 9"
 alias hc="herbstclient"
 alias upvent="sudo ventoy -u /dev/sde"
-alias killq="qtile cmd-obj -o cmd -f shutdown"
+alias col="cat /home/zero/.config/wpg/sequences"
 
 # suffix
 alias -s {cpp,cxx,cc,c,hh,h,inl,asc,txt,TXT,tex}=nano

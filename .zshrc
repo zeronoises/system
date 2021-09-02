@@ -25,10 +25,6 @@ export VISUAL=/usr/bin/nano
 export TERMINAL=/usr/bin/kitty
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-# custom LS_COLORS with vivid
-# FROM: ayu, jellybeans, molokai, one-dark, one-light, snazzy, solarized-dark, solarized-light
-export LS_COLORS="$(vivid generate one-dark)"
-
 WORDCHARS=${WORDCHARS//\/[&.;]}                                 # Don't consider certain characters part of the word
 
 fpath+=$HOME/.zsh/pure
@@ -98,7 +94,6 @@ setopt prompt_subst
 
 # the opening stanza
 # icat --align left --z-index -1 $HOME/.archlogo
-# echo
 echo $(lsb_release -is)  $(uname -sr)
 echo $(fortune oblique-strategies) | lolcat --random
 
@@ -153,10 +148,7 @@ walt() {
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
-
-# Alternative (blocks terminal for 0-3ms)
-cat ~/.cache/wal/sequences
+(cat ~/.config/wpg/sequences &)
 
 # To add support for TTYs this line can be optionally added.
 source ~/.cache/wal/colors-tty.sh

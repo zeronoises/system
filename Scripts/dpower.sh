@@ -4,7 +4,9 @@
 
     gxmessage "                                               ﰸ " -fn 'Arimo Nerd Font 20' -buttons "LockScr:100","LogOut:101","Reboot:102","PowerOff:103","Cancel:104" -default "Cancel" -bg $color6 -fg $color7
     case $? in
-    100) sflock -h -b discordia  
+    100) sflock -h -d
+        sleep 5 &&
+        xset dpms force off
         ;;
     101) killall spectrwm || qtile cmd-obj -o cmd -f shutdown
         ;;

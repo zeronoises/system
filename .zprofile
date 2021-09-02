@@ -47,5 +47,5 @@ PATH="/usr/sbin:/sbin:/usr/games:$PATH"
 export QT_STYLE_OVERRIDE=kvantum
 
 # start tdm
-
+sh $HOME/.cache/wal/colors-tty.sh
 tdm

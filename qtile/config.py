@@ -8,62 +8,74 @@ import socket
 import subprocess
 from qtilecolors import colors
 from typing import List  # noqa: F401
-from libqtile import bar, layout, widget, qtile
+from libqtile import bar, layout, widget, qtile, hook
 from libqtile.config import Click, Drag, Group, Key, Match, Screen, ScratchPad, DropDown
 from libqtile.lazy import lazy
 
 mod = "mod4"
 terminal = "kitty"
- 
-keys = [
-    Key([mod], "a", lazy.next_screen(), desc='Move focus to other monitor'),
-    Key([mod], "Left", lazy.layout.left(), desc="Move focus to left"),
-    Key([mod], "Right", lazy.layout.right(), desc="Move focus to right"),
-    Key([mod], "Down", lazy.layout.down(), desc="Move focus down"),
-    Key([mod], "Up", lazy.layout.up(), desc="Move focus up"),
-    Key([mod, "shift"], "Left", lazy.layout.shuffle_left(), desc="Move window to the left"),
-    Key([mod, "shift"], "Right", lazy.layout.shuffle_right(), desc="Move window to the right"),
-    Key([mod, "shift"], "Down", lazy.layout.shuffle_down(), desc="Move window down"),
-    Key([mod, "shift"], "Up", lazy.layout.shuffle_up(), desc="Move window up"),
-    Key([mod, "control"], "Up", lazy.layout.grow(), desc='Grow window'),
-    Key([mod, "control"], "Down", lazy.layout.shrink(), desc='Shrink window'),
-    Key([mod], "x", lazy.window.kill(), desc="Kill focused window"),
-    Key([mod], "b", lazy.hide_show_bar(position='all'), desc="Toggle bars"),
-    Key([mod], "Pause", lazy.spawn("/mnt/Gog/Scripts/dpower.sh"), desc='Power Menu'),
-    Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
-    Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "d", lazy.spawn("/mnt/Gog/Scripts/menu.sh"), desc="Main menu"),
-    Key([mod, "shift"], "d", lazy.spawn("/mnt/Gog/Scripts/run_menu.sh"), desc="Run menu"),
-    Key([mod], "c", lazy.spawn("/mnt/Gog/Scripts/clipmenu.sh"), desc="Clipboard menu"),
-    Key([mod], "u", lazy.spawn("/mnt/Gog/Scripts/walrand.sh"), desc="Random colourscheme"),
-    Key([mod], "y", lazy.spawn("yad --no-buttons --image '/home/zero/.config/wpg/current_sample.png'"), desc="Colourscheme"),
-    Key([mod], "Print", lazy.spawn("flameshot full -d 5000 -p /mnt/Gog/Pictures/scrots"), desc="Full screenshot"),
-    Key([mod], "p", lazy.spawn("flameshot gui -p /mnt/Gog/Temp"), desc="Screenshot"),
-    Key([mod], "w", lazy.spawn("xosview"), desc="Xosview"),
-    Key([mod], "Return", lazy.spawn(terminal), desc="Terminal"),
-    Key([mod], "F1", lazy.spawn("vivaldi-stable"), desc="Browser"),
-    Key([mod, "shift"], "F1", lazy.spawn("vivaldi-stable --restore-last-session"), desc="Browser session"),
-    Key([mod], "F2", lazy.spawn("vscodium"), desc="Text editor"), 
-    Key([mod], "F3", lazy.group['scratch'].dropdown_toggle('floaterm'), desc="Scratch term"),
-    Key([mod], "j", lazy.group['scratch'].dropdown_toggle('jack'), desc="JACK patchbay"),
-    Key([mod], "f", lazy.group['scratch'].dropdown_toggle('fileman'), desc="File manager"),
-    Key([mod], "m", lazy.group['scratch'].dropdown_toggle('mail'), desc="Email client"),]
 
-group_names = [("爵", {'layout': 'monadtall'}),
+keys = [
+    ## KEY_START
+    Key([mod], "1", lazy.group[""].toscreen(), desc=" ... Switch to group "),
+    Key([mod], "2", lazy.group[""].toscreen(), desc=" ... Switch to group "),
+    Key([mod], "3", lazy.group[""].toscreen(), desc=" ... Switch to group "),
+    Key([mod], "4", lazy.group[""].toscreen(), desc=" ... Switch to group "),
+    Key([mod], "5", lazy.group[""].toscreen(), desc=" ... Switch to group "),
+    Key([mod], "6", lazy.group[""].toscreen(), desc=" ... Switch to group "),
+    Key([mod, "shift"], "1", lazy.window.togroup(""), desc=" ... Move to group "),
+    Key([mod, "shift"], "2", lazy.window.togroup(""), desc=" ... Move to group "),
+    Key([mod, "shift"], "3", lazy.window.togroup(""), desc=" ... Move to group "),
+    Key([mod, "shift"], "4", lazy.window.togroup(""), desc=" ... Move to group "),
+    Key([mod, "shift"], "5", lazy.window.togroup(""), desc=" ... Move to group "),
+    Key([mod, "shift"], "6", lazy.window.togroup(""), desc=" ... Move to group "),
+    Key([mod], "a", lazy.next_screen(), desc=' ... Move focus to other monitor'),
+    Key([mod], "Left", lazy.layout.left(), desc=' ... Move focus to left'),
+    Key([mod], "Right", lazy.layout.right(), desc=' ... Move focus to right'),
+    Key([mod], "Down", lazy.layout.down(), desc=' ... Move focus down'),
+    Key([mod], "Up", lazy.layout.up(), desc=' ... Move focus up'),
+    Key([mod, "shift"], "Left", lazy.layout.shuffle_left(), desc=' ... Move window to the left'),
+    Key([mod, "shift"], "Right", lazy.layout.shuffle_right(), desc=' ... Move window to the right'),
+    Key([mod, "shift"], "Down", lazy.layout.shuffle_down(), desc=' ... Move window down'),
+    Key([mod, "shift"], "Up", lazy.layout.shuffle_up(), desc=' ... Move window up'),
+    Key([mod], "z", lazy.window.toggle_minimize(), desc=' ... Minimise window'),
+    Key([mod], "s", lazy.window.toggle_floating(), desc=' ... Toggle floating'),
+    Key([mod, "control"], "Up", lazy.layout.grow(), desc=' ... Grow window'),
+    Key([mod, "control"], "Down", lazy.layout.shrink(), desc=' ... Shrink window'),
+    Key([mod], "x", lazy.window.kill(), desc=' ... Kill focused window'),
+    Key([mod], "b", lazy.hide_show_bar(position='all'), desc=' ... Toggle bars'),
+    Key([mod], "Pause", lazy.spawn("dpower"), desc=' ... Power Menu'),
+    Key([mod, "control"], "r", lazy.restart(), desc=' ... Restart Qtile'),
+    Key([mod, "control"], "q", lazy.shutdown(), desc=' ... Shutdown Qtile'),
+    Key([mod], "d", lazy.spawn("menu"), desc=' ... Main menu'),
+    Key([mod, "shift"], "d", lazy.spawn("run_menu"), desc=' ... Run menu'),
+    Key([mod], "c", lazy.spawn("dclipmenu"), desc=' ... Clipboard menu'),
+    Key([mod], "u", lazy.spawn("walrand"), desc=' ... Random colourscheme'),
+    Key([mod], "y", lazy.spawn("yad --no-buttons --image '/home/zero/.config/wpg/current_sample.png'"), desc=' ... Colourscheme'),
+    Key([mod], "Print", lazy.spawn("flameshot full -d 5000 -p /mnt/Gog/Pictures/scrots"), desc=' ... Full screenshot'),
+    Key([mod], "p", lazy.spawn("flameshot gui -p /mnt/Gog/Temp"), desc=' ... Screenshot'),
+    Key([mod], "Return", lazy.spawn(terminal), desc=' ... Terminal'),
+    Key([mod], "F1", lazy.spawn("microsoft-edge-beta"), desc=' ... Browser'),
+    Key([mod], "F2", lazy.spawn("vscodium"), desc=' ... Text editor'), 
+    Key([mod], "F3", lazy.group['scratch'].dropdown_toggle('floaterm'), desc=' ... Scratch term'),
+    Key([mod], "j", lazy.group['scratch'].dropdown_toggle('jack'), desc=' ... JACK patchbay'),
+    Key([mod], "f", lazy.group['scratch'].dropdown_toggle('fileman'), desc=' ... File manager'),
+    Key([mod], "m", lazy.group['scratch'].dropdown_toggle('mail'), desc=' ... Email client'),
+    Key([mod], "k", lazy.spawn("/mnt/Gog/Scripts/qtkb.sh"), desc=" ... Key bindings"),
+    ## KEY_END
+    ]
+
+group_names = [("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
+               ("", {'layout': 'monadtall'}),
                ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'}),
-               ("", {'layout': 'monadtall'})
+               ("", {'layout': 'monadtall'}),
+               ("", {'layout': 'monadtall'})
                ]
 
 groups = [
     Group(name, **kwargs) for name, kwargs in group_names
     ]
-
-for i, (name, kwargs) in enumerate(group_names, 1):
-    keys.append(Key([mod], str(i), lazy.group[name].toscreen(), desc="Switch to group"))
-    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name), desc="Move to group"))
 
 groups.append(
     ScratchPad("scratch",
@@ -120,12 +132,11 @@ floating_layout = layout.Floating(
     Match(wm_class='Gxmessage'),
     Match(wm_class='Gnome-mplayer'),
     Match(wm_class='Yad'),
-    Match(wm_class='PkgBrowser'),
     Match(wm_class='Wpg'),
     Match(wm_class='Thunderbird'),
     Match(wm_class='Gedit'),
-    Match(wm_class='XOsview'),
-
+    Match(wm_class="Pamac-manager"),
+    Match(wm_class="Gimp-2.10"),
     ]
     )
 
@@ -154,14 +165,18 @@ screens = [
                     highlight_color = colors[0],
                     highlight_method = 'line',
                     inactive = colors[0],
-                    margin = 1            
+                    fontsize = 25,
+                    margin_y = 3
                 ),
                 widget.Spacer(
                     length = bar.STRETCH
                 ),
-                widget.Sep(
-                    linewidth = 0,
-                    padding = 20
+                widget.Net(
+                    format = "{down:^7}  {up:^7}",
+                    interface = "enp3s0"
+                ),
+                widget.Spacer(
+                    length = bar.STRETCH
                 ),
                 widget.DF(
                     partition = "/",
@@ -240,7 +255,8 @@ screens = [
                     highlight_color = colors[0],
                     highlight_method = 'line',
                     inactive = colors[0],
-                    margin = 1
+                    fontsize = 25,
+                    margin_y = 3
                 ),
                 widget.Sep(
                     linewidth = 0,
@@ -252,22 +268,18 @@ screens = [
                     linewidth = 0,
                     padding = 20
                 ),
-                widget.Net(
-                    format = "{down:^7}  {up:^7}",
-                    interface = "enp3s0"
-                ),
-                widget.Sep(
-                    linewidth = 0,
-                    padding = 10
-                ),
                 widget.CheckUpdates(
                     update_interval = 1800,
                     distro = "Arch_checkupdates",
                     display_format = " {updates}",
                     colour_have_updates = colors[0],
                     mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn(
-                        'gxmessage --file /mnt/Gog/updates.txt'
+                        'gxmessage --file /home/zero/.config/zero/updates.txt'
                         )},
+                ),
+                widget.Sep(
+                    linewidth = 0,
+                    padding = 20
                 ),
                 widget.Sep(
                     linewidth = 0,

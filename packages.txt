@@ -36,7 +36,6 @@ cmake
 converseen
 cpio
 cppunit
-cpupower
 crda
 cronie
 ctags
@@ -53,7 +52,6 @@ dosfstools
 dpf-plugins
 dragonfly-reverb
 dunst
-dzen2
 ecryptfs-utils
 efibootmgr
 espeak-ng
@@ -128,7 +126,6 @@ jshon
 jsoncpp
 kitty
 kvantum-qt5
-lfs
 lhasa
 libavtp
 libdvdcss
@@ -183,7 +180,6 @@ networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
 nilfs-utils
-nomacs
 noto-fonts-emoji
 nss-mdns
 ntfs-3g
@@ -196,7 +192,6 @@ pacman-contrib
 patch
 patchutils
 pcmanfm-gtk3
-pcurses
 perl-file-mimeinfo
 perl-json-xs
 picom
@@ -233,7 +228,6 @@ rust
 s-nail
 scrot
 sed
-shfmt
 shotwell
 simplescreenrecorder
 slop
@@ -241,7 +235,6 @@ smartmontools
 sqlitebrowser
 sshfs
 sudo
-surfraw
 svt-hevc
 syslog-ng
 sysstat
@@ -274,9 +267,6 @@ usb_modeswitch
 usbutils
 util-linux-libs
 vala
-vivaldi
-vivaldi-ffmpeg-codecs
-vivid
 vulkan-intel
 vulkan-radeon
 w3m
